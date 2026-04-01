@@ -54,6 +54,8 @@ def _call_once(client: OpenAI, model: str, system: str, user: str, max_tokens: i
         ],
         extra_headers=extra_headers or None,
     )
+    if not response.choices:
+        raise ValueError(f"Model {model} returned empty choices")
     return response.choices[0].message.content or ""
 
 
