@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
 
-from lib.config import BlogConfig
+from lib.config import BlogConfig, ModelSpec
 from lib.feeds import fetch_rss, make_excerpt
 from lib.hugo import dated_filename, make_slug
 from lib.llm import call_llm
@@ -141,7 +141,7 @@ def _save_research_note(
     return dest
 
 
-async def run_research(config: BlogConfig, model: str) -> ResearchResult:
+async def run_research(config: BlogConfig, specs: list[ModelSpec]) -> ResearchResult:
     if not os.environ.get("OPENROUTER_API_KEY"):
         raise EnvironmentError(
             "OPENROUTER_API_KEY is not set. Export it before running the research agent."
@@ -204,8 +204,9 @@ async def run_research(config: BlogConfig, model: str) -> ResearchResult:
             raw_response = call_llm(
                 system="You are a research assistant. Respond only with a valid JSON array.",
                 user=prompt,
-                model=model,
+                specs=specs,
                 max_tokens=BATCH_SIZE * 150,  # ~150 tokens per item for the response
+                config=config,
             )
             results = _parse_batch_response(raw_response)
         except Exception as exc:
@@ -247,5 +248,5 @@ async def run_research(config: BlogConfig, model: str) -> ResearchResult:
     )
 
 
-def research(config: BlogConfig, model: str) -> ResearchResult:
-    return asyncio.run(run_research(config, model))
+def research(config: BlogConfig, specs: list[ModelSpec]) -> ResearchResult:
+    return asyncio.run(run_research(config, specs))

@@ -74,15 +74,31 @@ dream:
   lock_file: ".dream-lock"
   context_posts: 10
 
+providers:
+  openrouter:
+    base_url: "https://openrouter.ai/api/v1"
+    api_key_env: "OPENROUTER_API_KEY"
+  private:
+    base_url: "https://infer.dayjob.dev/v1"
+    api_key: "ollama"
+    cf_client_id_env: "CF_CLIENT_ID"
+    cf_client_secret_env: "CF_CLIENT_SECRET"
+
 models:
+  # Research filtering: private server first (unlimited), OpenRouter as fallback
   research_filter:
-    - "meta-llama/llama-3.3-70b-instruct:free"
-    - "google/gemma-3-27b-it:free"
-    - "mistralai/mistral-7b-instruct:free"
+    - provider: private
+      model: "qwen3:8b"
+    - provider: openrouter
+      model: "mistralai/mistral-7b-instruct:free"
+  # Dream synthesis: best OpenRouter model first (reserve for quality), private fallback
   dream_synthesis:
-    - "deepseek/deepseek-r1:free"
-    - "meta-llama/llama-3.3-70b-instruct:free"
-    - "google/gemma-3-27b-it:free"
+    - provider: openrouter
+      model: "deepseek/deepseek-r1:free"
+    - provider: openrouter
+      model: "meta-llama/llama-3.3-70b-instruct:free"
+    - provider: private
+      model: "deepseek-r1:latest"
   max_tokens_filter: 512
   max_tokens_dream: 4096
 

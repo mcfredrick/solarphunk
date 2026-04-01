@@ -27,11 +27,25 @@ class DreamConfig(BaseModel):
     context_posts: int
 
 
+class ModelSpec(BaseModel):
+    provider: str  # "openrouter" | "private"
+    model: str
+
+
 class ModelsConfig(BaseModel):
-    research_filter: list[str]
-    dream_synthesis: list[str]
+    # Ordered preference lists: try each spec in order, skip on rate limit / error
+    research_filter: list[ModelSpec]
+    dream_synthesis: list[ModelSpec]
     max_tokens_filter: int
     max_tokens_dream: int
+
+
+class ProviderConfig(BaseModel):
+    base_url: str
+    api_key: str | None = None
+    api_key_env: str | None = None          # env var name for the API key
+    cf_client_id_env: str | None = None     # env var name for CF-Access-Client-Id
+    cf_client_secret_env: str | None = None # env var name for CF-Access-Client-Secret
 
 
 class ThemeConfig(BaseModel):
@@ -66,6 +80,7 @@ class BlogConfig(BaseModel):
     theme: ThemeConfig
     research: ResearchConfig
     dream: DreamConfig
+    providers: dict[str, ProviderConfig]
     models: ModelsConfig
     hugo: HugoConfig
     publish: PublishConfig

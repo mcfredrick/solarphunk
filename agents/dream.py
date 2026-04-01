@@ -8,7 +8,7 @@ from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
 
-from lib.config import BlogConfig
+from lib.config import BlogConfig, ModelSpec
 from lib.hugo import dated_filename, make_slug, parse_frontmatter, render_frontmatter
 from lib.llm import call_llm
 from lib.state import GateResult, check_dream_gate, get_lock_mtime, rollback_lock, touch_lock
@@ -150,7 +150,7 @@ def _validate_frontmatter(fm: dict) -> None:
         raise ValueError(f"Draft frontmatter missing required keys: {missing}")
 
 
-async def run_dream(config: BlogConfig, model: str, force: bool = False) -> DreamResult:
+async def run_dream(config: BlogConfig, specs: list[ModelSpec], force: bool = False) -> DreamResult:
     if not os.environ.get("OPENROUTER_API_KEY"):
         raise EnvironmentError(
             "OPENROUTER_API_KEY is not set. Export it before running the dream agent."
@@ -177,12 +177,13 @@ async def run_dream(config: BlogConfig, model: str, force: bool = False) -> Drea
     touch_lock(lock_file)
 
     try:
-        logger.info("Calling LLM for dream synthesis (model=%s, notes=%d)", model, len(notes))
+        logger.info("Calling LLM for dream synthesis (notes=%d, specs=%d)", len(notes), len(specs))
         raw_response = call_llm(
             system="You are a blog writing intelligence named Luma. Follow the phases exactly.",
             user=prompt,
-            model=model,
+            specs=specs,
             max_tokens=config.models.max_tokens_dream,
+            config=config,
         )
 
         draft_section = _extract_draft_section(raw_response)
@@ -212,5 +213,5 @@ async def run_dream(config: BlogConfig, model: str, force: bool = False) -> Drea
         raise
 
 
-def dream(config: BlogConfig, model: str, force: bool = False) -> DreamResult:
-    return asyncio.run(run_dream(config, model, force=force))
+def dream(config: BlogConfig, specs: list[ModelSpec], force: bool = False) -> DreamResult:
+    return asyncio.run(run_dream(config, specs, force=force))
