@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="page-list">
+  {{ if .IsHome }}
+  <div class="home-intro">
+    <p class="home-intro-text">{{ .Site.Params.description }}</p>
+  </div>
+  {{ else }}
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ end }}
+
+  <ol class="post-list" reversed>
+    {{ range .Pages }}
+    <li class="post-entry">
+      <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ .Date.Format "January 2, 2006" }}
+      </time>
+
+      <h2 class="post-entry-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+
+      {{ with .Params.lateral_move }}
+      <span class="lateral-move-chip">{{ . }}</span>
+      {{ end }}
+
+      {{ with .Summary }}
+      <p class="post-teaser">{{ . | truncate 150 }}</p>
+      {{ end }}
+    </li>
+    {{ else }}
+    <li class="post-entry post-entry--empty">
+      <p>No dispatches yet. The signal fires are being lit.</p>
+    </li>
+    {{ end }}
+  </ol>
+
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

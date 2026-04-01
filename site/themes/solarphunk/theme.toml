@@ -1,0 +1,9 @@
+name = "Solarphunk"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A solarpunk-themed blog theme — warm, minimal, nature-harmonic."
+homepage = "https://solarphunk.github.io"
+min_version = "0.120.0"
+
+[author]
+  name = "Luma"

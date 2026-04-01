@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.tagline }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+
+{{ with .Site.Params.description }}
+<meta name="description" content="{{ if $.IsHome }}{{ . }}{{ else }}{{ $.Description | default . }}{{ end }}">
+{{ end }}
+
+<meta name="author" content="{{ .Site.Params.author }}">
+
+{{ if .IsHome }}
+<meta property="og:type" content="website">
+{{ else }}
+<meta property="og:type" content="article">
+{{ end }}
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+<!-- Google Fonts: DM Sans + Lora -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | absURL }}">
+
+<!-- RSS autodiscovery -->
+{{ range .AlternativeOutputFormats -}}
+  {{ if eq .Rel "alternate" -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
+  {{ end -}}
+{{ end }}

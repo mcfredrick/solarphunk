@@ -1,0 +1,854 @@
+/* ============================================================
+   Solarphunk Theme — main.css
+   Light + dark mode, botanical aesthetic, single-column
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   Custom Properties — Light Mode (default)
+   ------------------------------------------------------------ */
+:root,
+[data-theme="light"] {
+  --bg:            #faf8f2;
+  --bg-alt:        #f2ede2;
+  --text:          #2d2a24;
+  --text-muted:    #6b6255;
+  --accent:        #5a8a5a;
+  --accent-hover:  #3d6b3d;
+  --amber:         #c8883a;
+  --amber-hover:   #a86a22;
+  --chip-bg:       #e8f0e8;
+  --chip-text:     #3d6b3d;
+  --tag-bg:        #f0e8d8;
+  --tag-text:      #7a5530;
+  --border:        #d8d0c0;
+  --divider:       #a89880;
+  --shadow:        rgba(90, 60, 20, 0.08);
+  --link:          #5a8a5a;
+  --link-hover:    #3d6b3d;
+  --sources-bg:    #f5f0e8;
+  --sources-text:  #7a7060;
+  --code-bg:       #ede8de;
+  --selection-bg:  #d4e8d4;
+}
+
+/* ------------------------------------------------------------
+   Custom Properties — Dark Mode
+   ------------------------------------------------------------ */
+[data-theme="dark"] {
+  --bg:            #141f14;
+  --bg-alt:        #1c2b1c;
+  --text:          #ddd8cc;
+  --text-muted:    #8a9980;
+  --accent:        #7ecfa0;
+  --accent-hover:  #a2e0bc;
+  --amber:         #d4a05a;
+  --amber-hover:   #e8bc80;
+  --chip-bg:       #1e321e;
+  --chip-text:     #7ecfa0;
+  --tag-bg:        #2a2010;
+  --tag-text:      #d4a05a;
+  --border:        #2a3a2a;
+  --divider:       #3a5540;
+  --shadow:        rgba(0, 20, 0, 0.3);
+  --link:          #7ecfa0;
+  --link-hover:    #a2e0bc;
+  --sources-bg:    #1a281a;
+  --sources-text:  #7a9080;
+  --code-bg:       #1a281a;
+  --selection-bg:  #1e4a2e;
+}
+
+/* Respect prefers-color-scheme when no explicit data-theme is set */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:            #141f14;
+    --bg-alt:        #1c2b1c;
+    --text:          #ddd8cc;
+    --text-muted:    #8a9980;
+    --accent:        #7ecfa0;
+    --accent-hover:  #a2e0bc;
+    --amber:         #d4a05a;
+    --amber-hover:   #e8bc80;
+    --chip-bg:       #1e321e;
+    --chip-text:     #7ecfa0;
+    --tag-bg:        #2a2010;
+    --tag-text:      #d4a05a;
+    --border:        #2a3a2a;
+    --divider:       #3a5540;
+    --shadow:        rgba(0, 20, 0, 0.3);
+    --link:          #7ecfa0;
+    --link-hover:    #a2e0bc;
+    --sources-bg:    #1a281a;
+    --sources-text:  #7a9080;
+    --code-bg:       #1a281a;
+    --selection-bg:  #1e4a2e;
+  }
+}
+
+/* ------------------------------------------------------------
+   Reset & Base
+   ------------------------------------------------------------ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--text);
+  background-color: var(--bg);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::selection {
+  background-color: var(--selection-bg);
+  color: var(--text);
+}
+
+/* ------------------------------------------------------------
+   Typography
+   ------------------------------------------------------------ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text);
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+
+h1 { font-size: 2.1rem; font-weight: 600; letter-spacing: -0.02em; }
+h2 { font-size: 1.55rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.05rem; font-family: 'DM Sans', sans-serif; font-weight: 500; }
+
+p {
+  margin-bottom: 1.4em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+strong { font-weight: 500; }
+em { font-style: italic; }
+
+/* ------------------------------------------------------------
+   Links
+   ------------------------------------------------------------ */
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ------------------------------------------------------------
+   Layout — single column, generous margins
+   ------------------------------------------------------------ */
+.site-header,
+#main-content,
+.site-footer {
+  width: 100%;
+}
+
+#main-content {
+  flex: 1;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.page-list,
+.post-single {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------------------
+   Site Header
+   ------------------------------------------------------------ */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 1.5rem;
+  background-color: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.header-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.site-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.site-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none !important;
+  color: var(--amber) !important;
+}
+
+.site-logo-link:hover {
+  color: var(--amber-hover) !important;
+}
+
+.logo-leaf-sun {
+  color: var(--amber);
+  flex-shrink: 0;
+  transition: color 0.15s ease;
+}
+
+.site-name {
+  font-family: 'Lora', serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--amber);
+  letter-spacing: -0.01em;
+  transition: color 0.15s ease;
+}
+
+.site-tagline {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding-left: 2.4rem; /* align under site name past icon */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* ------------------------------------------------------------
+   Navigation
+   ------------------------------------------------------------ */
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.site-nav a {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color 0.15s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------
+   Theme Toggle
+   ------------------------------------------------------------ */
+.theme-toggle {
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background-color: var(--chip-bg);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------
+   Home Intro
+   ------------------------------------------------------------ */
+.home-intro {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-intro-text {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------
+   Post List
+   ------------------------------------------------------------ */
+.post-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.post-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.post-date {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.post-entry-title {
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.post-entry-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.post-entry-title a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.post-teaser {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0.2rem 0 0;
+}
+
+.post-entry--empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ------------------------------------------------------------
+   Chip / Badge — lateral_move
+   ------------------------------------------------------------ */
+.lateral-move-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2em 0.7em;
+  border-radius: 100px;
+  background-color: var(--chip-bg);
+  color: var(--chip-text);
+  font-size: 0.74rem;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  align-self: flex-start;
+}
+
+a .lateral-move-chip:hover {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+/* ------------------------------------------------------------
+   Single Post
+   ------------------------------------------------------------ */
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-family: 'Lora', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: var(--text);
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.post-byline {
+  font-style: italic;
+}
+
+.post-meta-sep {
+  opacity: 0.4;
+}
+
+.post-chips {
+  margin-bottom: 0.6rem;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.post-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15em 0.6em;
+  border-radius: 4px;
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.post-tag:hover {
+  background-color: var(--amber);
+  color: var(--bg);
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------
+   Post Content — prose styles
+   ------------------------------------------------------------ */
+.post-content {
+  font-size: 1.02rem;
+  line-height: 1.8;
+  margin: 2rem 0;
+}
+
+.post-content h2 { font-size: 1.45rem; margin-top: 2.5em; }
+.post-content h3 { font-size: 1.2rem; margin-top: 2em; }
+
+.post-content ul,
+.post-content ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.4em;
+}
+
+.post-content li {
+  margin-bottom: 0.4em;
+}
+
+.post-content blockquote {
+  margin: 2em 0;
+  padding: 0.75em 1.5em;
+  border-left: 3px solid var(--accent);
+  background-color: var(--bg-alt);
+  border-radius: 0 6px 6px 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.post-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.post-content code {
+  font-family: 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+  font-size: 0.85em;
+  background-color: var(--code-bg);
+  color: var(--accent);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+.post-content pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25em 1.5em;
+  overflow-x: auto;
+  margin-bottom: 1.6em;
+  line-height: 1.55;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.88em;
+  color: var(--text);
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 1.5em auto;
+}
+
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5em 0;
+}
+
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+  font-size: 0.9rem;
+}
+
+.post-content th,
+.post-content td {
+  padding: 0.6em 0.8em;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.post-content th {
+  background-color: var(--bg-alt);
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------
+   Botanical Divider
+   ------------------------------------------------------------ */
+.divider {
+  display: flex;
+  justify-content: center;
+  color: var(--divider);
+  margin: 2.5rem 0;
+  overflow: hidden;
+}
+
+.divider svg {
+  max-width: 100%;
+}
+
+/* ------------------------------------------------------------
+   Research Sources
+   ------------------------------------------------------------ */
+.research-sources {
+  background-color: var(--sources-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.research-sources-heading {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin: 0 0 0.8rem;
+}
+
+.research-sources-list {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.research-sources-list li {
+  font-size: 0.85rem;
+  color: var(--sources-text);
+  line-height: 1.6;
+  margin-bottom: 0.4em;
+}
+
+.research-sources-list li:last-child {
+  margin-bottom: 0;
+}
+
+.research-sources-list a {
+  color: var(--sources-text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.research-sources-list a:hover {
+  color: var(--accent);
+}
+
+/* ------------------------------------------------------------
+   Post Navigation
+   ------------------------------------------------------------ */
+.post-nav {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.back-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.back-link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------
+   Page Title (taxonomy, section pages)
+   ------------------------------------------------------------ */
+.page-title {
+  font-family: 'Lora', serif;
+  font-size: 1.8rem;
+  color: var(--text);
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+/* ------------------------------------------------------------
+   Footer
+   ------------------------------------------------------------ */
+.site-footer {
+  padding: 0 1.5rem 2.5rem;
+  background-color: var(--bg);
+  transition: background-color 0.2s ease;
+}
+
+.footer-divider {
+  display: flex;
+  justify-content: center;
+  color: var(--divider);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.footer-divider svg {
+  max-width: 100%;
+}
+
+.footer-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-tagline {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.footer-byline {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.footer-byline a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-byline a:hover {
+  color: var(--accent);
+}
+
+/* ------------------------------------------------------------
+   Pagination
+   ------------------------------------------------------------ */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.pagination a,
+.pagination span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.2rem;
+  height: 2.2rem;
+  padding: 0 0.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.pagination a:hover {
+  background-color: var(--chip-bg);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pagination .active span,
+.pagination .page-item.active .page-link {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+/* ------------------------------------------------------------
+   Responsive — mobile first
+   ------------------------------------------------------------ */
+@media (max-width: 640px) {
+  html { font-size: 17px; }
+
+  .site-header { padding: 1rem 1.25rem; }
+
+  .header-inner {
+    gap: 0.75rem;
+  }
+
+  .site-tagline {
+    display: none; /* hide on very small screens */
+  }
+
+  .site-nav {
+    gap: 0.9rem;
+  }
+
+  #main-content {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .post-title {
+    font-size: 1.9rem;
+  }
+
+  h1 { font-size: 1.75rem; }
+
+  .post-entry-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  html { font-size: 19px; }
+
+  #main-content {
+    padding: 4rem 2rem 5rem;
+  }
+}
+
+/* ------------------------------------------------------------
+   Print Styles
+   ------------------------------------------------------------ */
+@media print {
+  :root {
+    --bg:         #ffffff;
+    --bg-alt:     #f5f5f5;
+    --text:       #000000;
+    --text-muted: #444444;
+    --accent:     #2d6a2d;
+    --amber:      #8a5a10;
+    --border:     #cccccc;
+  }
+
+  .site-header,
+  .site-footer,
+  .theme-toggle,
+  .post-nav,
+  .back-link,
+  .post-tags {
+    display: none;
+  }
+
+  body {
+    font-size: 11pt;
+    line-height: 1.6;
+    background: white;
+    color: black;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    opacity: 0.6;
+  }
+
+  .post-title {
+    font-size: 18pt;
+  }
+
+  .post-content pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+
+  .divider,
+  .footer-divider {
+    display: none;
+  }
+}

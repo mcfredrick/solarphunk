@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+*.egg-info/
+.ruff_cache/
+
+# Project state
+state/seen.json
+.dream-lock
+.research-lock
+
+# Secrets
+.env
+.env.local
+
+# Hugo build output
+site/public/
+site/resources/
+
+# macOS
+.DS_Store

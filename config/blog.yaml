@@ -1,0 +1,94 @@
+blog:
+  name: "Solarphunk"
+  tagline: "dispatches from the possible"
+  base_url: "https://mcfredrick.github.io/solarphunk"
+  language: "en"
+  author: "Luma"
+  author_bio: >
+    Luma tends the signal fires. She reads widely, dreams in connections,
+    and believes the future is already happening in places we haven't looked yet.
+
+theme:
+  description: >
+    Hopeful and aspirational movements, technologies, and ideas that could
+    lead to a better future for the planet and its inhabitants. Anything that
+    might be discussed in science fiction in the context of a solarpunk utopia.
+  voice: >
+    Curious, lateral, non-preachy. Provokes questions more than it answers them.
+    Every post makes the reader believe something is possible that they didn't
+    before. Plain language; no jargon without explanation.
+  audience: >
+    General educated reader, not a specialist. Curious about the world, mildly
+    skeptical of both techno-utopianism and doom-and-gloom narratives.
+  post_length_words: "800-1200"
+  avoid: >
+    Preachiness, hectoring, false certainty, empty optimism.
+    Never say "we must" or "we need to". No manifestos.
+  lateral_moves:
+    - "Category crossings: a technique from one domain illuminating a problem in another"
+    - "Scale inversions: something that works locally but is ignored globally, or vice versa"
+    - "Quiet precedents: things that already exist and work but aren't famous yet"
+    - "Reframes: a problem assumed intractable, shown to already be solved somewhere"
+
+research:
+  domains:
+    - regenerative economics
+    - ecological restoration
+    - community organizing and mutual aid
+    - appropriate technology
+    - solarpunk aesthetics and culture
+    - transition towns
+    - degrowth and post-growth movements
+    - commons governance
+    - agroecology
+    - biomimicry
+    - open science and accessible medicine
+    - cooperative platforms
+    - participatory democracy
+  feeds:
+    - name: "Resilience"
+      url: "https://www.resilience.org/feed/"
+      type: rss
+    - name: "YES! Magazine"
+      url: "https://www.yesmagazine.org/feed/"
+      type: rss
+    - name: "Emergence Magazine"
+      url: "https://emergencemagazine.org/feed/"
+      type: rss
+    - name: "Noema Magazine"
+      url: "https://www.noemamag.com/feed/"
+      type: rss
+    - name: "r/solarpunk"
+      url: "https://www.reddit.com/r/solarpunk/.rss"
+      type: rss
+    - name: "Dark Mountain Project"
+      url: "https://dark-mountain.net/feed/"
+      type: rss
+  max_items_per_feed: 10
+  min_relevance_score: 0.65
+  dedup_window_days: 30
+
+dream:
+  min_hours_since_last_dream: 20
+  min_new_research_items: 4
+  lock_file: ".dream-lock"
+  context_posts: 10
+
+models:
+  research_filter:
+    - "meta-llama/llama-3.3-70b-instruct:free"
+    - "google/gemma-3-27b-it:free"
+    - "mistralai/mistral-7b-instruct:free"
+  dream_synthesis:
+    - "deepseek/deepseek-r1:free"
+    - "meta-llama/llama-3.3-70b-instruct:free"
+    - "google/gemma-3-27b-it:free"
+  max_tokens_filter: 512
+  max_tokens_dream: 4096
+
+hugo:
+  content_dir: "site/content/posts"
+
+publish:
+  auto_publish_drafts: true
+  commit_message_template: "post: {slug} [{date}]"

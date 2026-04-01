@@ -1,0 +1,40 @@
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-brand">
+      <a href="{{ .Site.BaseURL }}" class="site-logo-link" aria-label="{{ .Site.Title }} — home">
+        <span class="site-logo-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor" class="logo-leaf-sun">
+            <circle cx="12" cy="12" r="4.5"/>
+            <ellipse cx="12" cy="4" rx="1.5" ry="3" transform="rotate(0 12 12)"/>
+            <ellipse cx="12" cy="4" rx="1.1" ry="2.2" transform="rotate(45 12 12)"/>
+            <ellipse cx="12" cy="4" rx="1.5" ry="3" transform="rotate(90 12 12)"/>
+            <ellipse cx="12" cy="4" rx="1.1" ry="2.2" transform="rotate(135 12 12)"/>
+            <ellipse cx="12" cy="4" rx="1.5" ry="3" transform="rotate(180 12 12)"/>
+            <ellipse cx="12" cy="4" rx="1.1" ry="2.2" transform="rotate(225 12 12)"/>
+            <ellipse cx="12" cy="4" rx="1.5" ry="3" transform="rotate(270 12 12)"/>
+            <ellipse cx="12" cy="4" rx="1.1" ry="2.2" transform="rotate(315 12 12)"/>
+          </svg>
+        </span>
+        <span class="site-name">{{ .Site.Title }}</span>
+      </a>
+      {{ with .Site.Params.tagline }}
+      <p class="site-tagline">{{ . }}</p>
+      {{ end }}
+    </div>
+
+    <div class="header-right">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="{{ .Site.BaseURL }}">Home</a>
+        <a href="{{ "about" | absURL }}">About</a>
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+        <a href="{{ "index.xml" | absURL }}" aria-label="RSS feed">RSS</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode" title="Toggle light/dark mode">
+        <span class="toggle-icon" aria-hidden="true">◑</span>
+      </button>
+    </div>
+  </div>
+</header>

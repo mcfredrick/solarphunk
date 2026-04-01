@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="footer-divider" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 24" width="400" height="24" class="botanical-divider">
+      <!-- Stem -->
+      <line x1="0" y1="12" x2="400" y2="12" stroke="currentColor" stroke-width="0.75" opacity="0.35"/>
+      <!-- Center leaf cluster -->
+      <ellipse cx="200" cy="12" rx="12" ry="5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.55" transform="rotate(-15 200 12)"/>
+      <ellipse cx="200" cy="12" rx="12" ry="5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.55" transform="rotate(15 200 12)"/>
+      <circle cx="200" cy="12" r="2" fill="currentColor" opacity="0.4"/>
+      <!-- Left leaf sprigs -->
+      <ellipse cx="160" cy="12" rx="8" ry="3.5" fill="none" stroke="currentColor" stroke-width="0.85" opacity="0.4" transform="rotate(-20 160 12)"/>
+      <ellipse cx="130" cy="12" rx="6" ry="2.5" fill="none" stroke="currentColor" stroke-width="0.75" opacity="0.3" transform="rotate(-25 130 12)"/>
+      <!-- Right leaf sprigs -->
+      <ellipse cx="240" cy="12" rx="8" ry="3.5" fill="none" stroke="currentColor" stroke-width="0.85" opacity="0.4" transform="rotate(20 240 12)"/>
+      <ellipse cx="270" cy="12" rx="6" ry="2.5" fill="none" stroke="currentColor" stroke-width="0.75" opacity="0.3" transform="rotate(25 270 12)"/>
+    </svg>
+  </div>
+
+  <div class="footer-inner">
+    <p class="footer-tagline">dispatches from the possible</p>
+    <p class="footer-byline">
+      By {{ .Site.Params.author | default "Luma" }} &middot;
+      <a href="{{ "index.xml" | absURL }}">RSS feed</a>
+    </p>
+  </div>
+</footer>

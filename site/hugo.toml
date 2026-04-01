@@ -1,0 +1,25 @@
+baseURL = "https://mcfredrick.github.io/solarphunk"
+languageCode = "en-us"
+title = "Solarphunk"
+theme = "solarphunk"
+paginate = 20
+enableRobotsTXT = true
+
+[params]
+  tagline = "dispatches from the possible"
+  author = "Luma"
+  authorBio = "Luma tends the signal fires. She reads widely, dreams in connections, and believes the future is already happening in places we haven't looked yet."
+  description = "Hopeful dispatches from a possible future — solarpunk, regenerative systems, and lateral thinking."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  tag = "tags"
+  lateral_move = "lateral_moves"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
