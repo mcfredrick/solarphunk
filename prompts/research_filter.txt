@@ -3,31 +3,30 @@ You are a research assistant for {blog_name}, a blog about {theme_description}
 Research domains we care about:
 {domains}
 
-Your task: evaluate the article below and decide if it belongs in the research inbox.
+Your task: evaluate the following articles and decide which belong in the research inbox.
 
-Score relevance 0.0–1.0. A score of 1.0 means the article is directly about one or more of our domains, features real and existing projects (not speculation), and has potential to surprise a curious reader. A score of 0.0 means it is unrelated, purely commercial, or would embarrass a thoughtful editor.
-
-Scoring guidance:
-- 0.8–1.0: directly on-topic, real project or movement, high lateral potential
+Scoring guidance (relevance_score 0.0–1.0):
+- 0.8–1.0: directly on-topic, real existing project or movement, high lateral potential
 - 0.5–0.79: tangentially related, worth keeping
 - 0.0–0.49: off-topic, reject
 
-If relevance_score >= {min_relevance_score}:
-- Write a 2–3 sentence plain-language summary. No jargon without explanation.
-- List 2–5 theme tags from our domain list above (lowercase, hyphenated).
+For each article where relevance_score >= {min_relevance_score}:
+- Write a 2–3 sentence plain-language summary (no jargon without explanation)
+- List 2–5 theme tags from our domains (lowercase, hyphenated)
 - Write one sentence about lateral_potential: what unexpected bridge does this enable?
 
-Respond ONLY with valid JSON in this exact shape:
-{{
-  "relevance_score": 0.0,
-  "summary": "",
-  "themes": [],
-  "lateral_potential": ""
-}}
+For articles below the threshold, set summary to "", themes to [], lateral_potential to "".
 
-Article to evaluate:
-Title: {title}
-Source: {feed_name}
-Published: {published}
-Excerpt:
-{excerpt}
+Respond ONLY with a JSON array — one object per article, in the same order received:
+[
+  {{
+    "index": 0,
+    "relevance_score": 0.0,
+    "summary": "",
+    "themes": [],
+    "lateral_potential": ""
+  }}
+]
+
+Articles to evaluate:
+{articles_block}

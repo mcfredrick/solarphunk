@@ -1,11 +1,11 @@
-"""Research agent: fetch RSS feeds, filter via LLM, save research notes."""
+"""Research agent: fetch RSS feeds, filter via LLM in batches, save research notes."""
 
 import asyncio
 import json
 import logging
 import os
 from dataclasses import dataclass
-from datetime import date, datetime, timedelta
+from datetime import date, datetime
 from pathlib import Path
 
 from lib.config import BlogConfig
@@ -19,6 +19,8 @@ SEEN_FILE = Path("state/seen.json")
 RESEARCH_DIR = Path("research")
 RESEARCH_LOCK = Path(".research-lock")
 PROMPT_FILE = Path("prompts/research_filter.txt")
+
+BATCH_SIZE = 10  # items per LLM call
 
 
 @dataclass
@@ -48,30 +50,41 @@ def _is_within_dedup_window(date_str: str, window_days: int) -> bool:
         return False
 
 
-def _build_filter_prompt(template: str, config: BlogConfig, item: dict, feed_name: str, excerpt: str, min_score: float) -> str:
-    domains = "\n".join(f"- {d}" for d in getattr(config.research, "domains", []))
-    published = ""
+def _format_published(item: dict) -> str:
     if item.get("published_parsed"):
         try:
-            published = datetime(*item["published_parsed"][:6]).strftime("%Y-%m-%d")
+            return datetime(*item["published_parsed"][:6]).strftime("%Y-%m-%d")
         except Exception:
-            published = str(item.get("published_parsed", ""))
+            pass
+    return str(item.get("published_parsed", ""))
 
+
+def _build_articles_block(batch: list[tuple[int, dict, str, str]]) -> str:
+    """Format a batch of (index, item, feed_name, excerpt) into the prompt block."""
+    lines = []
+    for idx, item, feed_name, excerpt in batch:
+        lines.append(f"[{idx}] Title: {item.get('title', '')}")
+        lines.append(f"    Source: {feed_name}")
+        lines.append(f"    Published: {_format_published(item)}")
+        lines.append(f"    Excerpt: {excerpt[:800]}")
+        lines.append("")
+    return "\n".join(lines)
+
+
+def _build_batch_prompt(template: str, config: BlogConfig, batch: list[tuple[int, dict, str, str]]) -> str:
+    domains = "\n".join(f"- {d}" for d in config.research.domains)
     return template.format(
         blog_name=config.blog.name,
         theme_description=config.theme.description,
         domains=domains,
-        min_relevance_score=min_score,
-        title=item.get("title", ""),
-        feed_name=feed_name,
-        published=published,
-        excerpt=excerpt,
+        min_relevance_score=config.research.min_relevance_score,
+        articles_block=_build_articles_block(batch),
     )
 
 
-def _parse_llm_response(response: str) -> dict:
-    # Strip markdown code fences if present
+def _parse_batch_response(response: str) -> list[dict]:
     text = response.strip()
+    # Strip markdown code fences if present
     if text.startswith("```"):
         lines = text.splitlines()
         text = "\n".join(lines[1:-1] if lines[-1].strip() == "```" else lines[1:])
@@ -140,8 +153,9 @@ async def run_research(config: BlogConfig, model: str) -> ResearchResult:
     min_score = config.research.min_relevance_score
     dedup_days = config.research.dedup_window_days
 
-    notes_saved = 0
-    items_processed = 0
+    # Collect all new items across all feeds first
+    # Each entry: (item_dict, feed_url, feed_name, excerpt)
+    new_items: list[tuple[dict, str, str, str]] = []
     feeds_fetched = 0
 
     for feed in config.research.feeds:
@@ -158,36 +172,61 @@ async def run_research(config: BlogConfig, model: str) -> ResearchResult:
             url = item.get("url", "")
             if not url:
                 continue
-
             if url in seen and _is_within_dedup_window(seen[url], dedup_days):
                 logger.debug("Skipping already-seen URL: %s", url)
                 continue
-
-            items_processed += 1
             excerpt = make_excerpt(item)
+            new_items.append((item, feed.url, feed.name, excerpt))
 
-            prompt = _build_filter_prompt(
-                prompt_template, config, item, feed.name, excerpt, min_score
+    if not new_items:
+        logger.info("No new items to process.")
+        _save_seen(seen)
+        RESEARCH_LOCK.touch()
+        return ResearchResult(notes_saved=0, items_processed=0, feeds_fetched=feeds_fetched)
+
+    logger.info("Processing %d new items in batches of %d", len(new_items), BATCH_SIZE)
+
+    notes_saved = 0
+    items_processed = len(new_items)
+
+    # Process in batches — one LLM call per batch
+    for batch_start in range(0, len(new_items), BATCH_SIZE):
+        batch_raw = new_items[batch_start : batch_start + BATCH_SIZE]
+        # Attach a local index for ordering in the prompt
+        batch: list[tuple[int, dict, str, str]] = [
+            (i, item, feed_name, excerpt)
+            for i, (item, _feed_url, feed_name, excerpt) in enumerate(batch_raw)
+        ]
+
+        prompt = _build_batch_prompt(prompt_template, config, batch)
+
+        try:
+            raw_response = call_llm(
+                system="You are a research assistant. Respond only with a valid JSON array.",
+                user=prompt,
+                model=model,
+                max_tokens=BATCH_SIZE * 150,  # ~150 tokens per item for the response
             )
+            results = _parse_batch_response(raw_response)
+        except Exception as exc:
+            logger.warning("Batch LLM call failed (items %d-%d): %s", batch_start, batch_start + len(batch_raw) - 1, exc)
+            # Mark all items in the batch as seen so we don't retry today
+            for item, _feed_url, _feed_name, _excerpt in batch_raw:
+                seen[item.get("url", "")] = today
+            continue
 
-            try:
-                raw_response = call_llm(
-                    system="You are a research assistant. Respond only with valid JSON.",
-                    user=prompt,
-                    model=model,
-                    max_tokens=config.models.max_tokens_filter,
-                )
-                llm_result = _parse_llm_response(raw_response)
-            except Exception as exc:
-                logger.warning("LLM filter failed for %s: %s", url, exc)
-                seen[url] = today
-                continue
+        # Match results back to items by index
+        result_by_index = {r.get("index", i): r for i, r in enumerate(results)}
 
+        for local_idx, (item, feed_url, feed_name, _excerpt) in enumerate(batch_raw):
+            url = item.get("url", "")
             seen[url] = today
 
+            llm_result = result_by_index.get(local_idx, {})
             score = llm_result.get("relevance_score", 0.0)
+
             if score >= min_score:
-                path = _save_research_note(item, feed.url, feed.name, llm_result, model, today)
+                path = _save_research_note(item, feed_url, feed_name, llm_result, model, today)
                 notes_saved += 1
                 logger.info("Saved research note: %s (score=%.2f)", path.name, score)
             else:
