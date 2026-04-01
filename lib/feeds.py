@@ -10,6 +10,7 @@ logger = logging.getLogger(__name__)
 
 _SCRAPE_TIMEOUT = 10
 _STRIP_TAGS = {"nav", "footer", "header", "aside", "script", "style", "form", "noscript"}
+_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; solarphunk-bot/1.0; +https://mcfredrick.github.io/solarphunk)"}
 
 
 def fetch_rss(url: str, max_items: int) -> list[dict]:
@@ -37,7 +38,7 @@ def fetch_rss(url: str, max_items: int) -> list[dict]:
 
 def scrape_article(url: str, max_chars: int = 3000) -> str:
     try:
-        response = httpx.get(url, timeout=_SCRAPE_TIMEOUT, follow_redirects=True)
+        response = httpx.get(url, timeout=_SCRAPE_TIMEOUT, follow_redirects=True, headers=_HEADERS)
         response.raise_for_status()
     except Exception as exc:
         logger.warning("Failed to fetch article %s: %s", url, exc)
