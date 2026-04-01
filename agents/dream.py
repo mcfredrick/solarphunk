@@ -178,13 +178,14 @@ async def run_dream(config: BlogConfig, specs: list[ModelSpec], force: bool = Fa
 
     try:
         logger.info("Calling LLM for dream synthesis (notes=%d, specs=%d)", len(notes), len(specs))
-        raw_response = call_llm(
+        raw_response, model_used = call_llm(
             system="You are a blog writing intelligence named Luma. Follow the phases exactly.",
             user=prompt,
             specs=specs,
             max_tokens=config.models.max_tokens_dream,
             config=config,
         )
+        logger.info("Dream synthesis used model: %s", model_used)
 
         draft_section = _extract_draft_section(raw_response)
         fm, body = parse_frontmatter(draft_section)

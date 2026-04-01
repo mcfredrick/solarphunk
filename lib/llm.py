@@ -73,8 +73,8 @@ def call_llm(
     max_tokens: int,
     config: BlogConfig,
     retries_per_spec: int = 3,
-) -> str:
-    """Try each (provider, model) spec in order. Move to the next on rate limit or error."""
+) -> tuple[str, str]:
+    """Try each (provider, model) spec in order. Returns (content, model_id) on success."""
     last_exc: Exception | None = None
 
     for spec in specs:
@@ -91,7 +91,7 @@ def call_llm(
             try:
                 result = _call_once(client, spec.model, system, user, max_tokens, is_openrouter)
                 logger.debug("LLM call succeeded (provider=%s, model=%s)", spec.provider, spec.model)
-                return result
+                return result, f"{spec.provider}/{spec.model}"
 
             except RateLimitError as exc:
                 last_exc = exc

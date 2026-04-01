@@ -86,13 +86,16 @@ providers:
 
 models:
   # Research filtering: private server first when CF token is valid, OpenRouter fallback
+  # Smaller free models used here to reduce rate-limit pressure — big models reserved for dream
   research_filter:
     - provider: private
       model: "qwen3:8b"
     - provider: openrouter
-      model: "google/gemma-3-27b-it:free"
+      model: "google/gemma-3-12b-it:free"
     - provider: openrouter
-      model: "meta-llama/llama-3.3-70b-instruct:free"
+      model: "google/gemma-3-4b-it:free"
+    - provider: openrouter
+      model: "meta-llama/llama-3.2-3b-instruct:free"
   # Dream synthesis: largest/best OpenRouter models first, private fallback
   dream_synthesis:
     - provider: openrouter

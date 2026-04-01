@@ -4,6 +4,7 @@ import asyncio
 import json
 import logging
 import os
+import time
 from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
@@ -21,6 +22,7 @@ RESEARCH_DIR = Path("research")
 PROMPT_FILE = Path("prompts/research_filter.txt")
 
 BATCH_SIZE = 10  # items per LLM call
+BATCH_DELAY = 12  # seconds between batches to stay under OpenRouter 8 RPM limit
 
 
 @dataclass
@@ -190,7 +192,11 @@ async def run_research(config: BlogConfig, specs: list[ModelSpec]) -> ResearchRe
     items_processed = len(new_items)
 
     # Process in batches — one LLM call per batch
-    for batch_start in range(0, len(new_items), BATCH_SIZE):
+    for batch_idx, batch_start in enumerate(range(0, len(new_items), BATCH_SIZE)):
+        if batch_idx > 0:
+            logger.debug("Sleeping %ds between batches to respect rate limits", BATCH_DELAY)
+            time.sleep(BATCH_DELAY)
+
         batch_raw = new_items[batch_start : batch_start + BATCH_SIZE]
         # Attach a local index for ordering in the prompt
         batch: list[tuple[int, dict, str, str]] = [
@@ -201,7 +207,7 @@ async def run_research(config: BlogConfig, specs: list[ModelSpec]) -> ResearchRe
         prompt = _build_batch_prompt(prompt_template, config, batch)
 
         try:
-            raw_response = call_llm(
+            raw_response, model_used = call_llm(
                 system="You are a research assistant. Respond only with a valid JSON array.",
                 user=prompt,
                 specs=specs,
@@ -227,7 +233,7 @@ async def run_research(config: BlogConfig, specs: list[ModelSpec]) -> ResearchRe
             score = llm_result.get("relevance_score", 0.0)
 
             if score >= min_score:
-                path = _save_research_note(item, feed_url, feed_name, llm_result, model, today)
+                path = _save_research_note(item, feed_url, feed_name, llm_result, model_used, today)
                 notes_saved += 1
                 logger.info("Saved research note: %s (score=%.2f)", path.name, score)
             else:
