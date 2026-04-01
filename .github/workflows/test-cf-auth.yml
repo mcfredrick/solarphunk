@@ -1,0 +1,35 @@
+name: Test CF Auth
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test CF Access credentials
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
+            -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
+            https://infer.dayjob.dev/api/tags)
+          echo "HTTP status: $response"
+          if [ "$response" = "200" ]; then
+            echo "CF auth OK"
+          else
+            echo "CF auth FAILED (expected 200, got $response)"
+            exit 1
+          fi
+
+      - name: List available models
+        run: |
+          curl -s \
+            -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
+            -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
+            https://infer.dayjob.dev/api/tags | python3 -c "
+          import sys, json
+          d = json.load(sys.stdin)
+          print('Models available:')
+          for m in d.get('models', []):
+              print(' -', m['name'])
+          "
