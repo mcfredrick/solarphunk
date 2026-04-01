@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 8 * * *"
   workflow_dispatch:
+    inputs:
+      force_dream:
+        description: "Force dream agent (bypass accumulation gate)"
+        type: boolean
+        default: false
 
 jobs:
   pipeline:
@@ -31,7 +36,12 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
 
       - name: Run dream agent
-        run: uv run python run.py dream
+        run: |
+          if [ "${{ inputs.force_dream }}" = "true" ]; then
+            uv run python run.py dream --force
+          else
+            uv run python run.py dream
+          fi
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
 
@@ -42,7 +52,7 @@ jobs:
         run: |
           git config user.name "solarphunk-bot"
           git config user.email "bot@solarphunk.github.io"
-          git add research/ drafts/ site/content/posts/ state/ .dream-lock .research-lock || true
+          git add research/ state/ drafts/ site/content/posts/
           git diff --staged --quiet || git commit -m "pipeline: $(date -u +%Y-%m-%d)"
           git push
         env:

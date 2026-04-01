@@ -6,11 +6,6 @@ dist/
 *.egg-info/
 .ruff_cache/
 
-# Project state
-state/seen.json
-.dream-lock
-.research-lock
-
 # Secrets
 .env
 .env.local

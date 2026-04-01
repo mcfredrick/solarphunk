@@ -12,12 +12,12 @@ from lib.config import BlogConfig
 from lib.feeds import fetch_rss, make_excerpt
 from lib.hugo import dated_filename, make_slug
 from lib.llm import call_llm
+from lib.state import touch_research_lock
 
 logger = logging.getLogger(__name__)
 
 SEEN_FILE = Path("state/seen.json")
 RESEARCH_DIR = Path("research")
-RESEARCH_LOCK = Path(".research-lock")
 PROMPT_FILE = Path("prompts/research_filter.txt")
 
 BATCH_SIZE = 10  # items per LLM call
@@ -181,7 +181,7 @@ async def run_research(config: BlogConfig, model: str) -> ResearchResult:
     if not new_items:
         logger.info("No new items to process.")
         _save_seen(seen)
-        RESEARCH_LOCK.touch()
+        touch_research_lock()
         return ResearchResult(notes_saved=0, items_processed=0, feeds_fetched=feeds_fetched)
 
     logger.info("Processing %d new items in batches of %d", len(new_items), BATCH_SIZE)
@@ -233,7 +233,7 @@ async def run_research(config: BlogConfig, model: str) -> ResearchResult:
                 logger.debug("Rejected (score=%.2f): %s", score, item.get("title", url))
 
     _save_seen(seen)
-    RESEARCH_LOCK.touch()
+    touch_research_lock()
     logger.info(
         "Research complete: %d notes saved, %d items processed, %d feeds fetched",
         notes_saved,
