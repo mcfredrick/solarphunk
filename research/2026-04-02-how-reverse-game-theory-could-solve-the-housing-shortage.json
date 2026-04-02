@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-how-reverse-game-theory-could-solve-the-housing-shortage",
+  "fetched_at": "2026-04-02T02:34:11.056826Z",
+  "source": {
+    "feed_url": "https://www.noemamag.com/feed/",
+    "article_url": "https://www.noemamag.com/the-architecture-of-cooperation",
+    "feed_name": "Noema Magazine"
+  },
+  "raw": {
+    "title": "How Reverse Game Theory Could Solve The Housing Shortage",
+    "published": "2026-03-25T16:30:04",
+    "excerpt": "<p>The post <a href=\"https://www.noemamag.com/the-architecture-of-cooperation\">How Reverse Game Theory Could Solve The Housing Shortage</a> appeared first on <a href=\"https://www.noemamag.com\">NOEMA</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "A farmer discovers a natural mutation in peach trees, leading to a new variety that thrives through sustainable propagation. This highlights agroecological innovation and biodiversity in agriculture.",
+    "themes": [
+      "agroecology",
+      "biomimicry"
+    ],
+    "lateral_potential": "Connects to sustainable agriculture practices and community-based food systems.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "reverse-game-theory-a-new-dawn-for-community-organizing"
+}

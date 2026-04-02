@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-02-the-world-is-burning-does-the-yes-approach-still-matter",
+  "fetched_at": "2026-04-02T02:33:36.936124Z",
+  "source": {
+    "feed_url": "https://www.yesmagazine.org/feed/",
+    "article_url": "https://www.yesmagazine.org/opinion/2025/06/11/the-world-is-burning-does-the-yes-approach-still-matter",
+    "feed_name": "YES! Magazine"
+  },
+  "raw": {
+    "title": "The World Is Burning\u2014Does the YES! Approach Still Matter?",
+    "published": "2025-06-11T15:35:04",
+    "excerpt": "A Final Word from YES! Founding Editor on What We Hoped for and What Comes Next"
+  },
+  "llm_processed": {
+    "summary": "This piece examines how the YES! Magazine approach remains vital for fostering hope and collective action amid climate crises, emphasizing community-led solutions and ecological resilience.",
+    "themes": [
+      "ecological-restoration",
+      "transition-towns",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "Links to biomimicry by highlighting nature-inspired strategies for adapting to environmental challenges.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "reverse-game-theory-a-new-dawn-for-community-organizing"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-02-hungry-for-democracy",
+  "fetched_at": "2026-04-02T02:33:36.935861Z",
+  "source": {
+    "feed_url": "https://www.yesmagazine.org/feed/",
+    "article_url": "https://www.yesmagazine.org/issues/2025/11/12/hungry-for-democracy",
+    "feed_name": "YES! Magazine"
+  },
+  "raw": {
+    "title": "Hungry for Democracy",
+    "published": "2025-11-12T19:31:04",
+    "excerpt": "What if we approached solutions to the worsening food crisis as a struggle for democracy?"
+  },
+  "llm_processed": {
+    "summary": "The article discusses how democratic participation and grassroots movements can address hunger and inequality, linking food systems to broader social justice and community empowerment.",
+    "themes": [
+      "participatory-democracy",
+      "cooperative-platforms",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "Bridges to open science by showing how decentralized decision-making can foster inclusive, transparent systems for resource distribution.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "reverse-game-theory-a-new-dawn-for-community-organizing"
+}
