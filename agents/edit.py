@@ -69,18 +69,32 @@ def _build_rewriter_prompt(template: str, config: BlogConfig, body: str, feedbac
 
 def _parse_judge_response(response: str) -> tuple[bool, str]:
     """Parse judge LLM response into (approved, feedback). Returns (False, raw) on failure."""
-    # Strip markdown code fences if present
     cleaned = re.sub(r"```(?:json)?\s*|\s*```", "", response).strip()
-    # Find the first JSON object
-    match = re.search(r"\{.*\}", cleaned, re.DOTALL)
-    if match:
-        try:
-            data = json.loads(match.group(0))
-            approved = bool(data.get("approved", False))
-            feedback = str(data.get("feedback", ""))
-            return approved, feedback
-        except (json.JSONDecodeError, KeyError):
-            pass
+
+    # Try direct parse first (ideal: model output is clean JSON)
+    try:
+        data = json.loads(cleaned)
+        return bool(data.get("approved", False)), str(data.get("feedback", ""))
+    except json.JSONDecodeError:
+        pass
+
+    # Fall back to brace-counting to find the first complete JSON object.
+    # Avoids the greedy-regex trap of r"\{.*\}" matching across multiple objects.
+    start = cleaned.find("{")
+    if start != -1:
+        depth = 0
+        for i, ch in enumerate(cleaned[start:], start):
+            if ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    try:
+                        data = json.loads(cleaned[start : i + 1])
+                        return bool(data.get("approved", False)), str(data.get("feedback", ""))
+                    except json.JSONDecodeError:
+                        break
+
     logger.warning("Could not parse judge response as JSON; treating as rejection. Preview: %r", response[:200])
     return False, response.strip()[:500]
 
