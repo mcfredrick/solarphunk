@@ -139,9 +139,14 @@ def _build_prompt(template: str, config: BlogConfig, notes: list[dict], posts: l
 
 def _extract_draft_section(llm_response: str) -> str:
     marker = "=== DRAFT ==="
-    if marker not in llm_response:
-        raise ValueError(f"LLM response missing '{marker}' marker")
-    return llm_response.split(marker, 1)[1].strip()
+    if marker in llm_response:
+        return llm_response.split(marker, 1)[1].strip()
+    # Some models output the draft directly without echoing the marker;
+    # treat the response as the draft if it starts with YAML frontmatter.
+    stripped = llm_response.strip()
+    if stripped.startswith("---"):
+        return stripped
+    raise ValueError(f"LLM response missing '{marker}' marker and does not begin with YAML frontmatter")
 
 
 def _validate_frontmatter(fm: dict) -> None:
