@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-the-quest-for-contributive-justice",
+  "fetched_at": "2026-04-02T21:02:43.941692Z",
+  "source": {
+    "feed_url": "https://www.noemamag.com/feed/",
+    "article_url": "https://www.noemamag.com/the-quest-for-contributive-justice",
+    "feed_name": "Noema Magazine"
+  },
+  "raw": {
+    "title": "The Quest For Contributive Justice",
+    "published": "2026-03-09T16:46:12",
+    "excerpt": "<p>The post <a href=\"https://www.noemamag.com/the-quest-for-contributive-justice\">The Quest For Contributive Justice</a> appeared first on <a href=\"https://www.noemamag.com\">NOEMA</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "The article argues that social recognition and dignity are fundamental to equitable systems, aligning with post-growth movements focused on human-centric values over economic metrics.",
+    "themes": [
+      "degrowth",
+      "participatory democracy"
+    ],
+    "lateral_potential": "Connects contributive justice to commons governance by emphasizing collective identity as a foundation for sustainable systems.",
+    "relevance_score": 0.65,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

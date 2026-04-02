@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-02-the-world-is-burning-does-the-yes-approach-still-matter",
+  "fetched_at": "2026-04-02T21:02:10.710752Z",
+  "source": {
+    "feed_url": "https://www.yesmagazine.org/feed/",
+    "article_url": "https://www.yesmagazine.org/opinion/2025/06/11/the-world-is-burning-does-the-yes-approach-still-matter",
+    "feed_name": "YES! Magazine"
+  },
+  "raw": {
+    "title": "The World Is Burning\u2014Does the YES! Approach Still Matter?",
+    "published": "2025-06-11T15:35:04",
+    "excerpt": "A Final Word from YES! Founding Editor on What We Hoped for and What Comes Next"
+  },
+  "llm_processed": {
+    "summary": "Reflects on the role of radical hope and community-driven solutions in addressing climate crises, emphasizing localized action and resilience.",
+    "themes": [
+      "ecological restoration",
+      "regenerative economics",
+      "transition towns"
+    ],
+    "lateral_potential": "Connects to designing climate adaptation strategies through localized, cooperative initiatives.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

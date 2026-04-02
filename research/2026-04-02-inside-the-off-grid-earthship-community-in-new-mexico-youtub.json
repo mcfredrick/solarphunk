@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-inside-the-off-grid-earthship-community-in-new-mexico-youtub",
+  "fetched_at": "2026-04-02T21:01:34.891902Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-03-27/inside-the-off-grid-earthship-community-in-new-mexico-youtube-film-review/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Inside the Off-Grid Earthship Community in New Mexico (YouTube film review)",
+    "published": "2026-03-27T09:31:23",
+    "excerpt": "Mainstream coverage of off-grid, self-sustaining communities like the one featured in this video tends to be glib and sensational (focusing, for example, on \u201ctrash homes\u201d). It\u2019s so much rarer to see in-depth coverage of the full social, technical and ecological aspects of such communities, or intimate glimpses into residents\u2019 daily lives and motivations."
+  },
+  "llm_processed": {
+    "summary": "The article explores an off-grid Earthship community, showcasing sustainable living practices and the founder's vision for regenerative architecture and ecological harmony.",
+    "themes": [
+      "appropriate technology",
+      "community organizing"
+    ],
+    "lateral_potential": "Connects to transition towns through decentralized sustainable living models",
+    "relevance_score": 0.85,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

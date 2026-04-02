@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-sustainable-gardening-in-the-real-world",
+  "fetched_at": "2026-04-02T21:01:34.891635Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-03-27/sustainable-gardening-in-the-real-world/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Sustainable gardening in the real world",
+    "published": "2026-03-27T09:42:15",
+    "excerpt": "There are many answers, and maybe none are completely right. But some of them are better than others. You find something that works for you and your land because you kept working at it. That is what most advice leaves out, and that is where the real work is."
+  },
+  "llm_processed": {
+    "summary": "This article discusses practical challenges of sustainable gardening, highlighting the gap between idealized sustainability concepts and real-world implementation in urban settings.",
+    "themes": [
+      "agroecology",
+      "appropriate technology"
+    ],
+    "lateral_potential": "Bridges to community organizing through localized food systems",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

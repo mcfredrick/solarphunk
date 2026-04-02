@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-02-hungry-for-democracy",
+  "fetched_at": "2026-04-02T21:02:10.710081Z",
+  "source": {
+    "feed_url": "https://www.yesmagazine.org/feed/",
+    "article_url": "https://www.yesmagazine.org/issues/2025/11/12/hungry-for-democracy",
+    "feed_name": "YES! Magazine"
+  },
+  "raw": {
+    "title": "Hungry for Democracy",
+    "published": "2025-11-12T19:31:04",
+    "excerpt": "Donald Trump has made history \u2013 the federal government shutdown has now lasted over 40 days. Through this perverse achievement, his administration has jeopardized food access for 42 million people"
+  },
+  "llm_processed": {
+    "summary": "Examines how democratic processes can address food insecurity and empower local communities through participatory decision-making.",
+    "themes": [
+      "participatory democracy",
+      "agroecology",
+      "community organizing"
+    ],
+    "lateral_potential": "Links to designing inclusive, food-secure systems through cooperative governance models.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

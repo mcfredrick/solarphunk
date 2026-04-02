@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-finding-home-part-ii-food",
+  "fetched_at": "2026-04-02T21:01:34.892574Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-03-26/finding-home-part-ii-food/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Finding Home Part II: Food",
+    "published": "2026-03-26T11:05:11",
+    "excerpt": "To be clear, a sustainable farmer does not\u00a0grow\u00a0food. With adequate nutrition from the soil, with energy from the sun, and moisture from the rain,\u00a0plants do all the growing by themselves. And animals grow by acquiring the energy and nutrition from plants."
+  },
+  "llm_processed": {
+    "summary": "This article reflects on rural living and self-sufficiency, emphasizing the role of land and seasonal cycles in fostering sustainable, community-based food systems.",
+    "themes": [
+      "agroecology",
+      "community organizing"
+    ],
+    "lateral_potential": "Bridges to transition towns through localized food sovereignty",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

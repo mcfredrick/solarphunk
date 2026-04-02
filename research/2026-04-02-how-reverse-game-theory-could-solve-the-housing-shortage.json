@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-how-reverse-game-theory-could-solve-the-housing-shortage",
+  "fetched_at": "2026-04-02T21:02:43.941450Z",
+  "source": {
+    "feed_url": "https://www.noemamag.com/feed/",
+    "article_url": "https://www.noemamag.com/the-architecture-of-cooperation",
+    "feed_name": "Noema Magazine"
+  },
+  "raw": {
+    "title": "How Reverse Game Theory Could Solve The Housing Shortage",
+    "published": "2026-03-25T16:30:04",
+    "excerpt": "<p>The post <a href=\"https://www.noemamag.com/the-architecture-of-cooperation\">How Reverse Game Theory Could Solve The Housing Shortage</a> appeared first on <a href=\"https://www.noemamag.com\">NOEMA</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "A farming case study demonstrates how natural mutations and community-driven agriculture can address food security through ecological innovation.",
+    "themes": [
+      "agroecology",
+      "ecological restoration"
+    ],
+    "lateral_potential": "Links reverse game theory to cooperative platforms by reimagining resource distribution as a collective problem-solving process.",
+    "relevance_score": 0.65,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}
