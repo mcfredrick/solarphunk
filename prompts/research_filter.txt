@@ -10,6 +10,13 @@ Scoring guidance (relevance_score 0.0–1.0):
 - 0.5–0.79: tangentially related, worth keeping
 - 0.0–0.49: off-topic, reject
 
+Always score 0.0 (reject) for articles primarily about:
+- Contemporary political figures, parties, elections, or partisan policy debates
+- Government policy fights or legislative battles
+- Culture-war conflicts or ideological disputes
+
+This blog imagines a sustainable future in harmony with the earth — it does not engage with current political personalities or partisan controversies.
+
 For each article where relevance_score >= {min_relevance_score}:
 - Write a 2–3 sentence plain-language summary (no jargon without explanation)
 - List 2–5 theme tags from our domains (lowercase, hyphenated)
