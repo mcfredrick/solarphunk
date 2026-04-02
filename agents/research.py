@@ -212,18 +212,31 @@ async def run_research(config: BlogConfig, specs: list[ModelSpec]) -> ResearchRe
 
         prompt = _build_batch_prompt(prompt_template, config, batch)
 
-        try:
-            raw_response, model_used = call_llm(
-                system="You are a research assistant. Respond only with a valid JSON array.",
-                user=prompt,
-                specs=specs,
-                max_tokens=BATCH_SIZE * 150,  # ~150 tokens per item for the response
-                config=config,
-            )
-            results = _parse_batch_response(raw_response)
-        except Exception as exc:
-            logger.warning("Batch LLM call failed (items %d-%d): %s", batch_start, batch_start + len(batch_raw) - 1, exc)
-            # Mark all items in the batch as seen so we don't retry today
+        # Try each spec individually so a JSON parse failure from one model
+        # triggers fallback to the next, not just HTTP/rate-limit errors.
+        results = None
+        model_used = None
+        for spec in specs:
+            try:
+                raw_response, model_used = call_llm(
+                    system="You are a research assistant. Respond only with a valid JSON array.",
+                    user=prompt,
+                    specs=[spec],
+                    max_tokens=BATCH_SIZE * 150,  # ~150 tokens per item for the response
+                    config=config,
+                )
+                results = _parse_batch_response(raw_response)
+                break  # parsed successfully
+            except Exception as exc:
+                logger.warning(
+                    "Batch failed for spec %s/%s (items %d-%d): %s — trying next spec",
+                    spec.provider, spec.model,
+                    batch_start, batch_start + len(batch_raw) - 1, exc,
+                )
+
+        if results is None:
+            logger.warning("All specs failed for batch (items %d-%d) — skipping", batch_start, batch_start + len(batch_raw) - 1)
+            # Mark as seen to avoid hammering the same content tomorrow
             for item, _feed_url, _feed_name, _excerpt in batch_raw:
                 seen[item.get("url", "")] = today
             continue
