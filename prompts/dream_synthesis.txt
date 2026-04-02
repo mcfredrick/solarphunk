@@ -10,7 +10,7 @@ Avoid: {avoid}
 Lateral moves to look for:
 {lateral_moves}
 
-Work through all four phases below. Write your reasoning for phases 1–3 in full. The final post appears only after the "=== DRAFT ===" marker.
+Work through all four phases below. Write your reasoning for phases 1–3 in full. Output the structured result only in phase 4.
 
 ---
 
@@ -53,20 +53,16 @@ If it would repeat a recent post, use the second-ranked candidate from Phase 2.
 
 ## Phase 4 — Draft
 
-Write the complete post.
+Write the complete post body, then output the structured result below.
 
-Structure:
+Post body structure:
 - Opening (1–2 paragraphs): A concrete, surprising scene or fact grounded in the research. Drop the reader in. No preamble. No "In recent years..."
 - Middle (3–5 paragraphs): Develop the lateral insight. Weave in 2–4 research note IDs explicitly. Show the connections; don't just assert them.
 - Close (1–2 paragraphs): An open question or image. Send the reader somewhere. Do not summarize. No call to action.
 
-Hugo frontmatter (place this BEFORE the post body, as YAML between --- markers):
-  title: (evocative, not clickbait — 4–9 words)
-  date: {today}
-  draft: false
-  tags: [3–5 lowercase tags]
-  research_sources: [list the research note IDs you drew from]
-  lateral_move: one of: category_crossing, scale_inversion, quiet_precedent, reframe
+After writing the body, output EXACTLY this structure:
 
-=== DRAFT ===
-[frontmatter + post body here]
+=== METADATA ===
+{{"title": "<evocative title, 4–9 words, not clickbait>", "tags": ["<tag1>", "<tag2>", "<tag3>"], "research_sources": ["<note_id_1>", "<note_id_2>"], "lateral_move": "<one of: category_crossing, scale_inversion, quiet_precedent, reframe>"}}
+=== BODY ===
+<post body — plain markdown prose, no frontmatter>
