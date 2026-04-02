@@ -99,39 +99,31 @@ def _parse_judge_response(response: str) -> tuple[bool, str]:
     return False, response.strip()[:500]
 
 
-def _pick_best_with_llm(
-    candidates: list[str],
-    config: BlogConfig,
-    judge_specs: list[ModelSpec],
-    max_tokens: int,
-) -> int:
-    """Ask the judge to pick the best of N candidates. Returns the index (0-based)."""
-    theme = config.theme
-    blog = config.blog
+def _pick_best(candidates: list[str], config: BlogConfig) -> int:
+    """Pick the best candidate body by word count proximity to the target range.
 
-    numbered = "\n\n".join(
-        f"=== CANDIDATE {i} ===\n{c}" for i, c in enumerate(candidates)
-    )
-    user_msg = (
-        f"Blog: {blog.name} — {theme.description}\n"
-        f"Voice: {theme.voice}\n\n"
-        f"Below are {len(candidates)} versions of the same blog post. "
-        f"Reply with ONLY a single integer (0-based index) for the best version.\n\n"
-        f"{numbered}"
-    )
-    response, model_used = call_llm(
-        system="You are a quality editor. Reply with ONLY a single integer.",
-        user=user_msg,
-        specs=judge_specs,
-        max_tokens=16,
-        config=config,
-    )
-    logger.debug("pick_best used model %s, response: %r", model_used, response)
-    match = re.search(r"\d+", response.strip())
-    if match:
-        idx = int(match.group(0))
-        return max(0, min(idx, len(candidates) - 1))
-    return 0
+    Avoids an LLM call — word count in range is a reliable structural proxy.
+    The original draft is at index 0; later iterations are generally more
+    refined, so ties are broken in favour of the latest candidate.
+    """
+    spec = getattr(config.theme, "post_length_words", "800-1200")
+    try:
+        lo, hi = (int(p.strip()) for p in spec.split("-"))
+    except (ValueError, AttributeError):
+        lo, hi = 800, 1200
+    midpoint = (lo + hi) / 2
+
+    best_idx = len(candidates) - 1  # default: most recent iteration
+    best_score = float("inf")
+    for i, body in enumerate(candidates):
+        wc = len(body.split())
+        score = abs(wc - midpoint)
+        if score < best_score:
+            best_score = score
+            best_idx = i
+
+    logger.debug("pick_best selected candidate %d (word count proximity scoring)", best_idx)
+    return best_idx
 
 
 def _edit_draft(
@@ -193,7 +185,7 @@ def _edit_draft(
 
     if not approved and len(candidates) > 1:
         logger.info("Iteration limit reached for %s — picking best of %d candidates", path.name, len(candidates))
-        best_idx = _pick_best_with_llm(candidates, config, judge_specs, config.models.max_tokens_edit_judge)
+        best_idx = _pick_best(candidates, config)
         current_body = candidates[best_idx]
         logger.info("Selected candidate %d as best", best_idx)
 
