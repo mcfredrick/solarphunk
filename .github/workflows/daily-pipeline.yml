@@ -31,24 +31,19 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
-      - name: Run research agent
-        run: uv run python run.py research
-        env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          CF_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
-          CF_CLIENT_SECRET: ${{ secrets.CF_CLIENT_SECRET }}
-
-      - name: Run dream agent
+      - name: Run pipeline
         run: |
           if [ "${{ inputs.force_dream }}" = "true" ]; then
-            uv run python run.py dream --force
+            uv run python pipeline.py --force-dream
           else
-            uv run python run.py dream
+            uv run python pipeline.py
           fi
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           CF_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
           CF_CLIENT_SECRET: ${{ secrets.CF_CLIENT_SECRET }}
+          PREFECT_API_URL: ${{ secrets.PREFECT_API_URL }}
+          PREFECT_API_KEY: ${{ secrets.PREFECT_API_KEY }}
 
       - name: Run edit agent
         run: uv run python run.py edit
