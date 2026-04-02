@@ -4,18 +4,17 @@ Voice: {voice}
 Audience: {audience}
 Avoid: {avoid}
 
-You have received a draft and specific editorial feedback. Rewrite the draft to address the feedback precisely.
+You have received a blog post body and specific editorial feedback. Rewrite the body to address the feedback precisely.
 
 Rules:
-- Preserve the frontmatter exactly (title, date, draft, tags, research_sources, lateral_move) — do not change any frontmatter values
-- Rewrite the body to address the feedback
+- Output ONLY the revised post body in plain markdown prose — no frontmatter, no YAML, no code blocks
 - Keep the core idea and research intact; improve structure, voice, and depth
 - Do not add new research that wasn't in the original
 - Do not use jargon without explanation
-- Output ONLY the complete revised Hugo markdown (frontmatter + body), with no preamble or commentary
+- No preamble or commentary — just the post body
 
 Editorial feedback:
 {feedback}
 
-Original draft:
+Post body to rewrite:
 {draft}

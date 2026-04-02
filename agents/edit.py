@@ -40,7 +40,7 @@ def already_ran_today() -> bool:
     return False
 
 
-def _build_judge_prompt(template: str, config: BlogConfig, draft: str) -> str:
+def _build_judge_prompt(template: str, config: BlogConfig, body: str) -> str:
     theme = config.theme
     blog = config.blog
     return template.format(
@@ -49,11 +49,11 @@ def _build_judge_prompt(template: str, config: BlogConfig, draft: str) -> str:
         voice=theme.voice,
         audience=theme.audience,
         avoid=theme.avoid,
-        draft=draft,
+        draft=body,
     )
 
 
-def _build_rewriter_prompt(template: str, config: BlogConfig, draft: str, feedback: str) -> str:
+def _build_rewriter_prompt(template: str, config: BlogConfig, body: str, feedback: str) -> str:
     theme = config.theme
     blog = config.blog
     return template.format(
@@ -63,7 +63,7 @@ def _build_rewriter_prompt(template: str, config: BlogConfig, draft: str, feedba
         audience=theme.audience,
         avoid=theme.avoid,
         feedback=feedback,
-        draft=draft,
+        draft=body,
     )
 
 
@@ -131,14 +131,18 @@ def _edit_draft(
     rewriter_template = REWRITER_PROMPT_FILE.read_text()
     max_iter = config.edit.max_iterations
 
-    current_draft = path.read_text()
-    candidates = [current_draft]
+    original_content = path.read_text()
+    # Preserve the original frontmatter — the rewriter only improves the body.
+    # LLMs don't reliably preserve YAML frontmatter, so we enforce it in code.
+    original_fm, _ = parse_frontmatter(original_content)
+    current_body = parse_frontmatter(original_content)[1]
+    candidates = [current_body]  # store bodies only; frontmatter is fixed
 
     approved = False
     iteration = 0
 
     for iteration in range(1, max_iter + 1):
-        judge_prompt = _build_judge_prompt(judge_template, config, current_draft)
+        judge_prompt = _build_judge_prompt(judge_template, config, current_body)
         judge_response, model_used = call_llm(
             system="You are a quality editor. Respond only with the JSON object requested.",
             user=judge_prompt,
@@ -158,28 +162,31 @@ def _edit_draft(
             # Limit reached — pick best instead of rewriting again
             break
 
-        rewriter_prompt = _build_rewriter_prompt(rewriter_template, config, current_draft, feedback)
-        revised, model_used = call_llm(
-            system="You are a skilled editor. Output only the complete revised Hugo markdown.",
+        rewriter_prompt = _build_rewriter_prompt(rewriter_template, config, current_body, feedback)
+        revised_body, model_used = call_llm(
+            system="You are a skilled editor. Output only the revised post body — plain markdown prose, no frontmatter.",
             user=rewriter_prompt,
             specs=rewriter_specs,
             max_tokens=config.models.max_tokens_edit_rewriter,
             config=config,
         )
         logger.info("Rewriter used model %s (draft=%s, iter=%d)", model_used, path.name, iteration)
-        current_draft = revised
-        candidates.append(revised)
+        if not revised_body.strip():
+            logger.warning("Rewriter returned empty body for %s iter %d — keeping current", path.name, iteration)
+        else:
+            current_body = revised_body.strip()
+        candidates.append(current_body)
 
     if not approved and len(candidates) > 1:
         logger.info("Iteration limit reached for %s — picking best of %d candidates", path.name, len(candidates))
         best_idx = _pick_best_with_llm(candidates, config, judge_specs, config.models.max_tokens_edit_judge)
-        current_draft = candidates[best_idx]
+        current_body = candidates[best_idx]
         logger.info("Selected candidate %d as best", best_idx)
 
-    # Write quality_iterations into frontmatter and save
-    fm, body = parse_frontmatter(current_draft)
-    fm["quality_iterations"] = iteration
-    updated = render_frontmatter(fm) + "\n" + body
+    # Write quality_iterations into the original frontmatter and save
+    final_fm = dict(original_fm)
+    final_fm["quality_iterations"] = iteration
+    updated = render_frontmatter(final_fm) + "\n" + current_body
     path.write_text(updated)
     logger.info("Edit complete: %s (iterations=%d, approved=%s)", path.name, iteration, approved)
 
