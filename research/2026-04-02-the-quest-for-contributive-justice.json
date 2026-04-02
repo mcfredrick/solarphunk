@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-the-quest-for-contributive-justice",
+  "fetched_at": "2026-04-02T02:34:11.057133Z",
+  "source": {
+    "feed_url": "https://www.noemamag.com/feed/",
+    "article_url": "https://www.noemamag.com/the-quest-for-contributive-justice",
+    "feed_name": "Noema Magazine"
+  },
+  "raw": {
+    "title": "The Quest For Contributive Justice",
+    "published": "2026-03-09T16:46:12",
+    "excerpt": "<p>The post <a href=\"https://www.noemamag.com/the-quest-for-contributive-justice\">The Quest For Contributive Justice</a> appeared first on <a href=\"https://www.noemamag.com\">NOEMA</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "The article explores how social recognition and dignity drive political movements, linking to struggles for equitable resource distribution and participatory governance models.",
+    "themes": [
+      "participatory democracy",
+      "degrowth"
+    ],
+    "lateral_potential": "Bridges to community organizing frameworks that prioritize social equity and inclusive decision-making.",
+    "relevance_score": 0.65,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "reverse-game-theory-a-new-dawn-for-community-organizing"
+}

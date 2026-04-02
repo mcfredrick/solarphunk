@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-02-what-we-do-together-holds-us-together",
+  "fetched_at": "2026-04-02T02:33:36.935536Z",
+  "source": {
+    "feed_url": "https://www.yesmagazine.org/feed/",
+    "article_url": "https://www.yesmagazine.org/issues/2026/03/16/what-we-do-together-holds-us-together",
+    "feed_name": "YES! Magazine"
+  },
+  "raw": {
+    "title": "What We Do Together Holds Us Together",
+    "published": "2026-03-16T20:18:50",
+    "excerpt": "What can hold us together when capitalism, empire, and fascism are ruthlessly committed to tearing us apart?"
+  },
+  "llm_processed": {
+    "summary": "This article explores how collective action and solidarity strengthen communities, emphasizing the power of mutual aid and cooperative efforts in building resilient societies.",
+    "themes": [
+      "community-organizing",
+      "mutual-aid",
+      "participatory-democracy"
+    ],
+    "lateral_potential": "Connects to cooperative platforms and regenerative economics by showing how shared labor and resource distribution can create sustainable systems.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "reverse-game-theory-a-new-dawn-for-community-organizing"
+}
