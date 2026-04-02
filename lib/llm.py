@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import os
+import re
 import time
 
 import httpx
@@ -59,7 +60,9 @@ def _call_ollama(provider: ProviderConfig, model: str, system: str, user: str, m
     if r.status_code == 403:
         raise PermissionError(f"CF Access blocked request to {url} (403)")
     r.raise_for_status()
-    return r.json()["message"]["content"]
+    content = r.json()["message"]["content"]
+    # DeepSeek-R1 wraps chain-of-thought in <think>...</think> before the actual response
+    return re.sub(r"<think>.*?</think>", "", content, flags=re.DOTALL).strip()
 
 
 def _call_openrouter(provider: ProviderConfig, model: str, system: str, user: str, max_tokens: int) -> str:
