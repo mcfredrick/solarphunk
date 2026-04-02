@@ -18,26 +18,36 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
-      - name: Probe path accessibility
+      - name: Probe headers that trigger block
         run: |
-          echo "=== /api/tags (GET) ==="
-          curl -s -o /dev/null -w "HTTP %{http_code}\n" \
-            -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
-            -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
-            https://infer.dayjob.dev/api/tags
+          BODY='{"model":"qwen3:8b","messages":[{"role":"user","content":"say OK"}],"stream":false,"max_tokens":16}'
+          CF="-H \"CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}\" -H \"CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}\""
 
-          echo "=== /v1/models (GET) ==="
-          curl -s -o /dev/null -w "HTTP %{http_code}\n" \
-            -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
-            -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
-            https://infer.dayjob.dev/v1/models
-
-          echo "=== /v1/chat/completions (POST, curl) ==="
+          echo "=== baseline (curl, no Auth) ==="
           curl -s -o /dev/null -w "HTTP %{http_code}\n" \
             -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
             -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
             -H "Content-Type: application/json" \
-            -d '{"model":"qwen3:8b","messages":[{"role":"user","content":"say OK"}],"stream":false,"max_tokens":16}' \
+            -d "$BODY" \
+            https://infer.dayjob.dev/v1/chat/completions
+
+          echo "=== with Authorization: Bearer ollama ==="
+          curl -s -o /dev/null -w "HTTP %{http_code}\n" \
+            -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
+            -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ollama" \
+            -d "$BODY" \
+            https://infer.dayjob.dev/v1/chat/completions
+
+          echo "=== with python user-agent ==="
+          curl -s -o /dev/null -w "HTTP %{http_code}\n" \
+            -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
+            -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ollama" \
+            -A "python-httpx/0.28.1" \
+            -d "$BODY" \
             https://infer.dayjob.dev/v1/chat/completions
 
       - name: Test via Python OpenAI SDK
