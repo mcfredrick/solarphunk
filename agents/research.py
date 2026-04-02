@@ -11,7 +11,7 @@ from pathlib import Path
 
 from lib.config import BlogConfig, ModelSpec
 from lib.feeds import fetch_rss, make_excerpt
-from lib.hugo import dated_filename, make_slug
+from lib.hugo import make_slug
 from lib.llm import call_llm
 from lib.state import touch_research_lock
 
@@ -106,7 +106,7 @@ def _save_research_note(
     title = item.get("title", "untitled")
     slug = make_slug(title)
     note_id = f"{today}-{slug}"
-    filename = dated_filename(today, slug)
+    filename = f"{note_id}.json"
 
     published = ""
     if item.get("published_parsed"):
