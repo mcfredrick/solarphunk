@@ -1,0 +1,58 @@
+name: Test Ollama (Python)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Test Ollama via Python (same code path as pipeline)
+        run: |
+          uv run python - <<'EOF'
+          import os
+          from openai import OpenAI
+
+          cf_id = os.environ.get("CF_CLIENT_ID", "")
+          cf_secret = os.environ.get("CF_CLIENT_SECRET", "")
+
+          print(f"CF_CLIENT_ID set: {bool(cf_id)} (len={len(cf_id)})")
+          print(f"CF_CLIENT_SECRET set: {bool(cf_secret)} (len={len(cf_secret)})")
+
+          client = OpenAI(
+              base_url="https://infer.dayjob.dev/v1",
+              api_key="ollama",
+          )
+
+          extra_headers = {}
+          if cf_id:
+              extra_headers["CF-Access-Client-Id"] = cf_id
+          if cf_secret:
+              extra_headers["CF-Access-Client-Secret"] = cf_secret
+
+          print(f"Sending CF headers: {list(extra_headers.keys())}")
+
+          response = client.chat.completions.create(
+              model="qwen3:8b",
+              max_tokens=64,
+              messages=[{"role": "user", "content": "Reply with just: OK"}],
+              extra_headers=extra_headers or None,
+          )
+
+          print(f"Response: {response.choices[0].message.content}")
+          print("SUCCESS")
+          EOF
+        env:
+          CF_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
+          CF_CLIENT_SECRET: ${{ secrets.CF_CLIENT_SECRET }}

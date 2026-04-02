@@ -4,7 +4,6 @@ import logging
 import os
 import time
 
-import httpx
 from openai import OpenAI, RateLimitError
 
 from lib.config import BlogConfig, ModelSpec, ProviderConfig
@@ -15,35 +14,33 @@ _HTTP_REFERER = "https://mcfredrick.github.io/solarphunk"
 _X_TITLE = "Solarphunk"
 
 
-def _build_client(provider: ProviderConfig) -> OpenAI:
-    """Build an OpenAI-compatible client for the given provider config."""
+def _build_client(provider: ProviderConfig) -> tuple[OpenAI, dict[str, str]]:
+    """Build an OpenAI-compatible client. Returns (client, extra_headers_for_each_call)."""
     api_key = provider.api_key or ""
     if provider.api_key_env:
         api_key = os.environ.get(provider.api_key_env, api_key)
 
-    extra_headers: dict[str, str] = {}
+    # CF Access headers must be sent per-request (not on the base httpx client),
+    # because the OpenAI SDK wrapper can strip default headers from a custom httpx client.
+    per_request_headers: dict[str, str] = {}
     if provider.cf_client_id_env:
         val = os.environ.get(provider.cf_client_id_env, "")
         if val:
-            extra_headers["CF-Access-Client-Id"] = val
+            per_request_headers["CF-Access-Client-Id"] = val
     if provider.cf_client_secret_env:
         val = os.environ.get(provider.cf_client_secret_env, "")
         if val:
-            extra_headers["CF-Access-Client-Secret"] = val
+            per_request_headers["CF-Access-Client-Secret"] = val
 
-    http_client = httpx.Client(headers=extra_headers) if extra_headers else None
-
-    kwargs: dict = dict(base_url=provider.base_url, api_key=api_key or "none")
-    if http_client:
-        kwargs["http_client"] = http_client
-
-    return OpenAI(**kwargs)
+    client = OpenAI(base_url=provider.base_url, api_key=api_key or "none")
+    return client, per_request_headers
 
 
-def _call_once(client: OpenAI, model: str, system: str, user: str, max_tokens: int, is_openrouter: bool) -> str:
-    extra_headers: dict[str, str] = {}
+def _call_once(client: OpenAI, model: str, system: str, user: str, max_tokens: int, is_openrouter: bool, cf_headers: dict[str, str] | None = None) -> str:
+    extra_headers: dict[str, str] = dict(cf_headers or {})
     if is_openrouter:
-        extra_headers = {"HTTP-Referer": _HTTP_REFERER, "X-Title": _X_TITLE}
+        extra_headers["HTTP-Referer"] = _HTTP_REFERER
+        extra_headers["X-Title"] = _X_TITLE
 
     response = client.chat.completions.create(
         model=model,
@@ -86,12 +83,12 @@ def call_llm(
             continue
 
         is_openrouter = spec.provider == "openrouter"
-        client = _build_client(provider_cfg)
+        client, cf_headers = _build_client(provider_cfg)
         delay = 10.0
 
         for attempt in range(retries_per_spec):
             try:
-                result = _call_once(client, spec.model, system, user, max_tokens, is_openrouter)
+                result = _call_once(client, spec.model, system, user, max_tokens, is_openrouter, cf_headers)
                 logger.debug("LLM call succeeded (provider=%s, model=%s)", spec.provider, spec.model)
                 return result, f"{spec.provider}/{spec.model}"
 
