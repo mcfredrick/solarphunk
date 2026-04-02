@@ -139,29 +139,77 @@ def _build_prompt(template: str, config: BlogConfig, notes: list[dict], posts: l
 
 
 def _extract_draft_section(llm_response: str) -> str:
+    """Extract the Hugo-formatted draft from an LLM response.
+
+    Tries three heuristics in order:
+    1. Split on the explicit '=== DRAFT ===' marker.
+    2. Find the first '---\\ntitle:' YAML frontmatter block anywhere in the text.
+    3. Raise ValueError so the caller can fall back to LLM reformatting.
+    """
     marker = "=== DRAFT ==="
     if marker in llm_response:
-        candidate = llm_response.split(marker, 1)[1].strip()
-    else:
-        # Many models output preamble before the draft. Find the YAML frontmatter
-        # block anywhere in the response (look for --- followed by title: on next line).
-        match = re.search(r"(---[ \t]*\n\s*title:)", llm_response)
-        if not match:
-            logger.debug("Raw LLM response (no marker/frontmatter found):\n%s", llm_response)
-            raise ValueError(
-                f"LLM response missing '{marker}' marker and no YAML frontmatter found. "
-                f"Preview: {llm_response[:300]!r}"
-            )
-        candidate = llm_response[match.start():].strip()
+        return llm_response.split(marker, 1)[1].strip()
 
-    logger.debug("Extracted draft candidate (%d chars)", len(candidate))
-    return candidate
+    # Many models output preamble before the draft. Find the YAML frontmatter
+    # block anywhere in the response (look for --- followed by title: on next line).
+    match = re.search(r"(---[ \t]*\n\s*title:)", llm_response)
+    if match:
+        return llm_response[match.start():].strip()
+
+    logger.debug("Raw LLM response (extraction failed):\n%s", llm_response)
+    raise ValueError(
+        f"LLM response missing '{marker}' marker and no YAML frontmatter found. "
+        f"Preview: {llm_response[:300]!r}"
+    )
 
 
-def _validate_frontmatter(fm: dict) -> None:
+def _reformat_with_llm(raw_response: str, config: BlogConfig) -> str:
+    """Use qwen3:8b on the private server to convert a malformed response to Hugo format."""
+    reformat_spec = ModelSpec(provider="private", model="qwen3:8b")
+    result, model_used = call_llm(
+        system="You are a document formatter. Output only the requested content with no preamble or explanation.",
+        user=(
+            "Convert the following blog post content into Hugo markdown format.\n"
+            "Output ONLY the result: YAML frontmatter between --- delimiters, "
+            "then a blank line, then the post body in plain markdown.\n"
+            "Rules for the YAML frontmatter:\n"
+            "- Always quote string values that contain colons, commas, or special characters.\n"
+            "- tags and research_sources must be YAML lists.\n"
+            "- draft must be false (boolean, not a string).\n"
+            "- Do not use code blocks. Do not add any commentary.\n\n"
+            f"{raw_response}"
+        ),
+        specs=[reformat_spec],
+        max_tokens=4096,
+        config=config,
+    )
+    logger.info("Draft reformatted using %s", model_used)
+    return result
+
+
+def _fill_frontmatter_defaults(fm: dict, today: str) -> dict:
+    """Fill in missing frontmatter keys with sensible defaults rather than failing.
+
+    LLMs don't always follow the exact format. Filling in defaults means the pipeline
+    keeps running and produces a usable (if imperfect) draft.
+    """
+    defaults = {
+        "title": "untitled",
+        "date": today,
+        "draft": False,
+        "tags": [],
+        "research_sources": [],
+        "lateral_move": "category_crossing",
+    }
     missing = REQUIRED_FRONTMATTER_KEYS - set(fm.keys())
     if missing:
-        raise ValueError(f"Draft frontmatter missing required keys: {missing}")
+        logger.warning("Frontmatter missing keys %s — filling defaults", missing)
+    for key in missing:
+        fm[key] = defaults[key]
+    # Ensure title is never empty even if present as a blank string
+    if not fm.get("title"):
+        fm["title"] = defaults["title"]
+    return fm
 
 
 async def run_dream(config: BlogConfig, specs: list[ModelSpec], force: bool = False) -> DreamResult:
@@ -201,9 +249,17 @@ async def run_dream(config: BlogConfig, specs: list[ModelSpec], force: bool = Fa
         )
         logger.info("Dream synthesis used model: %s", model_used)
 
-        draft_section = _extract_draft_section(raw_response)
+        try:
+            draft_section = _extract_draft_section(raw_response)
+        except ValueError as exc:
+            logger.warning("Extraction failed (%s); reformatting with LLM...", exc)
+            reformatted = _reformat_with_llm(raw_response, config)
+            draft_section = _extract_draft_section(reformatted)
+
         fm, body = parse_frontmatter(draft_section)
-        _validate_frontmatter(fm)
+        fm = _fill_frontmatter_defaults(fm, today)
+        # Reconstruct the draft with the (possibly default-filled) frontmatter
+        draft_section = render_frontmatter(fm) + "\n" + body
 
         title = fm.get("title", "untitled")
         slug = make_slug(title)
