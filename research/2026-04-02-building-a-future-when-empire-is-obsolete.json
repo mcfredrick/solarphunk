@@ -1,0 +1,27 @@
+{
+  "id": "2026-04-02-building-a-future-when-empire-is-obsolete",
+  "fetched_at": "2026-04-02T21:02:10.709546Z",
+  "source": {
+    "feed_url": "https://www.yesmagazine.org/feed/",
+    "article_url": "https://www.yesmagazine.org/issues/2026/02/11/building-a-future-when-empire-is-obsolete",
+    "feed_name": "YES! Magazine"
+  },
+  "raw": {
+    "title": "Building a Future When Empire Is Obsolete",
+    "published": "2026-02-11T21:02:09",
+    "excerpt": "A future without successive catastrophes requires solutions that put a culture of care at the heart of relationships with each other and the earth."
+  },
+  "llm_processed": {
+    "summary": "This article explores post-imperial governance models that prioritize ecological and social well-being over centralized control, aligning with degrowth and cooperative governance ideas.",
+    "themes": [
+      "degrowth",
+      "post-growth",
+      "commons governance",
+      "community organizing"
+    ],
+    "lateral_potential": "Connects to alternative political systems that could inform solarpunk-inspired decentralized governance structures.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

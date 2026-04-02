@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-02-messages-of-fierce-hope-from-the-global-south",
+  "fetched_at": "2026-04-02T21:02:10.710960Z",
+  "source": {
+    "feed_url": "https://www.yesmagazine.org/feed/",
+    "article_url": "https://www.yesmagazine.org/political-power/2025/05/30/ferocious-hope-messages-global-south",
+    "feed_name": "YES! Magazine"
+  },
+  "raw": {
+    "title": "Messages of Fierce Hope From the Global South",
+    "published": "2025-05-30T18:37:13",
+    "excerpt": "An offering of inspiration from activists in the Global South, including Mexico, Lebanon, Bangladesh, Myanmar, Thailand to help people in the U.S. navigate these difficult times."
+  },
+  "llm_processed": {
+    "summary": "Shares stories of grassroots resistance and hope from the Global South, emphasizing solidarity and alternative development pathways.",
+    "themes": [
+      "community organizing",
+      "solarpunk aesthetics",
+      "open science"
+    ],
+    "lateral_potential": "Bridges to global networks of knowledge-sharing and collaborative innovation for sustainability.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

@@ -32,12 +32,20 @@ class ModelSpec(BaseModel):
     model: str
 
 
+class EditConfig(BaseModel):
+    max_iterations: int
+
+
 class ModelsConfig(BaseModel):
     # Ordered preference lists: try each spec in order, skip on rate limit / error
     research_filter: list[ModelSpec]
     dream_synthesis: list[ModelSpec]
+    edit_judge: list[ModelSpec]
+    edit_rewriter: list[ModelSpec]
     max_tokens_filter: int
     max_tokens_dream: int
+    max_tokens_edit_judge: int
+    max_tokens_edit_rewriter: int
 
 
 class ProviderConfig(BaseModel):
@@ -80,6 +88,7 @@ class BlogConfig(BaseModel):
     theme: ThemeConfig
     research: ResearchConfig
     dream: DreamConfig
+    edit: EditConfig
     providers: dict[str, ProviderConfig]
     models: ModelsConfig
     hugo: HugoConfig

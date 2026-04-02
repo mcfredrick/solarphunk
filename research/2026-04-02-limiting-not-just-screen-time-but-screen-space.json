@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-limiting-not-just-screen-time-but-screen-space",
+  "fetched_at": "2026-04-02T21:02:43.940860Z",
+  "source": {
+    "feed_url": "https://www.noemamag.com/feed/",
+    "article_url": "https://www.noemamag.com/limiting-not-just-screen-time-but-screen-space",
+    "feed_name": "Noema Magazine"
+  },
+  "raw": {
+    "title": "Limiting Not Just Screen Time, But Screen Space",
+    "published": "2026-04-02T13:09:19",
+    "excerpt": "<p>The post <a href=\"https://www.noemamag.com/limiting-not-just-screen-time-but-screen-space\">Limiting Not Just Screen Time, But Screen Space</a> appeared first on <a href=\"https://www.noemamag.com\">NOEMA</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "The article reflects on the erosion of privacy due to digital technology and explores how reclaiming physical space can foster ecological mindfulness and reduce tech overreach.",
+    "themes": [
+      "ecological restoration",
+      "appropriate technology"
+    ],
+    "lateral_potential": "Connects digital detox practices to regenerative economics by framing technology use as a resource allocation issue.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

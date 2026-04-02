@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-yet-another-apocalyptic-prediction",
+  "fetched_at": "2026-04-02T21:01:34.892795Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-03-26/yet-another-apocalyptic-prediction/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Yet another apocalyptic prediction\u2026",
+    "published": "2026-03-26T10:33:13",
+    "excerpt": "From rising GDP losses to ecosystem collapse, climate reports are stacking up fast. The problem is we have no language for the difference between a bad situation and a civilisational threshold."
+  },
+  "llm_processed": {
+    "summary": "The article analyzes apocalyptic predictions about ecological collapse, linking biodiversity loss to potential economic and geopolitical crises.",
+    "themes": [
+      "ecological restoration",
+      "regenerative economics"
+    ],
+    "lateral_potential": "Connects to resilience strategies in post-growth frameworks",
+    "relevance_score": 0.65,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

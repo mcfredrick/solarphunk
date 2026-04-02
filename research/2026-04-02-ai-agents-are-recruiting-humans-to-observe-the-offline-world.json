@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-ai-agents-are-recruiting-humans-to-observe-the-offline-world",
+  "fetched_at": "2026-04-02T21:02:43.941937Z",
+  "source": {
+    "feed_url": "https://www.noemamag.com/feed/",
+    "article_url": "https://www.noemamag.com/ai-agents-are-recruiting-humans-to-observe-the-offline-world",
+    "feed_name": "Noema Magazine"
+  },
+  "raw": {
+    "title": "AI Agents Are Recruiting Humans To Observe The Offline World",
+    "published": "2026-03-05T14:16:10",
+    "excerpt": "<p>The post <a href=\"https://www.noemamag.com/ai-agents-are-recruiting-humans-to-observe-the-offline-world\">AI Agents Are Recruiting Humans To Observe The Offline World</a> appeared first on <a href=\"https://www.noemamag.com\">NOEMA</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "The article highlights how AI systems require human input to navigate physical reality, suggesting hybrid models could enhance ecological monitoring and decision-making.",
+    "themes": [
+      "open science",
+      "appropriate technology"
+    ],
+    "lateral_potential": "Bridges AI development with ecological restoration by positioning human observation as critical to sustainable technological integration.",
+    "relevance_score": 0.65,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

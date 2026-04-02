@@ -9,6 +9,7 @@ dist/
 # Secrets
 .env
 .env.local
+.secrets
 
 # Hugo build output
 site/public/
@@ -16,3 +17,6 @@ site/resources/
 
 # macOS
 .DS_Store
+
+# Git worktrees
+.worktrees/

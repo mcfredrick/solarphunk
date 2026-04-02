@@ -5,7 +5,12 @@ import logging
 import os
 import sys
 
+import agents.dream as dream_agent
+import agents.edit as edit_agent
+import agents.publish as publish_agent
+import agents.research as research_agent
 from agents.dream import dream
+from agents.edit import run_edit
 from agents.publish import run_publish
 from agents.research import research
 from agents.model_selector import get_research_specs, get_dream_specs
@@ -56,6 +61,20 @@ def cmd_dream(args: argparse.Namespace) -> None:
         print(f"Dream skipped: {result.reason}")
 
 
+def cmd_edit(args: argparse.Namespace) -> None:
+    config = load_config()
+    _check_credentials(config)
+    result = run_edit(config)
+    if result.ran:
+        print(f"Edit: {result.drafts_edited} drafts edited, iterations={result.iterations}")
+        if result.errors:
+            print(f"Edit errors ({len(result.errors)}):")
+            for err in result.errors:
+                print(f"  - {err}")
+    else:
+        print(f"Edit skipped: {result.reason}")
+
+
 def cmd_publish(args: argparse.Namespace) -> None:
     config = load_config()
     result = run_publish(config)
@@ -64,31 +83,55 @@ def cmd_publish(args: argparse.Namespace) -> None:
         print(f"Validation errors ({len(result.errors)}):")
         for err in result.errors:
             print(f"  - {err}")
+        sys.exit(1)
 
 
 def cmd_pipeline(args: argparse.Namespace) -> None:
     config = load_config()
     _check_credentials(config)
 
-    print("=== Step 1/3: Research ===")
-    research_specs = get_research_specs(config)
-    research_result = research(config, research_specs)
-    print(f"Research: {research_result.notes_saved} notes saved, {research_result.items_processed} items processed")
-
-    print("=== Step 2/3: Dream ===")
-    dream_specs = get_dream_specs(config)
-    dream_result = dream(config, dream_specs, force=args.force_dream)
-    if dream_result.ran:
-        print(f"Dream: draft written to {dream_result.draft_path} ({dream_result.notes_consumed} notes consumed)")
+    print("=== Step 1/4: Research ===")
+    if research_agent.already_ran_today():
+        print("Research: already ran today, skipping")
     else:
-        print(f"Dream skipped: {dream_result.reason}")
+        research_specs = get_research_specs(config)
+        research_result = research(config, research_specs)
+        print(f"Research: {research_result.notes_saved} notes saved, {research_result.items_processed} items processed")
 
-    print("=== Step 3/3: Publish ===")
-    publish_result = run_publish(config)
-    print(f"Publish: {publish_result.published} published, {publish_result.skipped} skipped")
-    if publish_result.errors:
-        for err in publish_result.errors:
-            print(f"  - {err}")
+    print("=== Step 2/4: Dream ===")
+    if dream_agent.already_ran_today():
+        print("Dream: already ran today, skipping")
+    else:
+        dream_specs = get_dream_specs(config)
+        dream_result = dream(config, dream_specs, force=args.force_dream)
+        if dream_result.ran:
+            print(f"Dream: draft written to {dream_result.draft_path} ({dream_result.notes_consumed} notes consumed)")
+        else:
+            print(f"Dream skipped: {dream_result.reason}")
+
+    print("=== Step 3/4: Edit ===")
+    if edit_agent.already_ran_today():
+        print("Edit: already ran today, skipping")
+    else:
+        edit_result = run_edit(config)
+        if edit_result.ran:
+            print(f"Edit: {edit_result.drafts_edited} drafts edited, iterations={edit_result.iterations}")
+            if edit_result.errors:
+                for err in edit_result.errors:
+                    print(f"  - {err}")
+        else:
+            print(f"Edit skipped: {edit_result.reason}")
+
+    print("=== Step 4/4: Publish ===")
+    if publish_agent.already_ran_today():
+        print("Publish: already ran today, skipping")
+    else:
+        publish_result = run_publish(config)
+        print(f"Publish: {publish_result.published} published, {publish_result.skipped} skipped")
+        if publish_result.errors:
+            for err in publish_result.errors:
+                print(f"  - {err}")
+            sys.exit(1)
 
     print("=== Pipeline complete ===")
 
@@ -101,6 +144,7 @@ def main() -> None:
 Examples:
   python run.py research
   python run.py dream --force
+  python run.py edit
   python run.py publish
   python run.py pipeline
   python run.py pipeline --force-dream
@@ -113,13 +157,21 @@ Examples:
     dream_parser = subparsers.add_parser("dream", help="Synthesise research into a draft post")
     dream_parser.add_argument("--force", action="store_true", help="Bypass the dream gate")
 
+    subparsers.add_parser("edit", help="Run judge/rewriter loop on today's unedited drafts")
+
     subparsers.add_parser("publish", help="Validate drafts and publish to Hugo content dir")
 
-    pipeline_parser = subparsers.add_parser("pipeline", help="Run research → dream → publish in sequence")
+    pipeline_parser = subparsers.add_parser("pipeline", help="Run research → dream → edit → publish in sequence")
     pipeline_parser.add_argument("--force-dream", action="store_true", help="Bypass the dream gate in the pipeline")
 
     args = parser.parse_args()
-    dispatch = {"research": cmd_research, "dream": cmd_dream, "publish": cmd_publish, "pipeline": cmd_pipeline}
+    dispatch = {
+        "research": cmd_research,
+        "dream": cmd_dream,
+        "edit": cmd_edit,
+        "publish": cmd_publish,
+        "pipeline": cmd_pipeline,
+    }
     dispatch[args.command](args)
 
 

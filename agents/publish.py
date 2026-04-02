@@ -12,7 +12,7 @@ from lib.hugo import make_slug, parse_frontmatter
 logger = logging.getLogger(__name__)
 
 DRAFTS_DIR = Path("drafts")
-REQUIRED_FRONTMATTER_KEYS = {"title", "date", "draft", "tags", "research_sources", "lateral_move"}
+REQUIRED_FRONTMATTER_KEYS = {"title", "date", "draft", "tags", "research_sources", "lateral_move", "quality_iterations"}
 
 
 @dataclass
@@ -22,21 +22,14 @@ class PublishResult:
     errors: list[str] = field(default_factory=list)
 
 
-def _parse_word_count_range(spec: str) -> tuple[int, int]:
-    """Parse '800-1200' into (800, 1200). Returns (0, 999999) on parse failure."""
-    try:
-        parts = spec.split("-")
-        return int(parts[0].strip()), int(parts[1].strip())
-    except Exception:
-        logger.warning("Could not parse post_length_words spec '%s', skipping word count check", spec)
-        return 0, 999_999
+def already_ran_today() -> bool:
+    """Return True if publish already ran today (post in Hugo content dir exists)."""
+    today = date.today().isoformat()
+    content_dir = Path("site/content/posts")
+    return any(content_dir.glob(f"{today}-*.md"))
 
 
-def _count_words(text: str) -> int:
-    return len(text.split())
-
-
-def _validate_draft(path: Path, config: BlogConfig, research_dir: Path) -> list[str]:
+def _validate_draft(path: Path, research_dir: Path) -> list[str]:
     """Return list of validation error messages (empty = valid)."""
     errors = []
     try:
@@ -53,14 +46,11 @@ def _validate_draft(path: Path, config: BlogConfig, research_dir: Path) -> list[
     if missing:
         errors.append(f"{path.name}: missing frontmatter keys: {missing}")
 
-    word_count_spec = getattr(config.theme, "post_length_words", "")
-    if word_count_spec:
-        min_words, max_words = _parse_word_count_range(word_count_spec)
-        word_count = _count_words(body)
-        if not (min_words <= word_count <= max_words):
-            errors.append(
-                f"{path.name}: word count {word_count} outside range {min_words}–{max_words}"
-            )
+    if fm.get("draft") is not False:
+        errors.append(f"{path.name}: draft must be false")
+
+    if not body.strip():
+        errors.append(f"{path.name}: body is empty")
 
     research_sources = fm.get("research_sources", [])
     if isinstance(research_sources, list):
@@ -95,7 +85,7 @@ def run_publish(config: BlogConfig) -> PublishResult:
     all_errors: list[str] = []
 
     for draft_path in sorted(drafts):
-        validation_errors = _validate_draft(draft_path, config, research_dir)
+        validation_errors = _validate_draft(draft_path, research_dir)
 
         if validation_errors:
             all_errors.extend(validation_errors)

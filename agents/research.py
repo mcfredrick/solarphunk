@@ -32,6 +32,12 @@ class ResearchResult:
     feeds_fetched: int
 
 
+def already_ran_today() -> bool:
+    """Return True if research already ran today (research note for today exists)."""
+    today = date.today().isoformat()
+    return any(RESEARCH_DIR.glob(f"{today}-*.json"))
+
+
 def _load_seen() -> dict[str, str]:
     if not SEEN_FILE.exists():
         SEEN_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -206,23 +212,47 @@ async def run_research(config: BlogConfig, specs: list[ModelSpec]) -> ResearchRe
 
         prompt = _build_batch_prompt(prompt_template, config, batch)
 
-        try:
-            raw_response, model_used = call_llm(
-                system="You are a research assistant. Respond only with a valid JSON array.",
-                user=prompt,
-                specs=specs,
-                max_tokens=BATCH_SIZE * 150,  # ~150 tokens per item for the response
-                config=config,
-            )
-            results = _parse_batch_response(raw_response)
-        except Exception as exc:
-            logger.warning("Batch LLM call failed (items %d-%d): %s", batch_start, batch_start + len(batch_raw) - 1, exc)
-            # Mark all items in the batch as seen so we don't retry today
-            for item, _feed_url, _feed_name, _excerpt in batch_raw:
-                seen[item.get("url", "")] = today
+        # Try each spec individually so a JSON parse failure from one model
+        # triggers fallback to the next, not just HTTP/rate-limit errors.
+        results = None
+        model_used = None
+        for spec in specs:
+            try:
+                raw_response, model_used = call_llm(
+                    system="You are a research assistant. Respond only with a valid JSON array.",
+                    user=prompt,
+                    specs=[spec],
+                    max_tokens=config.models.max_tokens_filter,
+                    config=config,
+                )
+                results = _parse_batch_response(raw_response)
+                break  # parsed successfully
+            except Exception as exc:
+                logger.warning(
+                    "Batch failed for spec %s/%s (items %d-%d): %s — trying next spec",
+                    spec.provider, spec.model,
+                    batch_start, batch_start + len(batch_raw) - 1, exc,
+                )
+
+        if results is None:
+            logger.warning("All specs failed for batch (items %d-%d) — skipping", batch_start, batch_start + len(batch_raw) - 1)
+            # Do NOT mark as seen — no note was saved, so these articles should
+            # remain eligible for the next run rather than being lost for 30 days.
             continue
 
-        # Match results back to items by index
+        # Validate all expected indices are present before matching.
+        # If the model omits index fields and results silently fall back to
+        # positional matching, scores get assigned to the wrong articles.
+        expected = set(range(len(batch_raw)))
+        returned = {r.get("index") for r in results if r.get("index") is not None}
+        missing_indices = expected - returned
+        if missing_indices:
+            logger.warning(
+                "Batch (items %d-%d): model returned %d results but missing indices %s — "
+                "falling back to positional matching",
+                batch_start, batch_start + len(batch_raw) - 1,
+                len(results), sorted(missing_indices),
+            )
         result_by_index = {r.get("index", i): r for i, r in enumerate(results)}
 
         for local_idx, (item, feed_url, feed_name, _excerpt) in enumerate(batch_raw):
