@@ -1,0 +1,27 @@
+{
+  "id": "2026-04-02-how-to-allocate-finite-resources-in-a-solarpunk-way",
+  "fetched_at": "2026-04-02T08:25:00.434343Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sa09r3/how_to_allocate_finite_resources_in_a_solarpunk/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "How to allocate finite resources in a solarpunk way?",
+    "published": "2026-04-01T22:58:10",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>The title says all. How do solarpunks allocate unique resources like land or housing without money? Who is eligible e.g. to live in a penthouse vs in a social housing project, and how do we want to decide if several people can make the claim?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Stegomaniac\"> /u/Stegomaniac </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sa09r3/how_to_allocate_finite_resources_in_a_solarpunk/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sa09r3/how_to_allocate_finite_resources_in_a_solarpunk/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "This post explores how solarpunks can fairly distribute limited resources like land and housing without currency systems, questioning criteria for access to different living spaces and decision-making processes.",
+    "themes": [
+      "regenerative economics",
+      "community organizing",
+      "commons governance",
+      "participatory democracy"
+    ],
+    "lateral_potential": "Connects resource allocation debates to cooperative platforms and degrowth frameworks, enabling cross-pollination with housing justice movements.",
+    "relevance_score": 0.85,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": null
+}
