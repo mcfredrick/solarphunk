@@ -1,0 +1,27 @@
+{
+  "id": "2026-04-02-messages-of-fierce-hope-from-the-global-south",
+  "fetched_at": "2026-04-02T19:01:48.470160Z",
+  "source": {
+    "feed_url": "https://www.yesmagazine.org/feed/",
+    "article_url": "https://www.yesmagazine.org/political-power/2025/05/30/ferocious-hope-messages-global-south",
+    "feed_name": "YES! Magazine"
+  },
+  "raw": {
+    "title": "Messages of Fierce Hope From the Global South",
+    "published": "2025-05-30T18:37:13",
+    "excerpt": "An offering of inspiration from activists in the Global South, including Mexico, Lebanon, Bangladesh, Myanmar, Thailand to help people in the U.S. navigate these difficult times."
+  },
+  "llm_processed": {
+    "summary": "This article highlights grassroots movements in the Global South that emphasize hope, resilience, and community-driven solutions to environmental and social challenges, aligning with solarpunk's focus on collective empowerment and sustainable futures.",
+    "themes": [
+      "community-organizing",
+      "solarpunk-aesthetics",
+      "regenerative-economics",
+      "ecological-restoration"
+    ],
+    "lateral_potential": "Connects global solidarity movements with local solarpunk initiatives, enabling cross-regional collaboration on regenerative projects.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": null
+}
