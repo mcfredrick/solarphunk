@@ -147,19 +147,43 @@ def _edit_draft(
     approved = False
     iteration = 0
 
-    for iteration in range(1, max_iter + 1):
-        judge_prompt = _build_judge_prompt(judge_template, config, current_body)
-        judge_response, model_used = call_llm(
-            system="You are a quality editor. Respond only with the JSON object requested.",
-            user=judge_prompt,
-            specs=judge_specs,
-            max_tokens=config.models.max_tokens_edit_judge,
-            config=config,
-        )
-        logger.info("Judge used model %s (draft=%s, iter=%d)", model_used, path.name, iteration)
+    # Parse target word count range once for use in structural checks
+    spec = getattr(config.theme, "post_length_words", "800-1200")
+    try:
+        min_words, _ = (int(p.strip()) for p in spec.split("-"))
+    except (ValueError, AttributeError):
+        min_words = 400  # conservative floor
 
-        approved, feedback = _parse_judge_response(judge_response)
-        logger.info("Judge decision: approved=%s, feedback=%r", approved, feedback[:100])
+    for iteration in range(1, max_iter + 1):
+        # Structural pre-check: catch obvious problems in code before burning an LLM call.
+        word_count = len(current_body.split())
+        research_sources = original_fm.get("research_sources", [])
+        citations_present = any(src in current_body for src in research_sources)
+
+        structural_issues = []
+        if word_count < min_words // 2:
+            structural_issues.append(f"body is too short ({word_count} words, minimum ~{min_words // 2})")
+        if not current_body.strip():
+            structural_issues.append("body is empty")
+        if research_sources and not citations_present:
+            structural_issues.append("no research note IDs cited in body")
+
+        if structural_issues:
+            feedback = "Structural issues: " + "; ".join(structural_issues) + ". Rewrite the post body in full."
+            logger.info("Structural pre-check failed (draft=%s, iter=%d): %s", path.name, iteration, feedback)
+            approved = False
+        else:
+            judge_prompt = _build_judge_prompt(judge_template, config, current_body)
+            judge_response, model_used = call_llm(
+                system="You are a quality editor. Respond only with the JSON object requested.",
+                user=judge_prompt,
+                specs=judge_specs,
+                max_tokens=config.models.max_tokens_edit_judge,
+                config=config,
+            )
+            logger.info("Judge used model %s (draft=%s, iter=%d)", model_used, path.name, iteration)
+            approved, feedback = _parse_judge_response(judge_response)
+            logger.info("Judge decision: approved=%s, feedback=%r", approved, feedback[:100])
 
         if approved:
             break
