@@ -55,52 +55,19 @@ jobs:
             -d "$API_BODY" \
             https://infer.dayjob.dev/api/chat | tail -c 300
 
-      - name: Test via Python httpx (native /api/chat)
+      - name: Test via pipeline code (_call_ollama)
         run: |
           uv run python - <<'EOF'
-          import os, json
-          import httpx
+          import os, sys
+          sys.path.insert(0, ".")
+          from lib.config import load_config
+          from lib.llm import _call_ollama
 
-          cf_id = os.environ.get("CF_CLIENT_ID", "")
-          cf_secret = os.environ.get("CF_CLIENT_SECRET", "")
-          headers = {
-              "CF-Access-Client-Id": cf_id,
-              "CF-Access-Client-Secret": cf_secret,
-              "Content-Type": "application/json",
-          }
-          body = {"model": "smollm2:135m", "messages": [{"role": "user", "content": "say OK"}], "stream": False}
-          r = httpx.post("https://infer.dayjob.dev/api/chat", headers=headers, json=body, timeout=60)
-          print(f"HTTP {r.status_code}")
-          if r.status_code == 200:
-              print(f"Response: {r.json()['message']['content']}")
-              print("SUCCESS via /api/chat + httpx")
-          else:
-              print(f"FAILED: {r.text[:200]}")
-          EOF
-        env:
-          CF_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
-          CF_CLIENT_SECRET: ${{ secrets.CF_CLIENT_SECRET }}
-
-      - name: Test via Python OpenAI SDK (/v1/chat/completions)
-        continue-on-error: true
-        run: |
-          uv run python - <<'EOF'
-          import os
-          from openai import OpenAI
-
-          cf_id = os.environ.get("CF_CLIENT_ID", "")
-          cf_secret = os.environ.get("CF_CLIENT_SECRET", "")
-          extra_headers = {"CF-Access-Client-Id": cf_id, "CF-Access-Client-Secret": cf_secret}
-
-          client = OpenAI(base_url="https://infer.dayjob.dev/v1", api_key="ollama")
-          response = client.chat.completions.create(
-              model="smollm2:135m",
-              max_tokens=16,
-              messages=[{"role": "user", "content": "say OK"}],
-              extra_headers=extra_headers,
-          )
-          print(f"Response: {response.choices[0].message.content}")
-          print("SUCCESS via OpenAI SDK")
+          config = load_config()
+          provider = config.providers["private"]
+          result = _call_ollama(provider, "smollm2:135m", "You are helpful.", "Reply with just: OK", 16)
+          print(f"Response: {result}")
+          print("SUCCESS")
           EOF
         env:
           CF_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
