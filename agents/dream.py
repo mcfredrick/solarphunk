@@ -4,6 +4,7 @@ import asyncio
 import json
 import logging
 import os
+import re
 from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
@@ -140,13 +141,21 @@ def _build_prompt(template: str, config: BlogConfig, notes: list[dict], posts: l
 def _extract_draft_section(llm_response: str) -> str:
     marker = "=== DRAFT ==="
     if marker in llm_response:
-        return llm_response.split(marker, 1)[1].strip()
-    # Some models output the draft directly without echoing the marker;
-    # treat the response as the draft if it starts with YAML frontmatter.
-    stripped = llm_response.strip()
-    if stripped.startswith("---"):
-        return stripped
-    raise ValueError(f"LLM response missing '{marker}' marker and does not begin with YAML frontmatter")
+        candidate = llm_response.split(marker, 1)[1].strip()
+    else:
+        # Many models output preamble before the draft. Find the YAML frontmatter
+        # block anywhere in the response (look for --- followed by title: on next line).
+        match = re.search(r"(---[ \t]*\n\s*title:)", llm_response)
+        if not match:
+            logger.debug("Raw LLM response (no marker/frontmatter found):\n%s", llm_response)
+            raise ValueError(
+                f"LLM response missing '{marker}' marker and no YAML frontmatter found. "
+                f"Preview: {llm_response[:300]!r}"
+            )
+        candidate = llm_response[match.start():].strip()
+
+    logger.debug("Extracted draft candidate (%d chars)", len(candidate))
+    return candidate
 
 
 def _validate_frontmatter(fm: dict) -> None:
