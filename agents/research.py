@@ -236,9 +236,8 @@ async def run_research(config: BlogConfig, specs: list[ModelSpec]) -> ResearchRe
 
         if results is None:
             logger.warning("All specs failed for batch (items %d-%d) — skipping", batch_start, batch_start + len(batch_raw) - 1)
-            # Mark as seen to avoid hammering the same content tomorrow
-            for item, _feed_url, _feed_name, _excerpt in batch_raw:
-                seen[item.get("url", "")] = today
+            # Do NOT mark as seen — no note was saved, so these articles should
+            # remain eligible for the next run rather than being lost for 30 days.
             continue
 
         # Match results back to items by index
