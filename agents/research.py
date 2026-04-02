@@ -240,7 +240,19 @@ async def run_research(config: BlogConfig, specs: list[ModelSpec]) -> ResearchRe
             # remain eligible for the next run rather than being lost for 30 days.
             continue
 
-        # Match results back to items by index
+        # Validate all expected indices are present before matching.
+        # If the model omits index fields and results silently fall back to
+        # positional matching, scores get assigned to the wrong articles.
+        expected = set(range(len(batch_raw)))
+        returned = {r.get("index") for r in results if r.get("index") is not None}
+        missing_indices = expected - returned
+        if missing_indices:
+            logger.warning(
+                "Batch (items %d-%d): model returned %d results but missing indices %s — "
+                "falling back to positional matching",
+                batch_start, batch_start + len(batch_raw) - 1,
+                len(results), sorted(missing_indices),
+            )
         result_by_index = {r.get("index", i): r for i, r in enumerate(results)}
 
         for local_idx, (item, feed_url, feed_name, _excerpt) in enumerate(batch_raw):
