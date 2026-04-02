@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-proforestation-beyond-the-human-forests-climate-emergency-an",
+  "fetched_at": "2026-04-02T21:01:34.891266Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-03-30/proforestation-beyond-the-human-forests-climate-emergency-and-the-undoing-of-mastery/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Proforestation Beyond the Human:  Forests, Climate Emergency, and the Undoing of Mastery",
+    "published": "2026-03-30T15:09:40",
+    "excerpt": "In the end, proforestation offers us a choice about who we wish to become. We can continue to treat forests as instruments to repair a damaged atmosphere, pulling them into our orbit as another tool in a human-centred project. Or we can accept their invitation to live differently: to slow down, to restrain ourselves, to share space and time with other beings whose existence does not revolve around us."
+  },
+  "llm_processed": {
+    "summary": "This article argues for proforestation as a response to the climate crisis, emphasizing ecological complexity over human-centric carbon sink narratives. It critiques dominant framing of forests as economic assets rather than living systems.",
+    "themes": [
+      "ecological restoration",
+      "biomimicry"
+    ],
+    "lateral_potential": "Connects to agroecology by rethinking human-nature relationships through forest regeneration",
+    "relevance_score": 0.9,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

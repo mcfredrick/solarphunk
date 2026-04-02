@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-02-rebellions-work-and-they-represent-a-long-tradition",
+  "fetched_at": "2026-04-02T21:02:10.709852Z",
+  "source": {
+    "feed_url": "https://www.yesmagazine.org/feed/",
+    "article_url": "https://www.yesmagazine.org/issues/2026/01/14/rebellions-work-and-they-represent-a-long-tradition",
+    "feed_name": "YES! Magazine"
+  },
+  "raw": {
+    "title": "Rebellions Work \u2014 and They Represent a Long Tradition",
+    "published": "2026-01-14T16:48:42",
+    "excerpt": "Immigration enforcement is now facing renewed resistance across the country as Trump\u2019s agents continue to harm, terrorize, and kill with impunity."
+  },
+  "llm_processed": {
+    "summary": "Analyzes historical and contemporary rebellions as catalysts for systemic change, emphasizing grassroots movements and collective action.",
+    "themes": [
+      "community organizing",
+      "participatory democracy",
+      "mutual aid"
+    ],
+    "lateral_potential": "Bridges to designing resilient, decentralized networks for ecological and social transformation.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

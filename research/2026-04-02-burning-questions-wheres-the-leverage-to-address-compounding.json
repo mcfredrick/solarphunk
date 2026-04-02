@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-02-burning-questions-wheres-the-leverage-to-address-compounding",
+  "fetched_at": "2026-04-02T21:01:34.892362Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-03-26/burning-questions-multisolving/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Burning Questions: Where\u2019s the Leverage to Address Compounding Crises?",
+    "published": "2026-03-26T11:11:22",
+    "excerpt": "Leslie Davenport's new podcast, Burning Questions: Conversations About Our Living World, brings together thought leaders navigating the emotional, strategic, and relational dimensions of our planetary moment. In this episode, Leslie is joined by Dr. Elizabeth Sawin to explore something both timely and timeless: how do we find leverage for transformation when the crises keep compounding?"
+  },
+  "llm_processed": {
+    "summary": "The article discusses strategies for finding leverage in addressing compounding crises, focusing on emotional and relational dimensions of systemic transformation.",
+    "themes": [
+      "degrowth",
+      "commons governance"
+    ],
+    "lateral_potential": "Connects to open science through collaborative problem-solving frameworks",
+    "relevance_score": 0.75,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}

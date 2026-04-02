@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-02-a-repository-of-hope-amid-an-authoritarian-moment",
+  "fetched_at": "2026-04-02T21:02:10.710536Z",
+  "source": {
+    "feed_url": "https://www.yesmagazine.org/feed/",
+    "article_url": "https://www.yesmagazine.org/issues/2025/09/15/a-repository-of-hope-amid-an-authoritarian-moment",
+    "feed_name": "YES! Magazine"
+  },
+  "raw": {
+    "title": "A Repository of Hope Amid an Authoritarian Moment",
+    "published": "2025-09-15T22:07:23",
+    "excerpt": "The past is replete with examples of committed groups of people outside the majority that have changed the world."
+  },
+  "llm_processed": {
+    "summary": "Highlights cultural and political resistance to authoritarianism, emphasizing the role of art and storytelling in fostering hope and solidarity.",
+    "themes": [
+      "community organizing",
+      "solarpunk aesthetics",
+      "commons governance"
+    ],
+    "lateral_potential": "Bridges to creating culturally rooted, participatory frameworks for sustainable futures.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "alternative-governance-ai-and-biomimicry-for-a-greener-futur"
+}
