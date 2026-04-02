@@ -20,37 +20,69 @@ jobs:
 
       - name: Probe headers that trigger block
         run: |
-          BODY='{"model":"qwen3:8b","messages":[{"role":"user","content":"say OK"}],"stream":false,"max_tokens":16}'
-          CF="-H \"CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}\" -H \"CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}\""
+          BODY='{"model":"smollm2:135m","messages":[{"role":"user","content":"say OK"}],"stream":false,"max_tokens":8}'
 
-          echo "=== baseline (curl, no Auth) ==="
-          curl -s -o /dev/null -w "HTTP %{http_code}\n" \
-            -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
-            -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
-            -H "Content-Type: application/json" \
-            -d "$BODY" \
-            https://infer.dayjob.dev/v1/chat/completions
-
-          echo "=== with Authorization: Bearer ollama ==="
-          curl -s -o /dev/null -w "HTTP %{http_code}\n" \
+          echo "=== curl baseline (show body) ==="
+          curl -s -w "\nHTTP %{http_code}\n" \
             -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
             -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ollama" \
             -d "$BODY" \
-            https://infer.dayjob.dev/v1/chat/completions
+            https://infer.dayjob.dev/v1/chat/completions | tail -c 500
 
-          echo "=== with python user-agent ==="
+          echo "=== curl + X-Stainless headers (OpenAI SDK signature) ==="
           curl -s -o /dev/null -w "HTTP %{http_code}\n" \
             -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
             -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ollama" \
-            -A "python-httpx/0.28.1" \
+            -H "X-Stainless-Lang: python" \
+            -H "X-Stainless-Package-Version: 1.74.0" \
+            -H "X-Stainless-Runtime: CPython" \
+            -H "X-Stainless-Runtime-Version: 3.12.9" \
+            -H "X-Stainless-OS: Linux" \
+            -H "X-Stainless-Arch: x64" \
             -d "$BODY" \
             https://infer.dayjob.dev/v1/chat/completions
 
-      - name: Test via Python OpenAI SDK
+          echo "=== /api/chat (native Ollama, curl) ==="
+          API_BODY='{"model":"smollm2:135m","messages":[{"role":"user","content":"say OK"}],"stream":false}'
+          curl -s -w "\nHTTP %{http_code}\n" \
+            -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
+            -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
+            -H "Content-Type: application/json" \
+            -d "$API_BODY" \
+            https://infer.dayjob.dev/api/chat | tail -c 300
+
+      - name: Test via Python httpx (native /api/chat)
+        run: |
+          uv run python - <<'EOF'
+          import os, json
+          import httpx
+
+          cf_id = os.environ.get("CF_CLIENT_ID", "")
+          cf_secret = os.environ.get("CF_CLIENT_SECRET", "")
+          headers = {
+              "CF-Access-Client-Id": cf_id,
+              "CF-Access-Client-Secret": cf_secret,
+              "Content-Type": "application/json",
+          }
+          body = {"model": "smollm2:135m", "messages": [{"role": "user", "content": "say OK"}], "stream": False}
+          r = httpx.post("https://infer.dayjob.dev/api/chat", headers=headers, json=body, timeout=60)
+          print(f"HTTP {r.status_code}")
+          if r.status_code == 200:
+              print(f"Response: {r.json()['message']['content']}")
+              print("SUCCESS via /api/chat + httpx")
+          else:
+              print(f"FAILED: {r.text[:200]}")
+          EOF
+        env:
+          CF_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
+          CF_CLIENT_SECRET: ${{ secrets.CF_CLIENT_SECRET }}
+
+      - name: Test via Python OpenAI SDK (/v1/chat/completions)
+        continue-on-error: true
         run: |
           uv run python - <<'EOF'
           import os
@@ -58,22 +90,17 @@ jobs:
 
           cf_id = os.environ.get("CF_CLIENT_ID", "")
           cf_secret = os.environ.get("CF_CLIENT_SECRET", "")
-          extra_headers = {}
-          if cf_id:
-              extra_headers["CF-Access-Client-Id"] = cf_id
-          if cf_secret:
-              extra_headers["CF-Access-Client-Secret"] = cf_secret
+          extra_headers = {"CF-Access-Client-Id": cf_id, "CF-Access-Client-Secret": cf_secret}
 
           client = OpenAI(base_url="https://infer.dayjob.dev/v1", api_key="ollama")
-
           response = client.chat.completions.create(
-              model="qwen3:8b",
+              model="smollm2:135m",
               max_tokens=16,
-              messages=[{"role": "user", "content": "Reply with just: OK"}],
-              extra_headers=extra_headers or None,
+              messages=[{"role": "user", "content": "say OK"}],
+              extra_headers=extra_headers,
           )
           print(f"Response: {response.choices[0].message.content}")
-          print("SUCCESS")
+          print("SUCCESS via OpenAI SDK")
           EOF
         env:
           CF_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
