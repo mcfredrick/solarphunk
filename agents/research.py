@@ -32,6 +32,12 @@ class ResearchResult:
     feeds_fetched: int
 
 
+def already_ran_today() -> bool:
+    """Return True if research already ran today (research note for today exists)."""
+    today = date.today().isoformat()
+    return any(RESEARCH_DIR.glob(f"{today}-*.json"))
+
+
 def _load_seen() -> dict[str, str]:
     if not SEEN_FILE.exists():
         SEEN_FILE.parent.mkdir(parents=True, exist_ok=True)

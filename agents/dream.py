@@ -24,6 +24,19 @@ DREAM_LOCK = Path(".dream-lock")
 REQUIRED_FRONTMATTER_KEYS = {"title", "date", "draft", "tags", "research_sources", "lateral_move"}
 
 
+def already_ran_today() -> bool:
+    """Return True if dream already ran today (unedited draft exists, i.e. no quality_iterations)."""
+    today = date.today().isoformat()
+    for path in DRAFTS_DIR.glob(f"{today}-*.md"):
+        try:
+            fm, _ = parse_frontmatter(path.read_text())
+            if "quality_iterations" not in fm:
+                return True
+        except Exception:
+            continue
+    return False
+
+
 @dataclass
 class DreamResult:
     ran: bool
