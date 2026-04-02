@@ -18,7 +18,29 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
-      - name: Test Ollama via Python (same code path as pipeline)
+      - name: Probe path accessibility
+        run: |
+          echo "=== /api/tags (GET) ==="
+          curl -s -o /dev/null -w "HTTP %{http_code}\n" \
+            -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
+            -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
+            https://infer.dayjob.dev/api/tags
+
+          echo "=== /v1/models (GET) ==="
+          curl -s -o /dev/null -w "HTTP %{http_code}\n" \
+            -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
+            -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
+            https://infer.dayjob.dev/v1/models
+
+          echo "=== /v1/chat/completions (POST, curl) ==="
+          curl -s -o /dev/null -w "HTTP %{http_code}\n" \
+            -H "CF-Access-Client-Id: ${{ secrets.CF_CLIENT_ID }}" \
+            -H "CF-Access-Client-Secret: ${{ secrets.CF_CLIENT_SECRET }}" \
+            -H "Content-Type: application/json" \
+            -d '{"model":"qwen3:8b","messages":[{"role":"user","content":"say OK"}],"stream":false,"max_tokens":16}' \
+            https://infer.dayjob.dev/v1/chat/completions
+
+      - name: Test via Python OpenAI SDK
         run: |
           uv run python - <<'EOF'
           import os
@@ -26,30 +48,20 @@ jobs:
 
           cf_id = os.environ.get("CF_CLIENT_ID", "")
           cf_secret = os.environ.get("CF_CLIENT_SECRET", "")
-
-          print(f"CF_CLIENT_ID set: {bool(cf_id)} (len={len(cf_id)})")
-          print(f"CF_CLIENT_SECRET set: {bool(cf_secret)} (len={len(cf_secret)})")
-
-          client = OpenAI(
-              base_url="https://infer.dayjob.dev/v1",
-              api_key="ollama",
-          )
-
           extra_headers = {}
           if cf_id:
               extra_headers["CF-Access-Client-Id"] = cf_id
           if cf_secret:
               extra_headers["CF-Access-Client-Secret"] = cf_secret
 
-          print(f"Sending CF headers: {list(extra_headers.keys())}")
+          client = OpenAI(base_url="https://infer.dayjob.dev/v1", api_key="ollama")
 
           response = client.chat.completions.create(
               model="qwen3:8b",
-              max_tokens=64,
+              max_tokens=16,
               messages=[{"role": "user", "content": "Reply with just: OK"}],
               extra_headers=extra_headers or None,
           )
-
           print(f"Response: {response.choices[0].message.content}")
           print("SUCCESS")
           EOF
