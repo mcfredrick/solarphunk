@@ -126,7 +126,7 @@ models:
       model: "google/gemma-3-27b-it:free"
     - provider: private
       model: "deepseek-r1:latest"
-  max_tokens_filter: 512
+  max_tokens_filter: 4096
   max_tokens_dream: 4096
   max_tokens_edit_judge: 512
   max_tokens_edit_rewriter: 4096

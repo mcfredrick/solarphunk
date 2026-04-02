@@ -222,7 +222,7 @@ async def run_research(config: BlogConfig, specs: list[ModelSpec]) -> ResearchRe
                     system="You are a research assistant. Respond only with a valid JSON array.",
                     user=prompt,
                     specs=[spec],
-                    max_tokens=BATCH_SIZE * 150,  # ~150 tokens per item for the response
+                    max_tokens=config.models.max_tokens_filter,
                     config=config,
                 )
                 results = _parse_batch_response(raw_response)
