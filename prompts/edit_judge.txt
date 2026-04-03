@@ -22,14 +22,19 @@ Reject the draft (approved: false) if it:
 Respond ONLY with a JSON object:
 {{
   "approved": true,
+  "score": 9,
   "feedback": "One sentence on what's working."
 }}
 
 Or if not approved:
 {{
   "approved": false,
+  "score": 4,
   "feedback": "Specific, actionable feedback on what to fix (2-4 sentences). Name the structural or voice problem precisely."
 }}
+
+score is an integer from 1–10 reflecting overall quality independent of approval status.
+Score each draft on its own merits without reference to other iterations.
 
 Draft to evaluate:
 {draft}

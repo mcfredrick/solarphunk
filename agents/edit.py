@@ -67,14 +67,14 @@ def _build_rewriter_prompt(template: str, config: BlogConfig, body: str, feedbac
     )
 
 
-def _parse_judge_response(response: str) -> tuple[bool, str]:
-    """Parse judge LLM response into (approved, feedback). Returns (False, raw) on failure."""
+def _parse_judge_response(response: str) -> tuple[bool, str, int]:
+    """Parse judge LLM response into (approved, feedback, score). Returns (False, raw, 0) on failure."""
     cleaned = re.sub(r"```(?:json)?\s*|\s*```", "", response).strip()
 
     # Try direct parse first (ideal: model output is clean JSON)
     try:
         data = json.loads(cleaned)
-        return bool(data.get("approved", False)), str(data.get("feedback", ""))
+        return bool(data.get("approved", False)), str(data.get("feedback", "")), int(data.get("score", 0))
     except json.JSONDecodeError:
         pass
 
@@ -91,38 +91,23 @@ def _parse_judge_response(response: str) -> tuple[bool, str]:
                 if depth == 0:
                     try:
                         data = json.loads(cleaned[start : i + 1])
-                        return bool(data.get("approved", False)), str(data.get("feedback", ""))
+                        return bool(data.get("approved", False)), str(data.get("feedback", "")), int(data.get("score", 0))
                     except json.JSONDecodeError:
                         break
 
     logger.warning("Could not parse judge response as JSON; treating as rejection. Preview: %r", response[:200])
-    return False, response.strip()[:500]
+    return False, response.strip()[:500], 0
 
 
-def _pick_best(candidates: list[str], config: BlogConfig) -> int:
-    """Pick the best candidate body by word count proximity to the target range.
-
-    Avoids an LLM call — word count in range is a reliable structural proxy.
-    The original draft is at index 0; later iterations are generally more
-    refined, so ties are broken in favour of the latest candidate.
-    """
-    spec = getattr(config.theme, "post_length_words", "800-1200")
-    try:
-        lo, hi = (int(p.strip()) for p in spec.split("-"))
-    except (ValueError, AttributeError):
-        lo, hi = 800, 1200
-    midpoint = (lo + hi) / 2
-
-    best_idx = len(candidates) - 1  # default: most recent iteration
-    best_score = float("inf")
-    for i, body in enumerate(candidates):
-        wc = len(body.split())
-        score = abs(wc - midpoint)
-        if score < best_score:
+def _pick_best(scores: list[int]) -> int:
+    """Return the index of the highest-scored candidate. Ties go to the latest iteration."""
+    best_idx = 0
+    best_score = -1
+    for i, score in enumerate(scores):
+        if score >= best_score:
             best_score = score
             best_idx = i
-
-    logger.debug("pick_best selected candidate %d (word count proximity scoring)", best_idx)
+    logger.debug("pick_best selected candidate %d (score=%d)", best_idx, best_score)
     return best_idx
 
 
@@ -143,26 +128,17 @@ def _edit_draft(
     original_fm, _ = parse_frontmatter(original_content)
     current_body = parse_frontmatter(original_content)[1]
     candidates = [current_body]  # store bodies only; frontmatter is fixed
+    candidate_scores = [0]       # judge score per candidate (0 = unscored)
 
     approved = False
     iteration = 0
 
-    # Parse target word count range once for use in structural checks
-    spec = getattr(config.theme, "post_length_words", "800-1200")
-    try:
-        min_words, _ = (int(p.strip()) for p in spec.split("-"))
-    except (ValueError, AttributeError):
-        min_words = 400  # conservative floor
-
     for iteration in range(1, max_iter + 1):
-        # Structural pre-check: catch obvious problems in code before burning an LLM call.
-        word_count = len(current_body.split())
+        # Structural pre-check: catch obvious problems before burning an LLM call.
         research_sources = original_fm.get("research_sources", [])
         citations_present = any(src in current_body for src in research_sources)
 
         structural_issues = []
-        if word_count < min_words // 2:
-            structural_issues.append(f"body is too short ({word_count} words, minimum ~{min_words // 2})")
         if not current_body.strip():
             structural_issues.append("body is empty")
         if research_sources and not citations_present:
@@ -172,6 +148,7 @@ def _edit_draft(
             feedback = "Structural issues: " + "; ".join(structural_issues) + ". Rewrite the post body in full."
             logger.info("Structural pre-check failed (draft=%s, iter=%d): %s", path.name, iteration, feedback)
             approved = False
+            score = 0
         else:
             judge_prompt = _build_judge_prompt(judge_template, config, current_body)
             judge_response, model_used = call_llm(
@@ -182,8 +159,9 @@ def _edit_draft(
                 config=config,
             )
             logger.info("Judge used model %s (draft=%s, iter=%d)", model_used, path.name, iteration)
-            approved, feedback = _parse_judge_response(judge_response)
-            logger.info("Judge decision: approved=%s, feedback=%r", approved, feedback[:100])
+            approved, feedback, score = _parse_judge_response(judge_response)
+            candidate_scores[-1] = score  # score the current (most recent) candidate
+            logger.info("Judge decision: approved=%s, score=%d, feedback=%r", approved, score, feedback[:100])
 
         if approved:
             break
@@ -206,12 +184,13 @@ def _edit_draft(
         else:
             current_body = revised_body.strip()
         candidates.append(current_body)
+        candidate_scores.append(0)  # will be scored next iteration
 
     if not approved and len(candidates) > 1:
-        logger.info("Iteration limit reached for %s — picking best of %d candidates", path.name, len(candidates))
-        best_idx = _pick_best(candidates, config)
+        logger.info("Iteration limit reached for %s — picking best of %d candidates by judge score", path.name, len(candidates))
+        best_idx = _pick_best(candidate_scores)
         current_body = candidates[best_idx]
-        logger.info("Selected candidate %d as best", best_idx)
+        logger.info("Selected candidate %d as best (score=%d)", best_idx, candidate_scores[best_idx])
 
     # Write quality_iterations into the original frontmatter and save
     final_fm = dict(original_fm)
