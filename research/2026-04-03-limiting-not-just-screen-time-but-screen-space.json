@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-03-limiting-not-just-screen-time-but-screen-space",
+  "fetched_at": "2026-04-03T01:44:28.814183Z",
+  "source": {
+    "feed_url": "https://www.noemamag.com/feed/",
+    "article_url": "https://www.noemamag.com/limiting-not-just-screen-time-but-screen-space",
+    "feed_name": "Noema Magazine"
+  },
+  "raw": {
+    "title": "Limiting Not Just Screen Time, But Screen Space",
+    "published": "2026-04-02T13:09:19",
+    "excerpt": "<p>The post <a href=\"https://www.noemamag.com/limiting-not-just-screen-time-but-screen-space\">Limiting Not Just Screen Time, But Screen Space</a> appeared first on <a href=\"https://www.noemamag.com\">NOEMA</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "The author reflects on the encroachment of digital technology into private spaces, suggesting a rethinking of how we integrate technology with ecological and personal boundaries.",
+    "themes": [
+      "ecological-restoration",
+      "community-organizing"
+    ],
+    "lateral_potential": "Bridges to digital detox movements and intentional community design.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "beyond-human-value-reimagining-resource-allocation"
+}

@@ -22,14 +22,20 @@ Reject the draft (approved: false) if it:
 Respond ONLY with a JSON object:
 {{
   "approved": true,
-  "feedback": "One sentence on what's working."
+  "score": 9,
+  "feedback": "One sentence."
 }}
 
 Or if not approved:
 {{
   "approved": false,
-  "feedback": "Specific, actionable feedback on what to fix (2-4 sentences). Name the structural or voice problem precisely."
+  "score": 4,
+  "feedback": "One sentence naming the single most important thing to fix."
 }}
+
+score is an integer from 1–10 reflecting overall quality independent of approval status.
+Score each draft on its own merits without reference to other iterations.
+feedback must be exactly one sentence — the rewriter needs a precise target, not a list.
 
 Draft to evaluate:
 {draft}

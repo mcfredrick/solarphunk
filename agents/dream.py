@@ -83,14 +83,17 @@ def build_research_block(notes: list[dict]) -> str:
         raw = note.get("raw", {})
         llm = note.get("llm_processed", {})
         lines.append(f"### [{note_id}]")
-        lines.append(f"**Title:** {raw.get('title', '')}")
-        lines.append(f"**Published:** {raw.get('published', '')}")
-        if llm.get("summary"):
-            lines.append(f"**Summary:** {llm['summary']}")
-        if llm.get("themes"):
-            lines.append(f"**Themes:** {', '.join(llm['themes'])}")
-        if llm.get("lateral_potential"):
-            lines.append(f"**Lateral potential:** {llm['lateral_potential']}")
+        lines.append(f"**Title:** {raw.get('title') or note.get('title', '')}")
+        lines.append(f"**Published:** {raw.get('published') or note.get('fetched_at', '')}")
+        summary = llm.get("summary") or note.get("summary", "")
+        themes = llm.get("themes") or note.get("themes", [])
+        lateral = llm.get("lateral_potential") or note.get("lateral_potential", "")
+        if summary:
+            lines.append(f"**Summary:** {summary}")
+        if themes:
+            lines.append(f"**Themes:** {', '.join(themes)}")
+        if lateral:
+            lines.append(f"**Lateral potential:** {lateral}")
         lines.append("")
     return "\n".join(lines)
 
@@ -102,6 +105,11 @@ def build_recent_posts_block(posts: list[dict]) -> str:
     for post in posts:
         lines.append(f"- **{post['title']}** ({post['date']}) — slug: {post['slug']}")
     return "\n".join(lines)
+
+
+def extract_cited_note_ids(body: str, notes: list[dict]) -> list[str]:
+    """Return IDs of notes whose ID string appears verbatim in the post body."""
+    return [note["id"] for note in notes if note.get("id") and note["id"] in body]
 
 
 def mark_notes_used(notes: list[dict], dream_slug: str) -> None:
@@ -238,13 +246,17 @@ async def run_dream(config: BlogConfig, specs: list[ModelSpec], force: bool = Fa
 
         metadata, body = _parse_llm_response(raw_response)
 
-        # Build frontmatter entirely in code — LLM owns title/tags/sources/lateral_move only
+        # research_sources is extracted deterministically from the body — never from LLM output
+        cited_ids = extract_cited_note_ids(body, notes)
+        if not cited_ids:
+            logger.warning("No known note IDs found in draft body — model may not have grounded in research")
+
         fm = {
             "title": metadata["title"],
             "date": today,
             "draft": False,
             "tags": metadata["tags"],
-            "research_sources": metadata["research_sources"],
+            "research_sources": cited_ids,
             "lateral_move": metadata["lateral_move"],
         }
         draft_section = render_frontmatter(fm) + "\n" + body
