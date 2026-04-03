@@ -83,14 +83,17 @@ def build_research_block(notes: list[dict]) -> str:
         raw = note.get("raw", {})
         llm = note.get("llm_processed", {})
         lines.append(f"### [{note_id}]")
-        lines.append(f"**Title:** {raw.get('title', '')}")
-        lines.append(f"**Published:** {raw.get('published', '')}")
-        if llm.get("summary"):
-            lines.append(f"**Summary:** {llm['summary']}")
-        if llm.get("themes"):
-            lines.append(f"**Themes:** {', '.join(llm['themes'])}")
-        if llm.get("lateral_potential"):
-            lines.append(f"**Lateral potential:** {llm['lateral_potential']}")
+        lines.append(f"**Title:** {raw.get('title') or note.get('title', '')}")
+        lines.append(f"**Published:** {raw.get('published') or note.get('fetched_at', '')}")
+        summary = llm.get("summary") or note.get("summary", "")
+        themes = llm.get("themes") or note.get("themes", [])
+        lateral = llm.get("lateral_potential") or note.get("lateral_potential", "")
+        if summary:
+            lines.append(f"**Summary:** {summary}")
+        if themes:
+            lines.append(f"**Themes:** {', '.join(themes)}")
+        if lateral:
+            lines.append(f"**Lateral potential:** {lateral}")
         lines.append("")
     return "\n".join(lines)
 
