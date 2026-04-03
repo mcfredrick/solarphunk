@@ -23,5 +23,5 @@
     "relevance_score": 0.85,
     "model": "private/qwen3:8b"
   },
-  "used_in_dream": null
+  "used_in_dream": "beyond-human-value-reimagining-resource-allocation"
 }

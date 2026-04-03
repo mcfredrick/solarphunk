@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-03-iran-war-is-pushing-consumers-to-break-up-with-fossil-fuels",
+  "fetched_at": "2026-04-03T01:44:28.814356Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1safx56/iran_war_is_pushing_consumers_to_break_up_with/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Iran War Is Pushing Consumers to Break Up With Fossil Fuels",
+    "published": "2026-04-02T12:23:49",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1safx56/iran_war_is_pushing_consumers_to_break_up_with/\"> <img alt=\"Iran War Is Pushing Consumers to Break Up With Fossil Fuels\" src=\"https://external-preview.redd.it/fBVzzi8OgsfeusSvgMQVRU7ldZoilOisdrkiMglCvVU.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=bd92a4549acd9dde906615de655f4af20c2f91c5\" title=\"Iran War Is Pushing Consumers to Break Up With Fossil Fuels\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/randolphquell\"> /u/randolphquell </a> <br /> <span><a href=\"https://www.bloomberg.com/news/features/2026-03-26/war-oil-price-shock-sparks-new-interest-in-green-tech-around-the-world?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc3NDUzMzY5MywiZXhwIjoxNzc1MTM4NDkzLCJhcnRpY2xlSWQiOiJUQ0hONDdLR0NURlkwMCIsImJjb25uZWN0SWQiOiIyMjc1RTYyODc5NjY0NjIyOUExMkRCMjU1OEYzNjQ2QiJ9._XQIjpjIFKfiSg5BKIl_W_dqcGmWpZ7Dh1Ibf2K8JJI&amp;leadSource=uverify%20wall&amp;utm_source=substack&amp;utm_medium=email\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1safx56/iran_war_is_pushing_consumers_to_break_up_with/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "The article highlights how geopolitical conflicts are driving consumer interest in renewable energy, linking fossil fuel dependency to societal shifts toward sustainability.",
+    "themes": [
+      "transition-towns",
+      "degrowth"
+    ],
+    "lateral_potential": "Connects to cooperative platforms by showing grassroots energy transitions.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "beyond-human-value-reimagining-resource-allocation"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-03-widening-the-definition-of-life",
+  "fetched_at": "2026-04-03T01:44:50.512879Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1saxfia/widening_the_definition_of_life/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Widening the definition of life",
+    "published": "2026-04-02T23:34:56",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1saxfia/widening_the_definition_of_life/\"> <img alt=\"Widening the definition of life\" src=\"https://external-preview.redd.it/mMt2iD-iOox3BwHGU8d3bE-5yXU4orRBRcGyFA5iK1U.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=27f100fd2030b47ac29c8f032a09dc4c92b78556\" title=\"Widening the definition of life\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/ChampionshipSalt696\"> /u/ChampionshipSalt696 </a> <br /> <span><a href=\"https://youtu.be/ZDlmZkXYNAY?si=BAqquWSaLAXJxuSx\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1saxfia/widening_the_definition_of_life/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "This article explores redefining life's boundaries through bioengineering and synthetic biology, proposing new frameworks for ecological interaction and sustainable innovation.",
+    "themes": [
+      "biomimicry",
+      "open-science",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "Connects to synthetic biology applications in ecological restoration and decentralized scientific collaboration models.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "beyond-human-value-reimagining-resource-allocation"
+}

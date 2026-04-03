@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-03-why-i-think-money-will-become-obsolete",
+  "fetched_at": "2026-04-03T01:44:28.815955Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1salhxs/why_i_think_money_will_become_obsolete/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Why I think money will become obsolete",
+    "published": "2026-04-02T16:03:13",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>When you really look into it, money is just a medium of exchange by which we acquire goods and services in society. We all know the basics. We work in society in order to get paid. Neo-liberals, liberals and capitalists will tell us that we sell our labor in order to earn money. On the surface this system seem fine and for many years it has more or less functioned. <strong>However:</strong> Robots and automation like <a href=\"https://manual.asimov.inc/v1\">Asimov v1</a> and <a href=\"https://bostondynamics.com/products/atlas/\">Boston dynamics's Atlas </a>will change this dynamic. Robots and automation can work for free and they can do it day and night with minimal amounts of breaks, unlike human beings. Okay then... Why not let robots produce the things humans need and give it all away for free?</p> <p>A lot of capitalists make the claim that communism can't work because humans won't work for free. Personally I think that is a fair criticism. <strong>However:</strong> Robots don't have an issue working for free, so when robots and automation become advanced enough they will be able to provide all of humanities needs for free. Which will eventually make money obsolete and unnecessary.</p> <p>From a solarpunk perspective I believe that we as a society should try to reach this type of society and technological advancement. Technology should help us create a society of abundance. </p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/SpeculatingFellow\"> /u/SpeculatingFellow </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1salhxs/why_i_think_money_will_become_obsolete/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1salhxs/why_i_think_money_will_become_obsolete/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "The author speculates on the obsolescence of money due to automation, linking economic systems to post-growth sustainability models.",
+    "themes": [
+      "degrowth",
+      "post-growth"
+    ],
+    "lateral_potential": "Connects to commons governance by reimagining value systems beyond currency.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "beyond-human-value-reimagining-resource-allocation"
+}
