@@ -7,6 +7,7 @@ from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
 
+from agents.dream import extract_cited_note_ids
 from lib.config import BlogConfig, ModelSpec
 from lib.hugo import parse_frontmatter, render_frontmatter
 from lib.llm import call_llm
@@ -133,16 +134,23 @@ def _edit_draft(
     approved = False
     iteration = 0
 
-    for iteration in range(1, max_iter + 1):
-        # Structural pre-check: catch obvious problems before burning an LLM call.
-        research_sources = original_fm.get("research_sources", [])
-        citations_present = any(src in current_body for src in research_sources)
+    # Load all known note IDs once for deterministic citation scanning
+    research_notes = []
+    research_dir = Path("research")
+    if research_dir.exists():
+        import json as _json
+        for p in research_dir.glob("*.json"):
+            try:
+                d = _json.loads(p.read_text())
+                if d.get("id"):
+                    research_notes.append(d)
+            except Exception:
+                pass
 
+    for iteration in range(1, max_iter + 1):
         structural_issues = []
         if not current_body.strip():
             structural_issues.append("body is empty")
-        if research_sources and not citations_present:
-            structural_issues.append("no research note IDs cited in body")
 
         if structural_issues:
             feedback = "Structural issues: " + "; ".join(structural_issues) + ". Rewrite the post body in full."
@@ -192,9 +200,10 @@ def _edit_draft(
         current_body = candidates[best_idx]
         logger.info("Selected candidate %d as best (score=%d)", best_idx, candidate_scores[best_idx])
 
-    # Write quality_iterations into the original frontmatter and save
+    # Recompute research_sources deterministically from the final body
     final_fm = dict(original_fm)
     final_fm["quality_iterations"] = iteration
+    final_fm["research_sources"] = extract_cited_note_ids(current_body, research_notes)
     updated = render_frontmatter(final_fm) + "\n" + current_body
     path.write_text(updated)
     logger.info("Edit complete: %s (iterations=%d, approved=%s)", path.name, iteration, approved)

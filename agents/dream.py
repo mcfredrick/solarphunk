@@ -107,6 +107,11 @@ def build_recent_posts_block(posts: list[dict]) -> str:
     return "\n".join(lines)
 
 
+def extract_cited_note_ids(body: str, notes: list[dict]) -> list[str]:
+    """Return IDs of notes whose ID string appears verbatim in the post body."""
+    return [note["id"] for note in notes if note.get("id") and note["id"] in body]
+
+
 def mark_notes_used(notes: list[dict], dream_slug: str) -> None:
     for note in notes:
         note_id = note.get("id", "")
@@ -241,13 +246,17 @@ async def run_dream(config: BlogConfig, specs: list[ModelSpec], force: bool = Fa
 
         metadata, body = _parse_llm_response(raw_response)
 
-        # Build frontmatter entirely in code — LLM owns title/tags/sources/lateral_move only
+        # research_sources is extracted deterministically from the body — never from LLM output
+        cited_ids = extract_cited_note_ids(body, notes)
+        if not cited_ids:
+            logger.warning("No known note IDs found in draft body — model may not have grounded in research")
+
         fm = {
             "title": metadata["title"],
             "date": today,
             "draft": False,
             "tags": metadata["tags"],
-            "research_sources": metadata["research_sources"],
+            "research_sources": cited_ids,
             "lateral_move": metadata["lateral_move"],
         }
         draft_section = render_frontmatter(fm) + "\n" + body

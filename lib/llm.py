@@ -94,6 +94,22 @@ def _parse_retry_after(exc: Exception) -> float | None:
         return None
 
 
+def _specs_with_private_fallback(specs: list[ModelSpec], config: BlogConfig) -> list[ModelSpec]:
+    """Append the private server as a last-resort fallback if not already in the list."""
+    private_cfg = config.providers.get("private")
+    if not private_cfg:
+        return specs
+    # Use the first model from the private provider's dream_synthesis list as a generic fallback
+    private_specs = [s for s in config.models.dream_synthesis if s.provider == "private"]
+    if not private_specs:
+        return specs
+    fallback = private_specs[0]
+    already_present = any(s.provider == fallback.provider and s.model == fallback.model for s in specs)
+    if already_present:
+        return specs
+    return list(specs) + [fallback]
+
+
 def call_llm(
     system: str,
     user: str,
@@ -102,8 +118,13 @@ def call_llm(
     config: BlogConfig,
     retries_per_spec: int = 3,
 ) -> tuple[str, str]:
-    """Try each (provider, model) spec in order. Returns (content, model_id) on success."""
+    """Try each (provider, model) spec in order. Returns (content, model_id) on success.
+
+    The private server is always appended as a last-resort fallback so no step
+    can fully exhaust all options when OpenRouter is rate-limited.
+    """
     last_exc: Exception | None = None
+    specs = _specs_with_private_fallback(specs, config)
 
     for spec in specs:
         provider_cfg = config.providers.get(spec.provider)
