@@ -1,0 +1,27 @@
+{
+  "id": "2026-04-03-so-uh-anyone-want-to-give-this-a-shot",
+  "fetched_at": "2026-04-03T08:21:29.733490Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sb0g9e/so_uh_anyone_want_to_give_this_a_shot/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "So uh... Anyone want to give this a shot?",
+    "published": "2026-04-03T01:51:12",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>So, I recently posted that article about that college in the desert and it got me thinking...</p> <p>Aside from $$$ (and being tied to a capitalist economic framework), what are the barriers preventing people from buying several acres and giving this a shot?</p> <p>Even just as a test space. This isn't at the stage where we can actually start our own collective completely divorced from mainstream society, but what prevents people with a vision, know-how and a bit of reckless hope from trying and failing to get this eco-utopia off the ground?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/CassieGemini\"> /u/CassieGemini </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sb0g9e/so_uh_anyone_want_to_give_this_a_shot/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sb0g9e/so_uh_anyone_want_to_give_this_a_shot/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "This post explores barriers to creating eco-utopias beyond financial constraints, focusing on practical challenges for establishing off-grid communities and testing regenerative living models.",
+    "themes": [
+      "community organizing",
+      "appropriate technology",
+      "degrowth",
+      "cooperative platforms"
+    ],
+    "lateral_potential": "Connects to participatory democracy by exploring how decentralized, non-capitalist communities could reshape governance models.",
+    "relevance_score": 0.95,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": null
+}
