@@ -108,7 +108,7 @@ models:
     - provider: openrouter
       model: "google/gemma-3-27b-it:free"
     - provider: private
-      model: "deepseek-r1:latest"
+      model: "gemma3:12b"
   # Edit: judge uses fast models for feedback, rewriter uses larger models for drafts
   edit_judge:
     - provider: private

@@ -2,6 +2,13 @@
 
 These are out of scope for the current PoC but worth building later.
 
+## Let's carefully consider the sources we use for research
+We want to use things that are high quality and relevant to the topic. We don't want to use things that are too broad or too narrow. We want to respect sites that don't want to be scraped.
+
+## Long term memory for agents - LightRAG?
+The agents should have a way to store and retrieve information across runs. This could be as simple as a database or as complex as a vector store. What is the initial implementation? Is there something simple enough but more efficient?
+
+
 ## TTS Podcast Version
 Convert each post to audio using a TTS voice model — soothing female/androgynous quality (e.g. ElevenLabs). Layer with ambient birdsong and soft generative background music. Publish as an RSS podcast feed alongside the blog. Could run as a separate GitHub Actions step triggered after publish.
 
