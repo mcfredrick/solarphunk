@@ -83,7 +83,8 @@ def cmd_publish(args: argparse.Namespace) -> None:
         print(f"Validation errors ({len(result.errors)}):")
         for err in result.errors:
             print(f"  - {err}")
-        sys.exit(1)
+        if result.published == 0:
+            sys.exit(1)
 
 
 def cmd_pipeline(args: argparse.Namespace) -> None:
@@ -131,7 +132,8 @@ def cmd_pipeline(args: argparse.Namespace) -> None:
         if publish_result.errors:
             for err in publish_result.errors:
                 print(f"  - {err}")
-            sys.exit(1)
+            if publish_result.published == 0:
+                sys.exit(1)
 
     print("=== Pipeline complete ===")
 
