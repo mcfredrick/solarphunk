@@ -9,7 +9,7 @@ from datetime import date
 from pathlib import Path
 
 from lib.config import BlogConfig, ModelSpec
-from lib.hugo import dated_filename, make_slug, render_frontmatter
+from lib.hugo import dated_filename, make_slug, parse_frontmatter, render_frontmatter
 from lib.llm import call_llm
 from lib.state import GateResult, check_dream_gate, get_lock_mtime, rollback_lock, touch_lock
 
