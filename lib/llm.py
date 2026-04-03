@@ -164,7 +164,7 @@ def call_llm(
             except Exception as exc:
                 last_exc = exc
                 status = getattr(getattr(exc, "response", None), "status_code", None)
-                is_retryable = status in (500, 502, 503, 504) or status is None
+                is_retryable = status in (500, 502, 503, 504, 524) or status is None
 
                 if not is_retryable or attempt == retries_per_spec - 1:
                     logger.warning(
