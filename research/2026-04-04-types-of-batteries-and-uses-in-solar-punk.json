@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-04-types-of-batteries-and-uses-in-solar-punk",
+  "fetched_at": "2026-04-04T08:17:09.203229Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sbtjjk/types_of_batteries_and_uses_in_solar_punk/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Types of \"batteries\" and uses in solar punk.",
+    "published": "2026-04-03T23:39:02",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Gravity battery- elevator</p> <p><a href=\"https://youtu.be/fdcS_sps5CU?si=RCFGpsrZ4HQJF9KY\">https://youtu.be/fdcS_sps5CU?si=RCFGpsrZ4HQJF9KY</a></p> <p>-use heavy materials that can't be made into something else for the counterweights.would give some incentive to install more elevators, making buildings more accessible.</p> <p>Water battery- water towers,Turbine at bottom of tower that turns when water is released, same with storm runoff.</p> <p><a href=\"https://youtu.be/buF8ASmwXt4?si=rTo-4wWgBBNhOml7\">https://youtu.be/buF8ASmwXt4?si=rTo-4wWgBBNhOml7</a></p> <p>Sand battery- used to heat water, as well as provide energy.</p> <p><a href=\"https://youtu.be/bZ9TyJ1bQ3Y?si=AqL-r0YbKPZg1JeQ\">https://youtu.be/bZ9TyJ1bQ3Y?si=AqL-r0YbKPZg1JeQ</a></p> <p>Let me know if I missed any. I think to be proper solar punk, we should have a variety of options for battery storage, even if they're not the most efficient, because we're taking up all the available energy we can, within our own footprint.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/ChampionshipSalt696\"> /u/ChampionshipSalt696 </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sbtjjk/types_of_batteries_and_uses_in_solar_punk/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sbtjjk/types_of_batteries_and_uses_in_solar_punk/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "A user explores alternative 'batteries' like gravity and sand systems, emphasizing decentralized, nature-inspired energy storage solutions.",
+    "themes": [
+      "appropriate-technology",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "Bridges to biomimicry by replicating natural energy storage mechanisms in engineered systems.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-weight-of-potential-energy-storage-beyond-lithium"
+}

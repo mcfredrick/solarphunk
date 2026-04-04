@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-04-diying-a-solar-charging-station-for-my-ebike-to-commute-off",
+  "fetched_at": "2026-04-04T08:17:09.202867Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sbq30o/diying_a_solar_charging_station_for_my_ebike_to/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "DIYing a Solar Charging Station for my Ebike to commute off-grid and emissions free! Mostly using thrifted/used materials for cheap.",
+    "published": "2026-04-03T21:15:48",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sbq30o/diying_a_solar_charging_station_for_my_ebike_to/\"> <img alt=\"DIYing a Solar Charging Station for my Ebike to commute off-grid and emissions free! Mostly using thrifted/used materials for cheap.\" src=\"https://external-preview.redd.it/9km6Ep_YwTEGTI7a3rIf4Wp2if9R82vDeqKbq9BRtrg.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=3f636cac7e8bd3750ccd434012021edbf7dbc57d\" title=\"DIYing a Solar Charging Station for my Ebike to commute off-grid and emissions free! Mostly using thrifted/used materials for cheap.\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/The_Quiet_PartYT\"> /u/The_Quiet_PartYT </a> <br /> <span><a href=\"https://youtu.be/X_PoWWxN4dI?si=\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sbq30o/diying_a_solar_charging_station_for_my_ebike_to/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A user details a DIY solar charging station for an e-bike using upcycled materials, promoting off-grid, emissions-free transportation.",
+    "themes": [
+      "appropriate-technology",
+      "degrowth-and-post-growth"
+    ],
+    "lateral_potential": "Links to cooperative-platforms by emphasizing resource-sharing and localized energy solutions.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-weight-of-potential-energy-storage-beyond-lithium"
+}

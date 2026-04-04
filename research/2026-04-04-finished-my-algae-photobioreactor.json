@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-04-finished-my-algae-photobioreactor",
+  "fetched_at": "2026-04-04T08:17:09.202555Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sbotou/finished_my_algae_photobioreactor/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Finished my Algae Photobioreactor",
+    "published": "2026-04-03T20:27:36",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sbotou/finished_my_algae_photobioreactor/\"> <img alt=\"Finished my Algae Photobioreactor\" src=\"https://external-preview.redd.it/ni73L27y-W7qkPC1u3xjsgjxC_66s82VN3uHbC0b0lg.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=1eb2a00128bf3a883146b892355f09f44c39b507\" title=\"Finished my Algae Photobioreactor\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>I'm not sure if my goal is solarpunk. At the very least it's solarpunk adjacent. I envision a future where goods and services transition to localized nodes rather than global distribution systems. The transport of goods is a major problem source. It incentivizes food preservatives and makes it possible for food production to be commercialize by large corporations whose focus is on profits. Not food quality or health.</p> <p>My long term goal is to build a self-sustaining hab type home that will solve a lot of todays problems. Produce its own power, be efficient, durable, low-cost, sustainable, have its own aquaponic garden for fresh produce year round, and so on. This project is a stepping stone toward that goal. Eventually converging on a blueprint home system I can release open source to improve standard of living everywhere.</p> <p>This projects produces spirulina algae as an input to the future aquaponics system for full self-sufficiency. I'm sharing it with this group in case your interested. </p> <p>The work continues..</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Sector07_en\"> /u/Sector07_en </a> <br /> <span><a href=\"https://youtu.be/SLckTj_tJg4?si=y9-JFAE7aHlorL0b\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sbotou/finished_my_algae_photobioreactor/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A user shares their completed algae photobioreactor project, aiming to support localized, low-transport systems for sustainable goods production.",
+    "themes": [
+      "appropriate-technology",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "Connects to biomimicry by mimicking natural photosynthesis for energy capture.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-weight-of-potential-energy-storage-beyond-lithium"
+}
