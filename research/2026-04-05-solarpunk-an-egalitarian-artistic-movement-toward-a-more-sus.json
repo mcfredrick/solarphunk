@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-05-solarpunk-an-egalitarian-artistic-movement-toward-a-more-sus",
+  "fetched_at": "2026-04-05T08:17:00.196196Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sc9vai/solarpunk_an_egalitarian_artistic_movement_toward/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Solarpunk: An egalitarian, artistic movement toward a more sustainable world",
+    "published": "2026-04-04T13:55:04",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sc9vai/solarpunk_an_egalitarian_artistic_movement_toward/\"> <img alt=\"Solarpunk: An egalitarian, artistic movement toward a more sustainable world\" src=\"https://preview.redd.it/97iai33ei6tg1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=c61986bedc807c988ca3a66396ef56086721b40c\" title=\"Solarpunk: An egalitarian, artistic movement toward a more sustainable world\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/blue-fireflies\"> /u/blue-fireflies </a> <br /> <span><a href=\"https://www.reddit.com/r/RewildingOurStories/comments/1sc9u32/solarpunk_an_egalitarian_artistic_movement_toward/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sc9vai/solarpunk_an_egalitarian_artistic_movement_toward/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "An article defines solarpunk as an egalitarian artistic movement prioritizing sustainability, linking creative expression to systemic change and ecological harmony.",
+    "themes": [
+      "solarpunk aesthetics",
+      "participatory democracy",
+      "commons governance"
+    ],
+    "lateral_potential": "Connects artistic movements with grassroots governance models for inclusive innovation.",
+    "relevance_score": 0.85,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "cities-as-reefs-building-resilience-through-interconnected-s"
+}

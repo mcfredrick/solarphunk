@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-05-the-low-tech-magazine-a-solar-powered-website-about-low-tech",
+  "fetched_at": "2026-04-05T08:17:00.195702Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1scp5bz/the_low_tech_magazinea_solar_powered_website/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "The low tech magazine-a solar powered website about low tech solutions.",
+    "published": "2026-04-05T00:18:24",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>This website is available offline on the kiwix app. Simple inventions to solve common problems.</p> <p><a href=\"https://solar.lowtechmagazine.com/\">https://solar.lowtechmagazine.com/</a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/ChampionshipSalt696\"> /u/ChampionshipSalt696 </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1scp5bz/the_low_tech_magazinea_solar_powered_website/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1scp5bz/the_low_tech_magazinea_solar_powered_website/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "A solar-powered low-tech magazine provides offline access to practical, sustainable solutions through a Kiwix app, emphasizing accessible knowledge sharing.",
+    "themes": [
+      "open science",
+      "solarpunk aesthetics",
+      "appropriate technology"
+    ],
+    "lateral_potential": "Connects solarpunk culture with decentralized information ecosystems for equitable education.",
+    "relevance_score": 0.75,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "cities-as-reefs-building-resilience-through-interconnected-s"
+}

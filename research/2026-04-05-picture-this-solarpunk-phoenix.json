@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-05-picture-this-solarpunk-phoenix",
+  "fetched_at": "2026-04-05T08:17:00.196032Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1scmb9q/picture_this_solarpunk_phoenix/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Picture this: Solarpunk Phoenix",
+    "published": "2026-04-04T22:11:39",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p><strong>Homes/buildings:</strong></p> <p>houses are built of a fusion between modern construction and adobe. Adobe is native to the southwest, with cheap locally available materials, and it is perfect for thermoregulation, vastly reducing heating and A/C needs. Above each home is a rooftop garden. These rooftop gardens provide local produce, help keep things cool, and absorb stormwater. Beekeeping is practiced in these gardens to pollinate plants and produce honey. Composting is also practiced in these gardens to reduce food waste and improve the soil, and mulching is practiced for water retention and heat management. They are irrigated by drip irrigation reusing household wastewater.</p> <p><strong>Transportation:</strong></p> <p>Streets consist of wide sidewalks shaded with solar panel overhangs which also provide a significant chunk of the city\u2019s power. Streets are relatively narrow, and made of porous cool pavement. Electric Autonomous Waymo\u2019s are used for transportation hailed from an app. They are typically much smaller than most cars in our world, with different sizes available relative to passenger and cargo load. A robust electric streetcar network also traverses the city. Phoenix lies at the intersection of 3 high speed rail lines: the western railroad which runs up to Edmonton, the pacific railroad which runs up to Vancouver, and the ferrocaril occidental which runs to Guatemala City.</p> <p><strong>Surroundings</strong></p> <p>Through terraforming and \u201cBeaver Dam Analogues\u201c the vast suburban sprawl that once surrounded Phoenix is now a large ephemeral marsh. It helps absorb heavy rains from the southwest monsoon and slowly release the water into groundwater, preventing drought. Many unique desert wetland species can be found here.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/LiteratureOk4649\"> /u/LiteratureOk4649 </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1scmb9q/picture_this_solarpunk_phoenix/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1scmb9q/picture_this_solarpunk_phoenix/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "A detailed vision of solarpunk Phoenix describes locally-sourced adobe homes with rooftop gardens, beekeeping, composting, and water-efficient irrigation systems.",
+    "themes": [
+      "agroecology",
+      "ecological restoration",
+      "community organizing"
+    ],
+    "lateral_potential": "Connects urban agriculture with climate-resilient housing models for sustainable cities.",
+    "relevance_score": 0.9,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "cities-as-reefs-building-resilience-through-interconnected-s"
+}

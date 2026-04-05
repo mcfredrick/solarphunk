@@ -1,0 +1,27 @@
+{
+  "id": "2026-04-05-the-ag-coop-that-shares-more-than-machinery",
+  "fetched_at": "2026-04-05T08:16:28.398560Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-03/the-ag-coop-that-shares-more-than-machinery/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "The Ag Coop that Shares More than Machinery",
+    "published": "2026-04-03T10:55:23",
+    "excerpt": "What if, instead of going into debt to invest in their farms, farmers came together to pool equipment? What if, instead of struggling to run a small farm alone, there was extra help at hand? What if new entrants could draw on the experience of more established farmers in their local area? It may sound too good to be true, but this is the reality with France\u2019s network of Agricultural Machinery Cooperatives (CUMA)."
+  },
+  "llm_processed": {
+    "summary": "The article discusses the French Agricultural Machinery Cooperatives (CUMA), a network of local branches where farmers pool equipment, share expertise, and offer mutual aid. This model provides an alternative to traditional farming practices by fostering cooperation, reducing debt, and supporting new entrants into agriculture.",
+    "themes": [
+      "regenerative-economics",
+      "community-organizing",
+      "commons-governance",
+      "appropriate-technology"
+    ],
+    "lateral_potential": "This shows how a seemingly niche agricultural practice can be a pathway towards broader community resilience and localized economic systems.",
+    "relevance_score": 0.9,
+    "model": "private/gemma3:12b"
+  },
+  "used_in_dream": "cities-as-reefs-building-resilience-through-interconnected-s"
+}

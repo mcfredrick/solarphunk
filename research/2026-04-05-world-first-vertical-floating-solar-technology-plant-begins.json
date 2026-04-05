@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-05-world-first-vertical-floating-solar-technology-plant-begins",
+  "fetched_at": "2026-04-05T08:17:00.195444Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1scjmwv/world_first_vertical_floating_solar_technology/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "\"World first\" Vertical Floating Solar Technology Plant Begins Operation in Bavarian gravel pit",
+    "published": "2026-04-04T20:22:02",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I'm not certain they actually are the first globally, but it's a lovely project. Bavaria isn't far enough north that east-west vertical bifacial panels outperform flat solar in net power output, but there is already a huge amount of solar in the German grid producing at midday. For a commercial volt farm there's sometimes more money in serving the undersupplied morning and evening times, when the sun is low.</p> <p>Go much further north and with big northern daylight swings seasonally, vertical bifacials can actually outperform regular south facing panels! They are also pretty resistant against hail and wind storms!</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/cromlyngames\"> /u/cromlyngames </a> <br /> <span><a href=\"https://happyeconews.com/worlds-first-vertical-floating-solar-technology/?trk=comments_comments-list_comment-text\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1scjmwv/world_first_vertical_floating_solar_technology/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "A vertical floating solar plant in Bavaria demonstrates innovative solar technology that optimizes energy production and resists weather damage, offering a scalable renewable energy solution.",
+    "themes": [
+      "appropriate technology",
+      "ecological restoration",
+      "regenerative economics"
+    ],
+    "lateral_potential": "Bridges solar technology with flood-resilient infrastructure design for climate adaptation.",
+    "relevance_score": 0.95,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "cities-as-reefs-building-resilience-through-interconnected-s"
+}

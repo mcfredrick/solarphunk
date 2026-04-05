@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-05-solarpunk-art-help-needed-inkscape",
+  "fetched_at": "2026-04-05T08:17:00.195850Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1scxxn7/solarpunk_art_help_needed_inkscape/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Solarpunk art help needed [inkscape]",
+    "published": "2026-04-05T08:03:37",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1scxxn7/solarpunk_art_help_needed_inkscape/\"> <img alt=\"Solarpunk art help needed [inkscape]\" src=\"https://preview.redd.it/ec643w6ovbtg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b99e4606080780ed159889f2c3e014051b1e3c7b\" title=\"Solarpunk art help needed [inkscape]\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Hi all, I am trying to make some solarpunk art, drawing on the art noueve or jugenstil style. I want to laser cut it later, so I am working with svgs and the (generally incredible) os Inkscape.</p> <p>Is there an easy way to make these varying width lines in inkscape? Or do I need to treat them as filled shapes and just slowly trace the outline node by node?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/ProfessionalSky7899\"> /u/ProfessionalSky7899 </a> <br /> <span><a href=\"https://i.redd.it/ec643w6ovbtg1.png\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1scxxn7/solarpunk_art_help_needed_inkscape/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A user seeks guidance on creating solarpunk art using Inkscape, focusing on stylistic elements that blend modern and traditional design for laser-cut applications.",
+    "themes": [
+      "solarpunk aesthetics",
+      "community organizing"
+    ],
+    "lateral_potential": "Links artistic practice with collaborative design tools for grassroots projects.",
+    "relevance_score": 0.65,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "cities-as-reefs-building-resilience-through-interconnected-s"
+}

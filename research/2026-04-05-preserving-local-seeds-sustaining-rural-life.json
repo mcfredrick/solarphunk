@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-05-preserving-local-seeds-sustaining-rural-life",
+  "fetched_at": "2026-04-05T08:16:28.398723Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-02/preserving-local-seeds-sustaining-rural-life/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Preserving Local Seeds, Sustaining Rural Life",
+    "published": "2026-04-02T11:24:54",
+    "excerpt": "In Tughgoz village, located in the remote Ishkashim District of Tajikistan, agriculture is more than a livelihood \u2014 it is the foundation of daily life. Like many rural communities in the region, village residents rely on their land, local knowledge, and traditional seed varieties to sustain their families and protect their future."
+  },
+  "llm_processed": {
+    "summary": "This article focuses on a village in Tajikistan where residents are preserving and sharing local seeds to maintain agricultural traditions and ensure food security. It emphasizes the importance of agriculture as a cornerstone of rural life and preserving traditional knowledge.",
+    "themes": [
+      "agroecology",
+      "community-organizing",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "The focus on local seed preservation highlights the importance of biodiversity and cultural heritage in building resilient food systems, inspiring similar initiatives elsewhere.",
+    "relevance_score": 0.75,
+    "model": "private/gemma3:12b"
+  },
+  "used_in_dream": "cities-as-reefs-building-resilience-through-interconnected-s"
+}

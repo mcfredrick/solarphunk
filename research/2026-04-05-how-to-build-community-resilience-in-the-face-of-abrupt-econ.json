@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-05-how-to-build-community-resilience-in-the-face-of-abrupt-econ",
+  "fetched_at": "2026-04-05T08:16:28.398876Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-02/how-to-build-community-resilience-in-the-face-of-abrupt-economic-decline/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "How to build community resilience in the face of abrupt economic decline",
+    "published": "2026-04-02T10:30:36",
+    "excerpt": "Benicia, California, is set to lose its largest single\u00a0employer and source of tax revenue, a sprawling oil refinery. A Guardian article about this issue catalyzed this essay that describes what a thoughtful process might look like, if a community - any community - chose to pursue sustainability instead of economic growth."
+  },
+  "llm_processed": {
+    "summary": "The article suggests strategies for building community resilience in response to economic decline, specifically referencing a town facing challenges due to an oil refinery. It advocates for fostering social cohesion, diversified livelihoods, and prioritizing community well-being over constant economic growth.",
+    "themes": [
+      "community-organizing",
+      "degrowth-and-post-growth",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "This case study provides practical insights into how communities can navigate economic transitions and build resilience through mutual support and alternative economic models.",
+    "relevance_score": 0.65,
+    "model": "private/gemma3:12b"
+  },
+  "used_in_dream": "cities-as-reefs-building-resilience-through-interconnected-s"
+}

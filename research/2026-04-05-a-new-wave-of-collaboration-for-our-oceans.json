@@ -1,0 +1,27 @@
+{
+  "id": "2026-04-05-a-new-wave-of-collaboration-for-our-oceans",
+  "fetched_at": "2026-04-05T08:16:28.398290Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-03/a-new-wave-of-collaboration-for-our-oceans/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "A New Wave of Collaboration for Our Oceans",
+    "published": "2026-04-03T10:58:41",
+    "excerpt": "In January, we launched a brand-new\u00a0Marine Ecosystems Community of Practice\u00a0\u2013\u00a0a collaborative initiative bringing together four Ecosystem Restoration Communities (ERCs) working at the frontlines of coastal and marine restoration."
+  },
+  "llm_processed": {
+    "summary": "This article highlights a new collaborative initiative called Marine Ecosystems Community of Practice, uniting four groups working on coral reef and mangrove restoration in the Philippines, Kenya, and Egypt. The partnership aims to restore ecosystems and create regenerative, ocean-based livelihoods for local communities, supported by the NAIAD Foundation.",
+    "themes": [
+      "ecological-restoration",
+      "regenerative-economics",
+      "community-organizing",
+      "appropriate-technology"
+    ],
+    "lateral_potential": "This demonstrates how international collaboration can be used to address ecological challenges and foster economic resilience in coastal communities, potentially informing models for other vulnerable regions.",
+    "relevance_score": 0.8,
+    "model": "private/gemma3:12b"
+  },
+  "used_in_dream": "cities-as-reefs-building-resilience-through-interconnected-s"
+}

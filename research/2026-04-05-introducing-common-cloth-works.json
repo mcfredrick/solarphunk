@@ -1,0 +1,27 @@
+{
+  "id": "2026-04-05-introducing-common-cloth-works",
+  "fetched_at": "2026-04-05T08:16:28.399038Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-01/introducing-common-cloth-works/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Introducing Common Cloth Works",
+    "published": "2026-04-01T10:15:57",
+    "excerpt": "We\u2019d love you to follow our exciting journey into the specifics and challenges of vertically micro-manufacturing the first bioregional, ecological UK linen in decades!"
+  },
+  "llm_processed": {
+    "summary": "This article introduces Common Cloth Works, a UK-based initiative aiming to revitalize flax and linen production through bioregional practices, community collaboration, and creative expression.  It emphasizes the importance of supporting local infrastructure, fostering creativity, and prioritizing community over profit.",
+    "themes": [
+      "appropriate-technology",
+      "community-organizing",
+      "solarpunk-aesthetics",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "This project demonstrates how artistic expression can be interwoven with regenerative economic activities to create a resilient and culturally vibrant local economy.",
+    "relevance_score": 0.85,
+    "model": "private/gemma3:12b"
+  },
+  "used_in_dream": "cities-as-reefs-building-resilience-through-interconnected-s"
+}
