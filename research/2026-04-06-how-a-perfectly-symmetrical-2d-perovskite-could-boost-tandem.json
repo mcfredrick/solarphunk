@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-06-how-a-perfectly-symmetrical-2d-perovskite-could-boost-tandem",
+  "fetched_at": "2026-04-06T08:36:09.887673Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sd3g91/how_a_perfectly_symmetrical_2d_perovskite_could/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "How a 'perfectly symmetrical' 2D perovskite could boost tandem solar cells",
+    "published": "2026-04-05T13:19:45",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sd3g91/how_a_perfectly_symmetrical_2d_perovskite_could/\"> <img alt=\"How a 'perfectly symmetrical' 2D perovskite could boost tandem solar cells\" src=\"https://external-preview.redd.it/-xtLlj5msmOfhcPvqhL7qbMnhDtGZ2qR2pppq4vjrmM.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=4d028d344590d3220be15e1f0bf29817cfd62424\" title=\"How a 'perfectly symmetrical' 2D perovskite could boost tandem solar cells\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/striketheviol\"> /u/striketheviol </a> <br /> <span><a href=\"https://techxplore.com/news/2026-04-symmetrical-2d-perovskite-boost-tandem.html\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sd3g91/how_a_perfectly_symmetrical_2d_perovskite_could/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A scientific breakthrough in perovskite solar cell technology could enhance renewable energy efficiency, supporting solarpunk goals of sustainable energy systems.",
+    "themes": [
+      "appropriate-technology",
+      "ecological-restoration"
+    ],
+    "lateral_potential": "Links solar tech innovation to community organizing for equitable adoption of renewable energy.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": null
+}

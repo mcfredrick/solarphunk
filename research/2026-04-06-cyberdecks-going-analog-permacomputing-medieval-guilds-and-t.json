@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-06-cyberdecks-going-analog-permacomputing-medieval-guilds-and-t",
+  "fetched_at": "2026-04-06T08:36:09.887215Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sd6eem/cyberdecks_going_analog_permacomputing_medieval/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Cyberdecks, Going Analog, Permacomputing, Medieval Guilds, and the Arts and Crafts Movement",
+    "published": "2026-04-05T15:24:14",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sd6eem/cyberdecks_going_analog_permacomputing_medieval/\"> <img alt=\"Cyberdecks, Going Analog, Permacomputing, Medieval Guilds, and the Arts and Crafts Movement\" src=\"https://preview.redd.it/uzgkqxbg3etg1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=cd795e41c1281d825cd2c16a6697de388ae30520\" title=\"Cyberdecks, Going Analog, Permacomputing, Medieval Guilds, and the Arts and Crafts Movement\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p><a href=\"https://blog.hydroponictrash.solar/cyberdecks-going-analoge-and-convivial-technology/\">https://blog.hydroponictrash.solar/cyberdecks-going-analoge-and-convivial-technology/</a></p> <p>Cyberdecks seem to be having a resurgence, and the designs are changing for the better. More women, non-binary, and trans people are at the forefront of creating new designs. It's interesting that at the same time that people are wanting to go analog, cyberdecks are also taking off outside of the typical male-dominated tech spaces. </p> <p>It's been amazing to see more people bringing up solarpunk in these videos, and more videos questioning the resources that go into our tech.</p> <p>There is an interesting historical parallel with the Arts and Crafts movement, the Luddites, and medieval guild systems that have all hit the same points:</p> <p>Automation and industrialization sucks the life out of things. Everything becomes a copy of a copy because it's reproducible. But adding back the human touch, creativity, and authenticity seems to be where the new waves of change are heading - especially in this AI blip we are going through. </p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/HydroponicTrash\"> /u/HydroponicTrash </a> <br /> <span><a href=\"https://i.redd.it/uzgkqxbg3etg1.png\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sd6eem/cyberdecks_going_analog_permacomputing_medieval/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A blog post explores cyberdecks, analog technology, permacomputing, and medieval guilds as examples of convivial technology that aligns with solarpunk principles of sustainability and community-driven innovation.",
+    "themes": [
+      "appropriate-technology",
+      "solarpunk-aesthetics",
+      "convivial-technology"
+    ],
+    "lateral_potential": "Connects permacomputing to ecological restoration by reimagining tech design as part of regenerative systems.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": null
+}

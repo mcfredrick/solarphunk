@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-06-what-is-the-economy-of-the-solarpunk-future",
+  "fetched_at": "2026-04-06T08:36:09.887501Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sd8zkc/what_is_the_economy_of_the_solarpunk_future/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "What is the economy of the solarpunk future?",
+    "published": "2026-04-05T17:06:22",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>We\u2019ve seen that digital and notary currency is constantly rigged against us by morally deficient opportunists, gold standard is pointless with no intrinsic value outside of its chemical and tech utility, energy and food will ideally be universally available. So what will we exchange, what with and what for, what will keep the incentive for the production of good and arts of trades and services without the almighty dollar. What industries and occupations will survive. How will the work week look, how will science be funded. Will we all be farmers, how will land, power and essentials be distributed. Will we see a resurgence in polymaths, as the division of labour at a society level in to specific worker roles dissolves.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Solar_sinner\"> /u/Solar_sinner </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sd8zkc/what_is_the_economy_of_the_solarpunk_future/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sd8zkc/what_is_the_economy_of_the_solarpunk_future/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "A discussion on designing an economy for a solarpunk future, exploring alternatives to currency, work structures, and resource distribution without reliance on traditional market systems.",
+    "themes": [
+      "regenerative-economics",
+      "degrowth",
+      "commons-governance"
+    ],
+    "lateral_potential": "Bridges economic models with ecological restoration by rethinking value systems as regenerative.",
+    "relevance_score": 0.9,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": null
+}
