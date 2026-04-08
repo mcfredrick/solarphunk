@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-08-why-does-no-one-admit-it",
+  "fetched_at": "2026-04-08T08:30:36.909239Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1setq7k/why_does_no_one_admit_it/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Why does no one admit it?",
+    "published": "2026-04-07T11:51:27",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>In this subreddit I'm seeing a lot of posts asking &quot;how will the economy work&quot; and in the comments a lot of people describing hypothetical new economic systems, without realizing that they're all talking about Socialism/Anarchism/Communism.</p> <p>Read, for example, Kohei Saito's books on ecology and socialism, and you will notice that you are saying the same thing.</p> <p>So here's the answer to all those posts: </p> <p>In solarpunk the economic system will be DIRECT DEMOCRACY on the means of production/workplace, which is Communism or Anarchism or if there will be full automation, planning and distribution of goods will be needed, which is still socialism/communism</p> <p>And this is not undeniable, because I have seen many walls of text written to &quot;describe an alternative post-capitalist system&quot; and simply recreate Marx's communism or the anarchism of the Zapatista communities. </p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Eve_0f\"> /u/Eve_0f </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1setq7k/why_does_no_one_admit_it/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1setq7k/why_does_no_one_admit_it/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "Discusses solarpunk's potential to integrate direct democracy and cooperative economic models as alternatives to capitalist systems.",
+    "themes": [
+      "degrowth",
+      "cooperative platforms",
+      "participatory democracy"
+    ],
+    "lateral_potential": "Links to blockchain-based resource management systems",
+    "relevance_score": 0.75,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-guilded-grid-reimagining-energy-through-local-craft"
+}

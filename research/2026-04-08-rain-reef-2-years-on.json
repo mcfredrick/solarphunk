@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-08-rain-reef-2-years-on",
+  "fetched_at": "2026-04-08T08:30:36.908788Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sesbqx/rain_reef_2_years_on/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Rain reef, 2 years on",
+    "published": "2026-04-07T10:40:05",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sesbqx/rain_reef_2_years_on/\"> <img alt=\"Rain reef, 2 years on\" src=\"https://preview.redd.it/9t2wm61myqtg1.jpg?width=140&amp;height=93&amp;auto=webp&amp;s=0a5727db603e43ee10dfafacd260d982a253bfb6\" title=\"Rain reef, 2 years on\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Via <a href=\"https://www.linkedin.com/posts/urbanreef_bioreceptive-urbanreef-bioreceptivedesign-ugcPost-7445757369260769280-9FZH\">https://www.linkedin.com/posts/urbanreef_bioreceptive-urbanreef-bioreceptivedesign-ugcPost-7445757369260769280-9FZH</a></p> <p>This Rain Reef at The Green Village at the Delft University of Technology has been installed nearly two years ago, without any treatment or seeding. The various conditions emerging from the porous morphology at multiple scales attract a diversity of species colonising the structure spontaneoulsy. The reef provides conditions, the ecosystem finds its way.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/cromlyngames\"> /u/cromlyngames </a> <br /> <span><a href=\"https://www.reddit.com/gallery/1sesbqx\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sesbqx/rain_reef_2_years_on/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A bioreceptive design project called 'Rain Reef' has been installed at a university for two years, showcasing how urban infrastructure can support marine life through biomimetic materials.",
+    "themes": [
+      "ecological restoration",
+      "biomimicry",
+      "appropriate technology"
+    ],
+    "lateral_potential": "Enables connections between urban ecology and coastal resilience strategies",
+    "relevance_score": 0.85,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-guilded-grid-reimagining-energy-through-local-craft"
+}

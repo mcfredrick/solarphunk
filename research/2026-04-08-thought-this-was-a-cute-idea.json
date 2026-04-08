@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-08-thought-this-was-a-cute-idea",
+  "fetched_at": "2026-04-08T08:30:36.909661Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sfgfcq/thought_this_was_a_cute_idea/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Thought this was a cute idea",
+    "published": "2026-04-08T02:29:38",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sfgfcq/thought_this_was_a_cute_idea/\"> <img alt=\"Thought this was a cute idea\" src=\"https://external-preview.redd.it/_eBo1k-csHZf3Mh0YR0NsJTQiocxJ7AOUwUxJXlOg94.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=45c681e96c4d9f88855f794c1929cf369eed770b\" title=\"Thought this was a cute idea\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/ChampionshipSalt696\"> /u/ChampionshipSalt696 </a> <br /> <span><a href=\"https://youtube.com/shorts/SkTxPmur8wI?si=2vDU5x-DH-z9tSsz\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sfgfcq/thought_this_was_a_cute_idea/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A creative project blending art and ecology, potentially contributing to solarpunk's aesthetic and cultural goals.",
+    "themes": [
+      "solarpunk aesthetics",
+      "biomimicry"
+    ],
+    "lateral_potential": "Links to eco-art installations",
+    "relevance_score": 0.65,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-guilded-grid-reimagining-energy-through-local-craft"
+}

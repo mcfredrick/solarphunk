@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-08-thoughts-on-xtina-chus-solarpunks",
+  "fetched_at": "2026-04-08T08:30:36.909790Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sfa268/thoughts_on_xtina_chus_solarpunks/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Thoughts on Xtina Chu\u2019s \u201cSolarpunks\u201d",
+    "published": "2026-04-07T21:57:16",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019m curious about people\u2019s thoughts on Christina Chu\u2019s non-profit SOLARPUNKS. Does her group\u2019s activities represent steps towards your vision for a solarpunk future? Or it is more like corporate appropriation of the concept to green wash capitalist practices by companies like Nike, Universal, and Rivian?</p> <p><a href=\"https://www.hopesolutions.services/post/the-sun-also-powers-how-xtina-chu-is-making-clean-energy-a-cultural-movement\">https://www.hopesolutions.services/post/the-sun-also-powers-how-xtina-chu-is-making-clean-energy-a-cultural-movement</a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/breadbreaker4u\"> /u/breadbreaker4u </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sfa268/thoughts_on_xtina_chus_solarpunks/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sfa268/thoughts_on_xtina_chus_solarpunks/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "Examines whether Xtina Chu's solarpunk initiatives represent authentic grassroots movements or corporate greenwashing strategies.",
+    "themes": [
+      "commons governance",
+      "degrowth",
+      "participatory democracy"
+    ],
+    "lateral_potential": "Connects to open-source energy innovation networks",
+    "relevance_score": 0.65,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-guilded-grid-reimagining-energy-through-local-craft"
+}

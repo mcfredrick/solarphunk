@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-08-rooftop-solar-now-accounts-for-one-fifth-of-puerto-ricos-gen",
+  "fetched_at": "2026-04-08T08:30:36.909088Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sezppo/rooftop_solar_now_accounts_for_one_fifth_of/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Rooftop solar now accounts for one fifth of Puerto Rico\u2019s generation capacity",
+    "published": "2026-04-07T15:45:30",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sezppo/rooftop_solar_now_accounts_for_one_fifth_of/\"> <img alt=\"Rooftop solar now accounts for one fifth of Puerto Rico\u2019s generation capacity\" src=\"https://external-preview.redd.it/uEG2hLyPo2GYQvE0KQIJZL-Sy9KHLe9dY6kZYG06TMM.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=94b63afcc8d4a9b6d5a5e954a4c1c347dbdfb356\" title=\"Rooftop solar now accounts for one fifth of Puerto Rico\u2019s generation capacity\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/randolphquell\"> /u/randolphquell </a> <br /> <span><a href=\"https://pv-magazine-usa.com/2026/04/02/rooftop-solar-now-accounts-for-one-fifth-of-puerto-ricos-generation-capacity/?utm_source=substack&amp;utm_medium=email\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sezppo/rooftop_solar_now_accounts_for_one_fifth_of/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "Puerto Rico's rooftop solar adoption now meets 20% of its energy needs, demonstrating decentralized renewable energy systems' potential for transition towns.",
+    "themes": [
+      "appropriate technology",
+      "transition towns",
+      "regenerative economics"
+    ],
+    "lateral_potential": "Highlights decentralized energy models for climate adaptation",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-guilded-grid-reimagining-energy-through-local-craft"
+}

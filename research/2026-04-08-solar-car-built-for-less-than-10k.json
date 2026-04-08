@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-08-solar-car-built-for-less-than-10k",
+  "fetched_at": "2026-04-08T08:30:36.909499Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sfcexm/solar_car_built_for_less_than_10k/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Solar Car built for less than 10k",
+    "published": "2026-04-07T23:32:33",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p><a href=\"https://youtube.com/shorts/6ono-DUwMTQ?si=ZsnK4CHIne4GAZwJ\">https://youtube.com/shorts/6ono-DUwMTQ?si=ZsnK4CHIne4GAZwJ</a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/RuddagerSmith\"> /u/RuddagerSmith </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sfcexm/solar_car_built_for_less_than_10k/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sfcexm/solar_car_built_for_less_than_10k/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "A low-cost solar car project demonstrates how accessible technology can advance sustainable transportation systems.",
+    "themes": [
+      "appropriate technology",
+      "cooperative platforms",
+      "regenerative economics"
+    ],
+    "lateral_potential": "Relates to open-source vehicle manufacturing",
+    "relevance_score": 0.75,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-guilded-grid-reimagining-energy-through-local-craft"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-08-solar-punk-zine-issue-01",
+  "fetched_at": "2026-04-08T08:30:36.909371Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sf6xg1/solar_punk_zine_issue_01/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Solar punk zine issue #01",
+    "published": "2026-04-07T19:59:04",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sf6xg1/solar_punk_zine_issue_01/\"> <img alt=\"Solar punk zine issue #01\" src=\"https://preview.redd.it/nwm7uwdsottg1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=021eaa739c7365304df83dbf3c82a5766d59d945\" title=\"Solar punk zine issue #01\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>I made a little zine, feel free to print it off and keep it, swap it, give it away, just don't put it into AI slop machine, thanks. Current affairs were getting to me and I needed to summarise my thoughts in what a better world would look like. I plan on making more on various solar punk topics, if you have any ideas you'd like to see included let me know \u2600\ufe0f\ud83d\udc9a</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Cold-Whereas-2566\"> /u/Cold-Whereas-2566 </a> <br /> <span><a href=\"https://i.redd.it/nwm7uwdsottg1.jpeg\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sf6xg1/solar_punk_zine_issue_01/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A solarpunk zine explores cultural visions for sustainable societies, emphasizing art and design as tools for ecological consciousness.",
+    "themes": [
+      "solarpunk aesthetics",
+      "cultural movement",
+      "open science"
+    ],
+    "lateral_potential": "Connects to community-led design practices",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-guilded-grid-reimagining-energy-through-local-craft"
+}
