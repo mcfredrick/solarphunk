@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-09-prairie-prophecy-a-powerful-new-film-on-wes-jackson-and-the",
+  "fetched_at": "2026-04-09T08:37:16.398608Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-06/prairie-prophecy-a-powerful-new-film-on-wes-jackson-and-the-future-of-agriculture/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Prairie Prophecy: A powerful new film on Wes Jackson and the future of agriculture",
+    "published": "2026-04-06T06:00:33",
+    "excerpt": "A new documentary, Prairie Prophecy, explores the life and work of ecologist Wes Jackson, offering a compelling vision for the future of agriculture, sustainability, and our relationship with the land."
+  },
+  "llm_processed": {
+    "summary": "The article reviews a documentary on Wes Jackson's work in sustainable agriculture, emphasizing regenerative farming and ecological innovation.",
+    "themes": [
+      "agroecology",
+      "ecological-restoration"
+    ],
+    "lateral_potential": "Links to land ethics and long-term food system planning.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-ecology-of-competition"
+}

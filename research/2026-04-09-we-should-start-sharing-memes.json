@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-09-we-should-start-sharing-memes",
+  "fetched_at": "2026-04-09T08:37:16.398923Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sg2si7/we_should_start_sharing_memes/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "We should start sharing memes",
+    "published": "2026-04-08T19:24:47",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sg2si7/we_should_start_sharing_memes/\"> <img alt=\"We should start sharing memes\" src=\"https://preview.redd.it/fev8gj9wo0ug1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=681010a2b80f3fd5c55a479bb7e9b42c913a6316\" title=\"We should start sharing memes\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Sometimes I think we should start sharing &quot;apparently politically neutral&quot; memes to timidly light some bulbs in some heads. </p> <p>Keeping them as aseptic, and common-sense possible, so they are not rejected outright, to squeeeeeze some empathy and &quot;hopepunkness&quot; in otherwise doomscrollers. Specially leveraging any situations.</p> <p>Heck, might even be a good idea to create a &quot;meme team&quot;.</p> <p>Example attached.</p> <p>After all, every big tree started by being a small seed...</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Artifexa\"> /u/Artifexa </a> <br /> <span><a href=\"https://i.redd.it/fev8gj9wo0ug1.jpeg\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sg2si7/we_should_start_sharing_memes/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "The Reddit post suggests using memes as a tool to spread hopepunk messages, fostering empathy and community through aseptic, shareable content.",
+    "themes": [
+      "solarpunk-aesthetics",
+      "community-organizing"
+    ],
+    "lateral_potential": "Enables digital activism and cultural storytelling networks.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-ecology-of-competition"
+}

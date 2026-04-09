@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-09-california-moves-ahead-with-balcony-solar",
+  "fetched_at": "2026-04-09T08:37:47.648168Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sg39nr/california_moves_ahead_with_balcony_solar/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "California moves ahead with balcony solar",
+    "published": "2026-04-08T19:42:11",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sg39nr/california_moves_ahead_with_balcony_solar/\"> <img alt=\"California moves ahead with balcony solar\" src=\"https://external-preview.redd.it/7KORQHVZgXmBTEu26JwWGgfKtFoNmvJeMguVCNkDwj8.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=728204190b3f09b626c06e45ba9939461aec65b5\" title=\"California moves ahead with balcony solar\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Anyone getting in on this?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Etherealgworll\"> /u/Etherealgworll </a> <br /> <span><a href=\"https://www.pv-tech.org/california-moves-ahead-with-balcony-solar-bill/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sg39nr/california_moves_ahead_with_balcony_solar/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "California is advancing legislation to promote solar panels on balconies, creating opportunities for decentralized renewable energy adoption.",
+    "themes": [
+      "appropriate-technology",
+      "solarpunk-aesthetics"
+    ],
+    "lateral_potential": "Connects to community organizing by enabling localized energy initiatives and peer-to-peer solar sharing.",
+    "relevance_score": 0.9,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-ecology-of-competition"
+}

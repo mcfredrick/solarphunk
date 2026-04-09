@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-09-why-were-still-marching-toward-collapse-and-how-to-break-the",
+  "fetched_at": "2026-04-09T08:37:16.397932Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-08/why-were-still-marching-toward-collapse-and-how-to-break-the-trance/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Why we\u2019re still marching toward collapse\u2014and how to break the trance",
+    "published": "2026-04-08T06:00:00",
+    "excerpt": "We continue down a path of collective destruction, in part because of a belief system so pervasive it feels like reality itself. Recognizing our deep interconnectedness is essential to building a more just and sustainable future."
+  },
+  "llm_processed": {
+    "summary": "The article examines societal collapse narratives and cultural hegemony, using examples like domestic violence to highlight how systemic consent perpetuates oppression.",
+    "themes": [
+      "participatory-democracy",
+      "community-organizing"
+    ],
+    "lateral_potential": "Enables bridges to social justice movements and cultural resistance frameworks.",
+    "relevance_score": 0.65,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-ecology-of-competition"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-09-climate-cracks-are-spreading-and-even-the-system-knows-it-ca",
+  "fetched_at": "2026-04-09T08:37:16.398466Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-06/climate-cracks-are-spreading-and-even-the-system-knows-it-cant-hold/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Climate cracks are spreading \u2014 and even the system knows it can\u2019t hold",
+    "published": "2026-04-06T06:00:47",
+    "excerpt": "From scientists to intelligence agencies, repeated warnings about climate and ecological collapse have gone largely unanswered by governments, media and markets."
+  },
+  "llm_processed": {
+    "summary": "This piece discusses the failure of climate warnings to drive action, suggesting the need for systemic rethinking and economic frameworks to address climate risks.",
+    "themes": [
+      "ecological-restoration",
+      "transition-towns"
+    ],
+    "lateral_potential": "Enables bridges to degrowth strategies and systemic change design.",
+    "relevance_score": 0.65,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-ecology-of-competition"
+}

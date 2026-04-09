@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-09-what-should-the-fight-culture-in-my-solarpunk-island-be-like",
+  "fetched_at": "2026-04-09T08:37:47.648751Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sgatwx/what_should_the_fight_culture_in_my_solarpunk/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "What should the fight culture in my solarpunk island be like believably?",
+    "published": "2026-04-09T00:46:04",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Hi everyone, I'm sure you remember me before. I've asked how superheroes can work in my solarpunk island in my comics?</p> <p>So like I said, my story is about 7 teenagers who travel around the world fighting criminals who are destroying the environment using the power to shapeshift into their spirit animals. But I'm trying to figure out what the fight culture in my story should be like. In many societies, as far as I know, warrior culture, whether it's in the workplace or in the military, is about grinding and outdoing the competition. It's like that in many shonen manga and anime, from wanting to be Hokage to wanting to be the best volleyball player. I want to create a different narrative, one that celebrates peace and sustainability. Only thing is I've been exposed to the grinding narrative so much that I might need a little help figuring out how it can work believably. I mean, I'm an odd 20-something year old, instead of wanting to grind and build a big career for myself, I want a life maintaining childhood play with my friends. </p> <p>So what kind of training do the people get to fight, and how much do they train without losing time for rest? What are the weapons made from and function, I want to use swords, spears, bows and arrows, the like but I don't know how much the characters should prioritize lethality? And should they ever get captured and tortured, how do they teach them to prepare for it?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/DeanSalichi\"> /u/DeanSalichi </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sgatwx/what_should_the_fight_culture_in_my_solarpunk/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sgatwx/what_should_the_fight_culture_in_my_solarpunk/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "Creative inquiry about designing non-hierarchical, sustainability-focused conflict resolution systems for a solarpunk society.",
+    "themes": [
+      "solarpunk-aesthetics",
+      "cooperative-platforms"
+    ],
+    "lateral_potential": "Bridges to participatory democracy by reimagining violence prevention as collective care practices.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-ecology-of-competition"
+}

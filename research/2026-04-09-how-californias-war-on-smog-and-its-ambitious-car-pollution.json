@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-09-how-californias-war-on-smog-and-its-ambitious-car-pollution",
+  "fetched_at": "2026-04-09T08:37:16.398274Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-07/how-californias-war-on-smog-and-its-ambitious-car-pollution-rules-made-everyones-air-cleaner/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "How California\u2019s war on smog and its ambitious car pollution rules made everyone\u2019s air cleaner",
+    "published": "2026-04-07T06:00:10",
+    "excerpt": "The Clean Air Act gave California the authority to issue tough pollution standards for vehicles, spurring the development of the catalytic converter and cleaning up America\u2019s air."
+  },
+  "llm_processed": {
+    "summary": "The article details California's historical success in reducing car emissions through strict pollution regulations, improving air quality and public health.",
+    "themes": [
+      "ecological-restoration",
+      "appropriate-technology"
+    ],
+    "lateral_potential": "Connects to policy innovation and clean tech scalability.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-ecology-of-competition"
+}

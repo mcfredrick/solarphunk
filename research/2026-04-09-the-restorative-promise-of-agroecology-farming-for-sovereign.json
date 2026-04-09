@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-09-the-restorative-promise-of-agroecology-farming-for-sovereign",
+  "fetched_at": "2026-04-09T08:37:16.398736Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-06/the-restorative-promise-of-agroecology-farming-for-sovereignty-and-resilience-in-malawi/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "The restorative promise of agroecology: Farming for sovereignty and resilience in Malawi",
+    "published": "2026-04-06T06:00:12",
+    "excerpt": "In Malawi, where agriculture is central to daily life, an internship with an agroecology organisation offers an inside look at farming practices that challenge industrial food systems and support food sovereignty."
+  },
+  "llm_processed": {
+    "summary": "This piece describes agroecological practices in Malawi that enhance resilience through traditional knowledge and sustainable rice farming.",
+    "themes": [
+      "agroecology",
+      "ecological-restoration"
+    ],
+    "lateral_potential": "Connects to climate adaptation and rural livelihoods.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-ecology-of-competition"
+}

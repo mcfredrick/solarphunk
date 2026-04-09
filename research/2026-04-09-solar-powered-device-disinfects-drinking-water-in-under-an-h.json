@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-09-solar-powered-device-disinfects-drinking-water-in-under-an-h",
+  "fetched_at": "2026-04-09T08:37:47.648616Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sfpl89/solarpowered_device_disinfects_drinking_water_in/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Solar-powered device disinfects drinking water in under an hour",
+    "published": "2026-04-08T11:02:14",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sfpl89/solarpowered_device_disinfects_drinking_water_in/\"> <img alt=\"Solar-powered device disinfects drinking water in under an hour\" src=\"https://external-preview.redd.it/5EcTRZImftdyUiE1QVavi_ojWCh538QdPKwBv9g44DM.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=7eb3e0cfeffaf7b6d6e56a5c01dff5edfa2eb290\" title=\"Solar-powered device disinfects drinking water in under an hour\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/striketheviol\"> /u/striketheviol </a> <br /> <span><a href=\"https://techxplore.com/news/2026-04-solar-powered-device-disinfects-hour.html\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sfpl89/solarpowered_device_disinfects_drinking_water_in/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "Innovative solar-powered water purification system offers scalable solutions for clean water access in underserved areas.",
+    "themes": [
+      "appropriate-technology",
+      "open-science"
+    ],
+    "lateral_potential": "Links to agroecology by enabling decentralized water security in rural or disaster-prone regions.",
+    "relevance_score": 0.9,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-ecology-of-competition"
+}

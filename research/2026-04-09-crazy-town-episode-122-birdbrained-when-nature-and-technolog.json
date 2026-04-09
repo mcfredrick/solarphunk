@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-09-crazy-town-episode-122-birdbrained-when-nature-and-technolog",
+  "fetched_at": "2026-04-09T08:37:16.397624Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-08/crazy-town-episode-122-birdbrained/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Crazy Town: Episode 122 Birdbrained: When Nature and Technology Collide",
+    "published": "2026-04-08T06:01:00",
+    "excerpt": "Jason, Rob, and Asher explore the world of competitive birding, the relationship between those who love nature and the technology they use to connect to it, and how even the most gentle of shared passions can get corrupted by status-fueled competition."
+  },
+  "llm_processed": {
+    "summary": "This article explores how technology can disrupt natural experiences, like birdwatching, by prioritizing competition over mindfulness. It questions the balance between tech use and ecological appreciation.",
+    "themes": [
+      "appropriate-technology",
+      "ecological-restoration"
+    ],
+    "lateral_potential": "Connects to community organizing around shared nature experiences and digital detox movements.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-ecology-of-competition"
+}
