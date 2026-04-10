@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-10-solshare",
+  "fetched_at": "2026-04-10T08:35:46.681852Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sgvn5j/solshare/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Solshare",
+    "published": "2026-04-09T17:07:04",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sgvn5j/solshare/\"> <img alt=\"Solshare\" src=\"https://external-preview.redd.it/FShzEkpmc3TKHH0WpYB2WkWABsq1zxYMNJ1dCAzTInQ.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=a55bc7cf4b712a47396717b77915be4be5343cd9\" title=\"Solshare\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/ChampionshipSalt696\"> /u/ChampionshipSalt696 </a> <br /> <span><a href=\"https://youtu.be/j6oB1UjwY5w?si=uK6tRKStsF0yHi59\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sgvn5j/solshare/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "Solshare is a solar microgrid project enabling community energy sharing, fostering cooperative energy systems and local resilience.",
+    "themes": [
+      "cooperative-platforms",
+      "appropriate-technology"
+    ],
+    "lateral_potential": "Bridges to accessible medicine through decentralized, low-cost healthcare integration.",
+    "relevance_score": 0.85,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "beyond-the-microgrid-villages-and-the-future-of-energy"
+}

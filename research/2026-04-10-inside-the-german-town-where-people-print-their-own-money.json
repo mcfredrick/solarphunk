@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-10-inside-the-german-town-where-people-print-their-own-money",
+  "fetched_at": "2026-04-10T08:35:46.681564Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sgrjgc/inside_the_german_town_where_people_print_their/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Inside the German town where people print their own money",
+    "published": "2026-04-09T14:40:52",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sgrjgc/inside_the_german_town_where_people_print_their/\"> <img alt=\"Inside the German town where people print their own money\" src=\"https://external-preview.redd.it/n0c2Bzd14Puu0a8ao754ONQ7w9zj71FF2Vc7hTm70Qs.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=9ebb2405e1a513093ebecdf920173ef7f7ca4b6f\" title=\"Inside the German town where people print their own money\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/EricHunting\"> /u/EricHunting </a> <br /> <span><a href=\"https://www.youtube.com/watch?v=WzijH3lgzHI\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sgrjgc/inside_the_german_town_where_people_print_their/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A German town experiments with local currency systems, promoting economic autonomy and community-driven financial models.",
+    "themes": [
+      "regenerative-economics",
+      "cooperative-platforms"
+    ],
+    "lateral_potential": "Links to commons governance through decentralized monetary systems.",
+    "relevance_score": 0.75,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "beyond-the-microgrid-villages-and-the-future-of-energy"
+}

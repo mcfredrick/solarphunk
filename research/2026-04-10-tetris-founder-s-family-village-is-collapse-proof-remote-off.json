@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-10-tetris-founder-s-family-village-is-collapse-proof-remote-off",
+  "fetched_at": "2026-04-10T08:35:46.681395Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sgzsra/tetris_founders_family_village_is_collapseproof/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Tetris founder's family village is collapse-proof, remote offgrid-topia",
+    "published": "2026-04-09T19:33:22",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sgzsra/tetris_founders_family_village_is_collapseproof/\"> <img alt=\"Tetris founder's family village is collapse-proof, remote offgrid-topia\" src=\"https://external-preview.redd.it/379MK3SLZJ0LA07sFrzGkwoujFSiU3ntsde7Wr0cDfA.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=c85ab205c81f218bb970fbf3152be64bd03e007b\" title=\"Tetris founder's family village is collapse-proof, remote offgrid-topia\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>This a great interview and workshop tour. He\u2019s made all kinds of things that run on hydrogen. He thinks the future is using geothermal to make hydrogen to power everything. </p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/JamisonW\"> /u/JamisonW </a> <br /> <span><a href=\"https://youtu.be/iz0iSxks-Dw?si=-7TClCIp1PVFgdvf\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sgzsra/tetris_founders_family_village_is_collapseproof/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A remote off-grid village uses hydrogen and geothermal energy for resilience, highlighting decentralized, sustainable energy systems.",
+    "themes": [
+      "appropriate-technology",
+      "transition-towns"
+    ],
+    "lateral_potential": "Bridges to biomimicry through natural energy cycles and community-led innovation.",
+    "relevance_score": 0.85,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "beyond-the-microgrid-villages-and-the-future-of-energy"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-10-update-on-the-solar-ereader",
+  "fetched_at": "2026-04-10T08:35:46.681074Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sgwwdp/update_on_the_solar_ereader/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "update on the solar ereader",
+    "published": "2026-04-09T17:51:13",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1sgwwdp/update_on_the_solar_ereader/\"> <img alt=\"update on the solar ereader\" src=\"https://preview.redd.it/7r4mje45d7ug1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=7e9cf5685b3c3ab931ecfde3886e4428a4a5054b\" title=\"update on the solar ereader\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>using two solar panels allows it to charge indoors. for charging, i recommend a tp4056 chip and two 3v zener diodes across the panels (less efficient but safer).</p> <p>stl with a niche for the tp4056 module at <a href=\"https://www.thingiverse.com/thing:7330235\">https://www.thingiverse.com/thing:7330235</a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/spiritplumber\"> /u/spiritplumber </a> <br /> <span><a href=\"https://i.redd.it/7r4mje45d7ug1.jpeg\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sgwwdp/update_on_the_solar_ereader/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A solar-powered ereader design uses two solar panels and a TP4056 chip for indoor charging, emphasizing low-cost, sustainable technology for off-grid reading.",
+    "themes": [
+      "appropriate-technology",
+      "solarpunk-aesthetics"
+    ],
+    "lateral_potential": "Connects to open-source hardware and accessible education through repurposed tech.",
+    "relevance_score": 0.95,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "beyond-the-microgrid-villages-and-the-future-of-energy"
+}

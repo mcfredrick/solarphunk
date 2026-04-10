@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-10-aerostat-airship-for-solar-power",
+  "fetched_at": "2026-04-10T08:35:46.681710Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sgmikn/aerostatairship_for_solar_power/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Aerostat/Airship for solar power",
+    "published": "2026-04-09T11:07:12",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Is there a reason why no one talks about using solar panel covered hugh altitude balloons to generate electricity? We need land for farming so the maximum amount of electricity we can get from solar is rather limited. A balloon would be placed in the stratosphere and wouldnt suffer from cloud days.</p> <p>There was research on this topic in the UK which would benefit from this concept tremendously (because of cloudy conditions and its latitude). But most of those papers came out 10-15 years ago; not much progress since then. They showed it was technologically and financially feasible. Other than that, I havent seen much discussion on this topic, good or bad.</p> <p>I think it would be useful for a lot of countries, specially land poor ones. Considering the benefits, it would make sense to be seeing pilot projects and more funding for research. But there doesnt seem to be. Investing in things like carbon nanotubes would make it even cheaper.</p> <p>For the UK, a panel of a given area would generate up to 7 times as much energy over a year on an airship conpared to ground based panels.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Best-Manager-8644\"> /u/Best-Manager-8644 </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sgmikn/aerostatairship_for_solar_power/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sgmikn/aerostatairship_for_solar_power/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "Proposes high-altitude solar balloons for electricity generation, addressing land-use constraints and energy reliability.",
+    "themes": [
+      "appropriate-technology",
+      "transition-towns"
+    ],
+    "lateral_potential": "Connects to open science through potential global energy equity solutions.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "beyond-the-microgrid-villages-and-the-future-of-energy"
+}
