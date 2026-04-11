@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-11-what-do-we-value-most-rethinking-resilience-in-a-time-of-pol",
+  "fetched_at": "2026-04-11T08:16:24.299633Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-09/what-do-we-value-most-rethinking-resilience-in-a-time-of-polycrisis/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "\u2018What do we value most?\u2019 Rethinking resilience in a time of polycrisis",
+    "published": "2026-04-09T06:00:53",
+    "excerpt": "Professor Jem Bendell proposed the \u201cDeep Adaptation\u201d framework to help people respond to the climate crisis. As global crises intensify, new questions focused on reclamation and regeneration offer ways to navigate an increasingly uncertain world."
+  },
+  "llm_processed": {
+    "summary": "The article reflects on redefining resilience amid multiple crises, emphasizing the need to prioritize values over survivalist narratives and rethink collective action frameworks.",
+    "themes": [
+      "community_organizing",
+      "participatory_democracy",
+      "commons_governance"
+    ],
+    "lateral_potential": "Bridges to grassroots movements that build decentralized, value-driven governance models for crisis response.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-quiet-revolution-of-the-empty-desk"
+}

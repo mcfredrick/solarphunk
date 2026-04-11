@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-11-human-nature-odyssey-episode-21-earth-abides-part-1-life-aft",
+  "fetched_at": "2026-04-11T08:16:24.299288Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-09/human-nature-odyssey-episode-21-earth-abides-part-1-life-after-civilization/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Human Nature Odyssey, Episode 21. Earth Abides (Part 1): Life After Civilization",
+    "published": "2026-04-09T06:01:00",
+    "excerpt": "You ever go on a little trip, to just get away from it all \u2014 only to come home and find all of civilization collapsed while you were gone and you might be the last person left on earth? Well then you could totally relate to George R. Stewart\u2019s 1949 science-fiction novel, \"Earth Abides.\""
+  },
+  "llm_processed": {
+    "summary": "A podcast episode explores post-apocalyptic scenarios, questioning the sustainability of civilization and imagining alternative paths for human resilience and adaptation.",
+    "themes": [
+      "solarpunk_aesthetics",
+      "participatory_democracy",
+      "transition_towns"
+    ],
+    "lateral_potential": "Links to speculative design practices that inform real-world community resilience strategies and utopian planning.",
+    "relevance_score": 0.65,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-quiet-revolution-of-the-empty-desk"
+}

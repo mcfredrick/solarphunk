@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-11-the-empty-desk-policy-why-remote-work-is-the-sustainability",
+  "fetched_at": "2026-04-11T08:16:24.298855Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-10/the-empty-desk-policy-why-the-right-to-remote-work-is-the-sustainability-win-were-ignoring/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "The empty desk policy: Why remote work is the sustainability win we\u2019re ignoring",
+    "published": "2026-04-10T06:00:53",
+    "excerpt": "The daily commute is more than an inconvenience; it is a major source of pollution and wasted time. As return-to-office demands grow, remote work may be one of the most overlooked tools for reducing emissions while improving quality of life and accessibility."
+  },
+  "llm_processed": {
+    "summary": "This article argues that remote work reduces urban pollution and carbon emissions by eliminating daily commutes, positioning it as a sustainability win that is often overlooked.",
+    "themes": [
+      "regenerative_economics",
+      "appropriate_technology",
+      "ecological_restoration"
+    ],
+    "lateral_potential": "Connects to urban planning and decentralized work models that could reshape city infrastructure and reduce heat island effects.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-quiet-revolution-of-the-empty-desk"
+}

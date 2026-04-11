@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-11-how-environmental-laws-are-shifting-the-focus-from-humans-to",
+  "fetched_at": "2026-04-11T08:16:24.299126Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-10/how-environmental-laws-are-shifting-the-focus-from-humans-to-nature/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "How environmental laws are shifting the focus from humans to nature",
+    "published": "2026-04-10T06:00:14",
+    "excerpt": "Environmental laws are evolving from prioritizing human benefits to recognizing nature\u2019s intrinsic rights; this is reflected in the small but growing number of countries that grant legal personhood to natural entities."
+  },
+  "llm_processed": {
+    "summary": "The article traces how environmental laws are evolving to prioritize ecological systems over human-centric protections, drawing on historical examples from ancient civilizations.",
+    "themes": [
+      "ecological_restoration",
+      "commons_governance",
+      "biomimicry"
+    ],
+    "lateral_potential": "Bridges to policy design that integrates ecological values into legal frameworks, supporting regenerative systems.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-quiet-revolution-of-the-empty-desk"
+}
