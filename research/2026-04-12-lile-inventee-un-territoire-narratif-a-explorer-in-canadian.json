@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-12-lile-inventee-un-territoire-narratif-a-explorer-in-canadian",
+  "fetched_at": "2026-04-12T08:22:16.721094Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1siu8m4/l\u00eele_invent\u00e9e_un_territoire_narratif_\u00e0_explorer/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "L\u2019\u00cele Invent\u00e9e | un territoire narratif \u00e0 explorer ( In Canadian French)",
+    "published": "2026-04-11T20:37:44",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1siu8m4/l\u00eele_invent\u00e9e_un_territoire_narratif_\u00e0_explorer/\"> <img alt=\"L\u2019\u00cele Invent\u00e9e | un territoire narratif \u00e0 explorer ( In Canadian French)\" src=\"https://external-preview.redd.it/JVav_f7l2B77MAi_aov4XzoQ9Rao8zkqd6xSv7VmP7Y.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=67ed62e097f88694baf0dbbb4eac25cf81c54a5d\" title=\"L\u2019\u00cele Invent\u00e9e | un territoire narratif \u00e0 explorer ( In Canadian French)\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>A nice bio-solar-steampunk blend I saw a preview at the Salon Du Livre De Qu\u00e9bec . Could be seen in his entirety at Monique Corriveau and Gabrielle Roy libraries .</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/AcanthisittaBusy457\"> /u/AcanthisittaBusy457 </a> <br /> <span><a href=\"https://productionsrhizome.org/portfolio/lile-inventee-un-territoire-narratif-a-explorer\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1siu8m4/l\u00eele_invent\u00e9e_un_territoire_narratif_\u00e0_explorer/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "L\u2019\u00cele Invent\u00e9e is a narrative territory exploring a blend of bio-solar-steampunk aesthetics and themes, possibly representing a fictional solarpunk world or setting.  It serves as a creative example of envisioning alternative futures.",
+    "themes": [
+      "solarpunk-aesthetics",
+      "appropriate-technology"
+    ],
+    "lateral_potential": "It provides inspiration for creative worldbuilding and expanding the aesthetic and narrative possibilities within the solarpunk movement.",
+    "relevance_score": 0.7,
+    "model": "private/gemma3:12b"
+  },
+  "used_in_dream": null
+}

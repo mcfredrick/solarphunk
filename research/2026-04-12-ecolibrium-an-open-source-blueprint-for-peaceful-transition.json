@@ -1,0 +1,27 @@
+{
+  "id": "2026-04-12-ecolibrium-an-open-source-blueprint-for-peaceful-transition",
+  "fetched_at": "2026-04-12T08:22:16.720596Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1sj5ppk/ecolibrium_an_opensource_blueprint_for_peaceful/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Ecolibrium: An open-source blueprint for peaceful transition to post-scarcity",
+    "published": "2026-04-12T05:29:36",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Automation, AI, and ecological crisis are converging. Rather than defending what's failing, I spent some time trying to map what needs to exist <em>before</em> any meaningful transition can happen.</p> <p>Ecolibrium covers democratic infrastructure, food/healthcare/housing distribution, economic transition mechanisms (cooperative ownership, debt jubilee, commons), energy sovereignty, and a leaderless &quot;mycelial&quot; network strategy where radical transparency is the security model.</p> <p>The framework is deliberately incomplete \u2014 bones, with the details we can infer. Open questions included. Everything designed to be forked and challenged.</p> <p>Anonymous by design. No founders. No personality cult. Just the work.</p> <p><a href=\"https://github.com/simonlpaige/ecolibrium\">https://github.com/simonlpaige/ecolibrium</a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/BillyTamper\"> /u/BillyTamper </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sj5ppk/ecolibrium_an_opensource_blueprint_for_peaceful/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1sj5ppk/ecolibrium_an_opensource_blueprint_for_peaceful/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "Ecolibrium is an open-source framework outlining a blueprint for transitioning to a post-scarcity society, covering democratic infrastructure, resource distribution, and economic models. It prioritizes radical transparency and aims to be adaptable and challengeable by others.",
+    "themes": [
+      "regenerative-economics",
+      "commons-governance",
+      "cooperative-platforms",
+      "appropriate-technology"
+    ],
+    "lateral_potential": "This framework could connect technological solutions to social and governance models, enabling a more holistic approach to building solarpunk communities.",
+    "relevance_score": 0.9,
+    "model": "private/gemma3:12b"
+  },
+  "used_in_dream": null
+}
