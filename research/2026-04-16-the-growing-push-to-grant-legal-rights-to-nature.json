@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-16-the-growing-push-to-grant-legal-rights-to-nature",
+  "fetched_at": "2026-04-16T08:38:15.507307Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-13/how-countries-are-granting-legal-rights-to-nature/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "The growing push to grant legal rights to nature",
+    "published": "2026-04-13T11:28:42",
+    "excerpt": "From Ecuador to New Zealand and India, a growing number of countries are recognizing the legal rights of nature, though not without legal and political challenges."
+  },
+  "llm_processed": {
+    "summary": "The article examines global efforts to grant legal rights to nature, citing Ecuador's 2008 constitutional protections and similar initiatives in Spain, New Zealand, and India.",
+    "themes": [
+      "rights of nature",
+      "legal personhood",
+      "commons governance"
+    ],
+    "lateral_potential": "Enables integration of legal frameworks with ecological restoration, supporting rights-based approaches to conservation.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-subtle-signals-of-resilience"
+}

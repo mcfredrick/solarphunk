@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-16-how-pacific-communities-use-sea-worms-to-track-time-and-seas",
+  "fetched_at": "2026-04-16T08:38:15.507133Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-13/how-pacific-communities-use-sea-worms-to-track-time-and-seasonal-shifts-through-a-changing-climate/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "How Pacific communities use sea worms to track time and seasonal shifts through a changing climate",
+    "published": "2026-04-13T11:58:41",
+    "excerpt": "In the Pacific Islands, the annual spawning of palolo sea worms feeds communities, marks time and sustains cultural traditions. Why this Indigenous tradition is becoming increasingly important as climate change intensifies weather events."
+  },
+  "llm_processed": {
+    "summary": "This article showcases Pacific communities using sea worms as natural indicators to adapt to climate change, blending traditional ecological knowledge with modern environmental challenges.",
+    "themes": [
+      "biomimicry",
+      "traditional knowledge",
+      "agroecology"
+    ],
+    "lateral_potential": "Connects indigenous ecological monitoring to community-based solutions for climate resilience.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-subtle-signals-of-resilience"
+}

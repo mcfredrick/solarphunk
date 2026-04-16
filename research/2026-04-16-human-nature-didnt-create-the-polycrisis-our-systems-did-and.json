@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-16-human-nature-didnt-create-the-polycrisis-our-systems-did-and",
+  "fetched_at": "2026-04-16T08:38:15.506684Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-15/human-nature-didnt-create-the-polycrisis-our-systems-did-and-they-can-be-redesigned/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Human nature didn\u2019t create the polycrisis. Our systems did \u2013 and they can be redesigned",
+    "published": "2026-04-15T08:00:25",
+    "excerpt": "The drivers behind the polycrisis, including relentless extraction, extreme inequality, and environmental degradation, are often attributed to human nature, but evidence suggests they are products of historically conditioned systems."
+  },
+  "llm_processed": {
+    "summary": "The article argues that the polycrisis stems from flawed systems, not human nature, and emphasizes redesigning societal structures to align with ecological and social well-being through scientific insights.",
+    "themes": [
+      "degrowth",
+      "systems redesign",
+      "participatory democracy"
+    ],
+    "lateral_potential": "Bridges ecological restoration with systemic redesign, offering a framework for reimagining economies and governance.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-subtle-signals-of-resilience"
+}

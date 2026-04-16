@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-16-rethinking-our-place-in-nature-means-rethinking-the-law",
+  "fetched_at": "2026-04-16T08:38:15.506965Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-14/rethinking-our-place-in-nature-means-rethinking-the-law/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Rethinking our place in nature means rethinking the law",
+    "published": "2026-04-14T08:00:56",
+    "excerpt": "As Indigenous knowledge gains recognition and environmental crises deepen, a growing movement argues that granting legal rights to nature can protect it from exploitation."
+  },
+  "llm_processed": {
+    "summary": "This piece explores rethinking legal systems to recognize nature's intrinsic value, drawing on Indigenous traditions of coexistence and challenging anthropocentric legal frameworks.",
+    "themes": [
+      "legal personhood",
+      "indigenous knowledge",
+      "ecological law"
+    ],
+    "lateral_potential": "Links Indigenous ecological wisdom to commons governance, enabling legal innovations for ecological restoration.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "the-subtle-signals-of-resilience"
+}
