@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-20-theres-no-single-path-through-collapse-it-spans-multiple-sys",
+  "fetched_at": "2026-04-20T08:49:39.782155Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-16/theres-no-single-path-through-collapse-it-spans-multiple-systems-and-perspectives/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "There\u2019s no single path through collapse. It spans multiple systems and perspectives",
+    "published": "2026-04-16T08:00:10",
+    "excerpt": "In his new book, the author argues that without a clearer view of the systems we\u2019re embedded in, as well as our cultural and historical contexts, our responses to the polycrisis will continue to fall short."
+  },
+  "llm_processed": {
+    "summary": "The article argues that navigating collapse requires integrating psychological, cultural, and systemic perspectives, emphasizing wisdom and courage to address interconnected crises.",
+    "themes": [
+      "degeneration",
+      "participatory_democracy"
+    ],
+    "lateral_potential": "Connects to biomimicry by framing resilience as an adaptive process akin to natural systems.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "ecosystems-of-adaptation"
+}

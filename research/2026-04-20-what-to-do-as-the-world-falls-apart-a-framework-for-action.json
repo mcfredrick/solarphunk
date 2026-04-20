@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-20-what-to-do-as-the-world-falls-apart-a-framework-for-action",
+  "fetched_at": "2026-04-20T08:49:39.781556Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-17/what-to-do-as-the-world-falls-apart-a-framework-for-action/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "What to do as the world falls apart: A framework for action",
+    "published": "2026-04-17T08:00:46",
+    "excerpt": "From the archive &#124; Having spent twenty years articulating the more-than-human predicament, Nate Hagens shares a timely first-pass framework for action and response organized around what to do\u00a0now,\u00a0which\u00a0could be applied in various contexts and at multiple scales."
+  },
+  "llm_processed": {
+    "summary": "This article presents a framework for individual and collective action in response to global crises, emphasizing inner work, community resilience, and localized solutions to build stability amid collapse.",
+    "themes": [
+      "community_organizing",
+      "regenerative_economics",
+      "resilience"
+    ],
+    "lateral_potential": "Connects to transition towns and degrowth movements by framing collapse as an opportunity for systemic reimagining.",
+    "relevance_score": 0.8,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "ecosystems-of-adaptation"
+}

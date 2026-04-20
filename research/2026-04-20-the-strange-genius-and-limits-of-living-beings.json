@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-20-the-strange-genius-and-limits-of-living-beings",
+  "fetched_at": "2026-04-20T08:49:39.782264Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-16/the-strange-genius-and-limits-of-living-beings/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "The strange genius\u2014and limits\u2014of living beings",
+    "published": "2026-04-16T08:00:02",
+    "excerpt": "A reflection on animal behaviour, evolutionary feedback systems and why living beings can appear both extraordinarily intelligent and strangely \u201cdumb\u201d depending on context."
+  },
+  "llm_processed": {
+    "summary": "This piece explores the evolutionary ingenuity of life forms, advocating for greater appreciation of natural systems as models for sustainable human innovation.",
+    "themes": [
+      "biomimicry",
+      "ecological_restoration"
+    ],
+    "lateral_potential": "Bridges to open science by suggesting collaborative, nature-inspired research frameworks.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "ecosystems-of-adaptation"
+}

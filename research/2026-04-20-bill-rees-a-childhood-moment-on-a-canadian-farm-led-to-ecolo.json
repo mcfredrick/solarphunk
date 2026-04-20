@@ -1,0 +1,25 @@
+{
+  "id": "2026-04-20-bill-rees-a-childhood-moment-on-a-canadian-farm-led-to-ecolo",
+  "fetched_at": "2026-04-20T08:49:39.782019Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-16/bill-rees-ecological-footprint-analysis-grew-from-a-boys-contemplation-of-soil-and-sun/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Bill Rees: A childhood moment on a Canadian farm led to ecological footprint analysis",
+    "published": "2026-04-16T08:00:19",
+    "excerpt": "A childhood moment on a Canadian farm shaped Bill Rees\u2019s understanding of ecological limits, leading to the development of ecological footprint analysis and decades of warnings about global overshoot."
+  },
+  "llm_processed": {
+    "summary": "Bill Rees' early realization of ecological interdependence inspired ecological footprint analysis, linking personal consumption to planetary boundaries and systemic change.",
+    "themes": [
+      "ecological_economics",
+      "appropriate_technology"
+    ],
+    "lateral_potential": "Links to biomimicry by emphasizing learning from natural systems to design sustainable technologies.",
+    "relevance_score": 0.7,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "ecosystems-of-adaptation"
+}

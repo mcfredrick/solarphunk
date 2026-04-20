@@ -1,0 +1,26 @@
+{
+  "id": "2026-04-20-across-africa-farmers-are-adopting-regenerative-agricultural",
+  "fetched_at": "2026-04-20T08:49:39.781867Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-04-17/across-africa-farmers-are-adopting-regenerative-agricultural-practices-that-support-food-sovereignty-amid-global-instability/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Across Africa, farmers are adopting regenerative agricultural practices that support food sovereignty amid global instability",
+    "published": "2026-04-17T08:00:35",
+    "excerpt": "As geopolitical tensions drive up resource costs and disrupt supply, fertilizer prices may soar, endangering farming systems dependent on imports. Regenerative solutions, like green manure and community finance, are expanding across African countries, restoring local control over food systems."
+  },
+  "llm_processed": {
+    "summary": "Farmers across Africa are adopting regenerative practices to achieve food sovereignty, reducing reliance on imported fertilizers and building localized, sustainable food systems amid global instability.",
+    "themes": [
+      "agroecology",
+      "regenerative_economics",
+      "food_sovereignty"
+    ],
+    "lateral_potential": "Bridges to commons governance and cooperative platforms by highlighting collective ownership of agricultural resources.",
+    "relevance_score": 0.9,
+    "model": "private/qwen3:8b"
+  },
+  "used_in_dream": "ecosystems-of-adaptation"
+}
