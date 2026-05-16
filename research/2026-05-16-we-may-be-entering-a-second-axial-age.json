@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-16-we-may-be-entering-a-second-axial-age",
+  "fetched_at": "2026-05-16T08:48:24.265748Z",
+  "source": {
+    "feed_url": "https://www.noemamag.com/feed/",
+    "article_url": "https://www.noemamag.com/we-may-be-entering-a-second-axial-age",
+    "feed_name": "Noema Magazine"
+  },
+  "raw": {
+    "title": "We May Be Entering A Second Axial Age",
+    "published": "2026-05-12T13:12:26",
+    "excerpt": "<p>The post <a href=\"https://www.noemamag.com/we-may-be-entering-a-second-axial-age\">We May Be Entering A Second Axial Age</a> appeared first on <a href=\"https://www.noemamag.com\">NOEMA</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "A new Axial Age is emerging, marked by a planetary polycrisis, but also opportunities for transformative change. The old maps no longer apply, and new approaches are needed to navigate this complex and uncertain world.",
+    "themes": [
+      "transition-towns",
+      "ecological-restoration",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "Enable a paradigm shift in how we understand and respond to the planetary polycrisis, opening up new possibilities for collective action and transformative change.",
+    "relevance_score": 0.8,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "consciousness-and-collapse"
+}

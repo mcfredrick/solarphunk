@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-16-introducing-dark-mountain-issue-29",
+  "fetched_at": "2026-05-16T08:50:57.123449Z",
+  "source": {
+    "feed_url": "https://dark-mountain.net/feed/",
+    "article_url": "https://dark-mountain.net/introducing-dark-mountain-issue-29/",
+    "feed_name": "Dark Mountain Project"
+  },
+  "raw": {
+    "title": "Introducing Dark Mountain: Issue 29",
+    "published": "2026-04-15T06:59:03",
+    "excerpt": "<p>Welcome to our new Spring anthology, the first issue we've devoted entitely to animals, now available in our online shop. Today we share the editorial and a glimpse of Amy Guidry's eye-catching cover image. </p>\n<p>The post <a href=\"https://dark-mountain.net/introducing-dark-mountain-issue-29/\">Introducing Dark Mountain: Issue 29</a> appeared first on <a href=\"https://dark-mountain.net\">Dark Mountain</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "An introduction to the Dark Mountain Project's zine and its focus on artistic exploration of uncertainty and collapse.",
+    "themes": [
+      "ecological-restoration",
+      "community-organizing",
+      "open-science"
+    ],
+    "lateral_potential": "This enables a bridge between artistic expression and ecological restoration by highlighting the need for collaborative storytelling and experimentation in the face of environmental collapse.",
+    "relevance_score": 0.69,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "consciousness-and-collapse"
+}

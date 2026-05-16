@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-16-sea-beet-sugar-beet",
+  "fetched_at": "2026-05-16T08:50:57.123864Z",
+  "source": {
+    "feed_url": "https://dark-mountain.net/feed/",
+    "article_url": "https://dark-mountain.net/sea-beet-sugar-beet/",
+    "feed_name": "Dark Mountain Project"
+  },
+  "raw": {
+    "title": "Sea Beet, Sugar Beet",
+    "published": "2025-12-26T11:21:01",
+    "excerpt": "<p>The summer the visitors flock from the cities to the sandy lands: the children run...</p>\n<p>The post <a href=\"https://dark-mountain.net/sea-beet-sugar-beet/\">Sea Beet, Sugar Beet</a> appeared first on <a href=\"https://dark-mountain.net\">Dark Mountain</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "An exploration of the intersection of agriculture and fantasy in the context of ecological restoration.",
+    "themes": [
+      "ecological-restoration",
+      "cooperative-platforms",
+      "biomimicry"
+    ],
+    "lateral_potential": "This enables a bridge between agricultural practice and speculative thought by exploring how fantasy can be used to reimagine sustainable relationships between humans and the earth.",
+    "relevance_score": 0.76,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "consciousness-and-collapse"
+}

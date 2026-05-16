@@ -1,0 +1,25 @@
+{
+  "id": "2026-05-16-there-is-no-hard-problem-of-consciousness",
+  "fetched_at": "2026-05-16T08:48:24.266427Z",
+  "source": {
+    "feed_url": "https://www.noemamag.com/feed/",
+    "article_url": "https://www.noemamag.com/there-is-no-hard-problem-of-consciousness",
+    "feed_name": "Noema Magazine"
+  },
+  "raw": {
+    "title": "There Is No \u2018Hard Problem Of Consciousness\u2019",
+    "published": "2026-05-07T13:25:36",
+    "excerpt": "<p>The post <a href=\"https://www.noemamag.com/there-is-no-hard-problem-of-consciousness\">There Is No \u2018Hard Problem Of Consciousness\u2019</a> appeared first on <a href=\"https://www.noemamag.com\">NOEMA</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "Carlo Rovelli argues that consciousness is not separate from the physical world, and that this idea is not new, but rather a natural consequence of scientific discoveries.",
+    "themes": [
+      "open-science",
+      "biomimicry"
+    ],
+    "lateral_potential": "Enable a deeper understanding of the relationship between mind and matter, opening up new possibilities for innovation and discovery.",
+    "relevance_score": 0.9,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "consciousness-and-collapse"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-16-of-hidden-futures-and-star-shaped-worlds",
+  "fetched_at": "2026-05-16T08:50:57.123724Z",
+  "source": {
+    "feed_url": "https://dark-mountain.net/feed/",
+    "article_url": "https://dark-mountain.net/of-hidden-futures-and-star-shaped-worlds/",
+    "feed_name": "Dark Mountain Project"
+  },
+  "raw": {
+    "title": "Of Hidden Futures and Star-Shaped Worlds",
+    "published": "2026-02-01T10:59:52",
+    "excerpt": "<p>Writer and activist Lara-Lane Plambeck describes her efforts, along with the artist collective RE-PEAT, to create alternative maps and unearth more embedded ways of seeing and preserving endangered peatlands.</p>\n<p>The post <a href=\"https://dark-mountain.net/of-hidden-futures-and-star-shaped-worlds/\">Of Hidden Futures and Star-Shaped Worlds</a> appeared first on <a href=\"https://dark-mountain.net\">Dark Mountain</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "Exploring hidden futures and the potential for radical transformation in the face of ecological collapse.",
+    "themes": [
+      "community-organizing",
+      "open-science",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "This enables a bridge between speculative fiction and regenerative economics by highlighting the potential of reordered systems for sustenance of human flourishing.",
+    "relevance_score": 0.67,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "consciousness-and-collapse"
+}

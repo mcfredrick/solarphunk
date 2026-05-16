@@ -1,0 +1,25 @@
+{
+  "id": "2026-05-16-what-separates-the-great-from-the-petty-in-history",
+  "fetched_at": "2026-05-16T08:48:24.266596Z",
+  "source": {
+    "feed_url": "https://www.noemamag.com/feed/",
+    "article_url": "https://www.noemamag.com/what-separates-the-great-from-the-petty-in-history",
+    "feed_name": "Noema Magazine"
+  },
+  "raw": {
+    "title": "What Separates The Great From The Petty In History",
+    "published": "2026-05-01T12:37:55",
+    "excerpt": "<p>The post <a href=\"https://www.noemamag.com/what-separates-the-great-from-the-petty-in-history\">What Separates The Great From The Petty In History</a> appeared first on <a href=\"https://www.noemamag.com\">NOEMA</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "Effective leadership requires accurately reading the room of reality and acting accordingly, rather than trying to impose a particular ideology or agenda.",
+    "themes": [
+      "participatory-democracy",
+      "cooperative-platforms"
+    ],
+    "lateral_potential": "Enable a shift in how we think about leadership and power, opening up new possibilities for collective decision-making and action.",
+    "relevance_score": 0.9,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "consciousness-and-collapse"
+}
