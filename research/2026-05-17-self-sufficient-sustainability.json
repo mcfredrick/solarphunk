@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-17-self-sufficient-sustainability",
+  "fetched_at": "2026-05-17T08:52:50.414036Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tfcm4o/self_sufficient_sustainability/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Self Sufficient Sustainability",
+    "published": "2026-05-17T02:22:46",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tfcm4o/self_sufficient_sustainability/\"> <img alt=\"Self Sufficient Sustainability\" src=\"https://preview.redd.it/yrzpdh2mcmwg1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=4d09e60a05b4a46b26a5cbd7eb41ba4d45d32acb\" title=\"Self Sufficient Sustainability\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/21Kuranashi\"> /u/21Kuranashi </a> <br /> <span><a href=\"https://i.redd.it/yrzpdh2mcmwg1.jpeg\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tfcm4o/self_sufficient_sustainability/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "Exploring sustainable living, self-sufficiency, and community development, showcasing a vision for a more eco-friendly lifestyle.",
+    "themes": [
+      "agroecology",
+      "transition-towns",
+      "ecological-restoration"
+    ],
+    "lateral_potential": "This showcases the potential for community-driven initiatives to promote sustainable living, creating local examples of regenerative practices.",
+    "relevance_score": 0.8,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "community-power-and-renewable-energy"
+}

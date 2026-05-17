@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-17-key-outcomes-from-the-first-summit-on-transitioning-away-fro",
+  "fetched_at": "2026-05-17T08:48:15.740971Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-05-12/key-outcomes-from-the-first-summit-on-transitioning-away-from-fossil-fuels/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Key outcomes from the first summit on \u2018transitioning away\u2019 from fossil fuels",
+    "published": "2026-05-12T08:00:12",
+    "excerpt": "Countries attending a first-of-its-kind summit have walked away with plans to develop national roadmaps away from fossil fuels, along with new tools to address harmful subsidies and carbon-intensive trade."
+  },
+  "llm_processed": {
+    "summary": "The first conference on transitioning away from fossil fuels aimed to facilitate practical discussions on moving away from coal, oil, and gas.",
+    "themes": [
+      "transition_towns",
+      "degrowth",
+      "common_governance"
+    ],
+    "lateral_potential": "This could lead to the development of more effective transition strategies and community-led initiatives.",
+    "relevance_score": 0.73,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "community-power-and-renewable-energy"
+}

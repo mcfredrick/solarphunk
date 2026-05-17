@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-17-do-you-understand-solarpunk-it-s-a-way-of-life-and-aesthetic",
+  "fetched_at": "2026-05-17T08:52:50.414496Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1teu1wl/do_you_understand_solarpunk_its_a_way_of_life_and/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Do you understand Solarpunk it's a way of Life and aesthetic it's \"the product\" of It, right?...RIGHT?",
+    "published": "2026-05-16T13:42:17",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I say this because some of the people in here doesn't quite get It, the comunal housing, the gardens, the work structure, the leizure, the buildings, the relationship with nature comes from an agreement to live under a form of ideology that it's political and not closed to change, there can be a community in Germany that favours the permaculture, there can be one in Peru that utilze different materials for their houses, and ALL OF THEM would be Solarpunk to give an example.</p> <p>Theres can not exist an holy church of Solarpunk that dictates vertically it's values</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Cataplasto\"> /u/Cataplasto </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1teu1wl/do_you_understand_solarpunk_its_a_way_of_life_and/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1teu1wl/do_you_understand_solarpunk_its_a_way_of_life_and/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "Exploring the Solarpunk movement, advocating for the importance of openness, diversity, and inclusivity, emphasizing collective harmony with nature.",
+    "themes": [
+      "solarpunk-aesthetics",
+      "community-organizing",
+      "ecological-restoration"
+    ],
+    "lateral_potential": "This promotes a holistic understanding of Solarpunk, encouraging everyone to join in creating a more harmonious and equal world.",
+    "relevance_score": 0.8,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "community-power-and-renewable-energy"
+}

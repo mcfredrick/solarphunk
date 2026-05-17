@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-17-the-quiet-pattern",
+  "fetched_at": "2026-05-17T08:52:50.413751Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1na597i/the_quiet_pattern/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "The Quiet Pattern",
+    "published": "2025-09-06T17:22:37",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I wrote this because I think something has to change about how we approach humanity\u2019s problems:</p> <p><a href=\"https://thequietpattern.github.io/thequietpattern\">https://thequietpattern.github.io/thequietpattern</a></p> <p>I myself am irrelevant. Curious what you think of it.</p> <p>Thank you.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/thequietpattern\"> /u/thequietpattern </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1na597i/the_quiet_pattern/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1na597i/the_quiet_pattern/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "Exploring a quiet, introspective approach to problem-solving, questioning the conventional way we approach complex issues.",
+    "themes": [
+      "regenerative-economics",
+      "ecological-restoration",
+      "solarpunk-aesthetics"
+    ],
+    "lateral_potential": "This approach enables a creative, slow-burning process of questioning and innovation, opening up new paths for collaborative problem-solving.",
+    "relevance_score": 0.9,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "community-power-and-renewable-energy"
+}

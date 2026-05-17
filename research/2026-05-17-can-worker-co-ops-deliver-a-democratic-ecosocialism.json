@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-17-can-worker-co-ops-deliver-a-democratic-ecosocialism",
+  "fetched_at": "2026-05-17T08:52:50.414625Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tesqio/can_worker_coops_deliver_a_democratic_ecosocialism/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Can Worker Co-ops Deliver a Democratic Ecosocialism?",
+    "published": "2026-05-16T12:46:20",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tesqio/can_worker_coops_deliver_a_democratic_ecosocialism/\"> <img alt=\"Can Worker Co-ops Deliver a Democratic Ecosocialism?\" src=\"https://external-preview.redd.it/pXhRQK2NFF4FB8JJJ2n9ONW1J1wuqgAfkYl0aFEWdX8.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=789947f81fd399ebb537f54f6a1f1030f49f1bb6\" title=\"Can Worker Co-ops Deliver a Democratic Ecosocialism?\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>A review of Worker Cooperatives and Deep Democracy: Transformative Politics and Planetary Care from Below from Pluto Press</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Brief-Ecology\"> /u/Brief-Ecology </a> <br /> <span><a href=\"https://www.briefecology.com/eco-nonfiction/can-worker-co-ops-deliver-a-democratic-ecosocialism\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tesqio/can_worker_coops_deliver_a_democratic_ecosocialism/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "Discussing the potential for worker co-ops to deliver democratic ecosocialism, providing a solution for transforming the economy towards more equitable and sustainable paths.",
+    "themes": [
+      "regulated-economy",
+      "ecological-restoration",
+      "democratic-decision-making"
+    ],
+    "lateral_potential": "This enables the development of more inclusive and sustainable economic systems, creating opportunities for collective ownership and social change.",
+    "relevance_score": 0.7,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "community-power-and-renewable-energy"
+}

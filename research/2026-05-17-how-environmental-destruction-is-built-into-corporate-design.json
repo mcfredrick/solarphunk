@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-17-how-environmental-destruction-is-built-into-corporate-design",
+  "fetched_at": "2026-05-17T08:48:15.741123Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-05-11/how-environmental-destruction-is-built-into-corporate-design/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "How environmental destruction is built into corporate design",
+    "published": "2026-05-11T08:00:40",
+    "excerpt": "Modern corporations are legally and financially structured to prioritize profit over ecological stability. The result is a system that normalizes environmental destruction while diffusing responsibility across institutions and individuals."
+  },
+  "llm_processed": {
+    "summary": "The design of corporate systems often prioritizes profit over environmental sustainability, leading to environmental destruction.",
+    "themes": [
+      "regenerative_economics",
+      "ecological_restoration",
+      "commons_governance"
+    ],
+    "lateral_potential": "This could enable a deeper understanding of how corporate systems harm the environment and how to redesign them for sustainability.",
+    "relevance_score": 0.87,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "community-power-and-renewable-energy"
+}
