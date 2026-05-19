@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-19-we-throw-away-200-lbs-of-clean-rubber-every-week-i-ll-mail-i",
+  "fetched_at": "2026-05-19T09:22:42.354044Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1th3j72/we_throw_away_200_lbs_of_clean_rubber_every_week/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "We throw away 200+ lbs of clean rubber every week. I'll mail it to you for the cost of shi",
+    "published": "2026-05-18T22:24:22",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1th3j72/we_throw_away_200_lbs_of_clean_rubber_every_week/\"> <img alt=\"We throw away 200+ lbs of clean rubber every week. I'll mail it to you for the cost of shi\" src=\"https://preview.redd.it/4dudcs8fpy1h1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=288842bbaac3312f479ea5fd4ed17314f16015f7\" title=\"We throw away 200+ lbs of clean rubber every week. I'll mail it to you for the cost of shi\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/SolarpunkGnome\"> /u/SolarpunkGnome </a> <br /> <span><a href=\"https://i.redd.it/4dudcs8fpy1h1.jpeg\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1th3j72/we_throw_away_200_lbs_of_clean_rubber_every_week/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "",
+    "themes": [
+      "zero-waste",
+      "regenerative-economics",
+      "solarpunk-aesthetics"
+    ],
+    "lateral_potential": "This enables unexpected connections between waste reduction, local economies, and upcycling, highlighting design-for-disassembly approaches.",
+    "relevance_score": 0.74,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "imagining-futures-shaping-transitions"
+}

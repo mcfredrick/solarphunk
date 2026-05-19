@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-19-how-a-different-kind-of-education-built-the-worlds-most-equa",
+  "fetched_at": "2026-05-19T09:18:17.328183Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-05-14/how-a-different-kind-of-education-built-the-worlds-most-equal-democracies/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "How a different kind of education built the world\u2019s most equal democracies",
+    "published": "2026-05-14T08:00:50",
+    "excerpt": "Nordic countries used an education system rooted in human ecology and civic formation to build high\u2011trust, more equal democracies. Could similar changes in U.S. schools help confront inequality, polarization and the climate crisis?"
+  },
+  "llm_processed": {
+    "summary": "A different type of education can build more equal societies. This means teaching people to care for each other and the environment, and to use skills and resources to improve their communities.",
+    "themes": [
+      "community-organizing",
+      "cooperative-platforms",
+      "participatory-democracy"
+    ],
+    "lateral_potential": "This idea could enable a bridge between education and community organizing, highlighting the importance of education in building more equal and resilient societies.",
+    "relevance_score": 0.87,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "imagining-futures-shaping-transitions"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-19-we-made-a-solarpunk-adventure-game-release-this-week-after-7",
+  "fetched_at": "2026-05-19T09:22:42.353741Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tgj1oz/we_made_a_solarpunk_adventure_game_release_this/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "We made a solarpunk adventure game. Release this week, after 7 years of hand-drawing \ud83d\ude05",
+    "published": "2026-05-18T10:56:22",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tgj1oz/we_made_a_solarpunk_adventure_game_release_this/\"> <img alt=\"We made a solarpunk adventure game. Release this week, after 7 years of hand-drawing \ud83d\ude05\" src=\"https://preview.redd.it/4k45mrqjmv1h1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=45387753b47dc21c330cf966c87ea4e3da86cf19\" title=\"We made a solarpunk adventure game. Release this week, after 7 years of hand-drawing \ud83d\ude05\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Inlusio_Interactive\"> /u/Inlusio_Interactive </a> <br /> <span><a href=\"https://i.redd.it/4k45mrqjmv1h1.png\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tgj1oz/we_made_a_solarpunk_adventure_game_release_this/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A team of artists and game designers created a solarpunk-themed adventure game after 7 years of hand-drawing, with an envisioned future of a harmonious relationship between humanity and nature.",
+    "themes": [
+      "approp-technology",
+      "community-organizing",
+      "solarpunk-aesthetics"
+    ],
+    "lateral_potential": "This project enables unexpected bridges between art, technology, and community, pointing to new models for creative and inclusive innovation processes.",
+    "relevance_score": 0.87,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "imagining-futures-shaping-transitions"
+}

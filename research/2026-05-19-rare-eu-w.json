@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-19-rare-eu-w",
+  "fetched_at": "2026-05-19T09:18:17.328489Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tgo9gl/rare_eu_w/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Rare EU W",
+    "published": "2026-05-18T14:25:51",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tgo9gl/rare_eu_w/\"> <img alt=\"Rare EU W\" src=\"https://preview.redd.it/2hzlknb8ow1h1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=775f72e1c094f632ac29f863f3c1692728a25e5d\" title=\"Rare EU W\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Source: <a href=\"https://ourworldindata.org/data-insights/in-2025-solar-and-wind-produced-more-electricity-than-fossil-fuels-in-the-european-union\">https://ourworldindata.org/data-insights/in-2025-solar-and-wind-produced-more-electricity-than-fossil-fuels-in-the-european-union</a></p> <p>Just a decade ago, almost three times as much electricity in the European Union was coming from fossil fuels as from clean sources. </p> <p>But last year, for the first time, solar and wind produced more than coal, gas, and oil combined. They accounted for just over 30% of total electricity production.</p> <p>This record happened despite a poor year for wind output due to low wind speeds and a slight increase in gas to compensate for lower hydropower output from dry conditions last year. </p> <p>24% from Nuclear power</p> <p>17% from Hydro+Other Renewables</p> <p>30% from Solar+Wind</p> <p>= ~70%+ electricity is Clean Energy!</p> <p>That's a rare EU W ngl. </p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/21Kuranashi\"> /u/21Kuranashi </a> <br /> <span><a href=\"https://i.redd.it/2hzlknb8ow1h1.png\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tgo9gl/rare_eu_w/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "In the European Union, solar and wind energy produced more electricity than fossil fuels for the first time in 2025.",
+    "themes": [
+      "deutschmark-economics",
+      "transition-towns",
+      "agroecology"
+    ],
+    "lateral_potential": "This data could enable a comparison between the European Union's energy transition and the goals of the Solarpunk movement, highlighting the importance of community-led initiatives and decentralized energy systems.",
+    "relevance_score": 0.87,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "imagining-futures-shaping-transitions"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-19-real-economic-change-requires-more-than-reform-we-must-build",
+  "fetched_at": "2026-05-19T09:18:17.328350Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-05-14/real-economic-change-requires-more-than-reform-we-must-build-a-solidarity-economy/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Real economic change requires more than reform, we must build a solidarity economy",
+    "published": "2026-05-14T08:00:12",
+    "excerpt": "Elections and protest movements may shift public attention, but systemic change depends on building resilient economies capable of replacing the structures now driving inequality and social fragmentation. The solidarity economy, an evolving network of post-capitalist worker-driven coalitions, is what we need."
+  },
+  "llm_processed": {
+    "summary": "Building a solidarity economy requires more than just reforming the existing system. It means designing a new economic system that prioritizes people and the planet over profit.",
+    "themes": [
+      "regenerative-economics",
+      "cooperative-platforms",
+      "degrowth"
+    ],
+    "lateral_potential": "This idea could enable a deeper conversation about the role of solidarity economies in creating more resilient and equitable societies, and how to design and anchor such systems.",
+    "relevance_score": 0.81,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "imagining-futures-shaping-transitions"
+}

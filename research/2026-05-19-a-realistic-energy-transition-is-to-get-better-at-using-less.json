@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-19-a-realistic-energy-transition-is-to-get-better-at-using-less",
+  "fetched_at": "2026-05-19T09:18:17.327877Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-05-15/a-realistic-energy-transition-is-to-get-better-at-using-less-of-it/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "A realistic \u2018energy transition\u2019 is to get better at using less of it",
+    "published": "2026-05-15T08:00:00",
+    "excerpt": "We must develop a realistic plan for energy descent, rather than clinging to naive fantasies of endless consumer abundance powered by alternatives to fossil fuels."
+  },
+  "llm_processed": {
+    "summary": "A realistic energy transition is about reducing energy use, not just switching to cleaner sources. This means changing our behavior and using technology to improve energy efficiency.",
+    "themes": [
+      "regenerative-economics",
+      "ecological-restoration",
+      "transition-towns"
+    ],
+    "lateral_potential": "This idea could enable a deeper conversation about the role of consumption in our energy transition, and how to design a society that values both personal happiness and planetary health.",
+    "relevance_score": 0.87,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "imagining-futures-shaping-transitions"
+}
