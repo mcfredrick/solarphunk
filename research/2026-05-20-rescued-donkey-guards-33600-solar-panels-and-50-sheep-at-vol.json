@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-20-rescued-donkey-guards-33600-solar-panels-and-50-sheep-at-vol",
+  "fetched_at": "2026-05-20T09:15:16.445771Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tht133/rescued_donkey_guards_33600_solar_panels_and_50/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Rescued donkey guards 33,600 solar panels and 50 sheep at Volkswagen factory",
+    "published": "2026-05-19T16:59:02",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tht133/rescued_donkey_guards_33600_solar_panels_and_50/\"> <img alt=\"Rescued donkey guards 33,600 solar panels and 50 sheep at Volkswagen factory\" src=\"https://external-preview.redd.it/iRnWWjt0uAu2UDE2V_Yb51lD97rI7TDlqJJSDy7pTXo.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=d4fb9c2b33f54871673d740a79936b641478d3b0\" title=\"Rescued donkey guards 33,600 solar panels and 50 sheep at Volkswagen factory\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/randolphquell\"> /u/randolphquell </a> <br /> <span><a href=\"https://www.yahoo.com/news/articles/rescued-donkey-guards-33-600-074000788.html?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZWNvc2lhLm9yZy8&amp;guce_referrer_sig=AQAAADdT-dIMl4HTQ03r56GDKRmeVvuetUmJOEGaATc2Yr_vggeDNOSoCcErd-7ucAfcc602CfsoQHWBrCmtXBdDFAqHQnxMhFMbypkIoX8oIx6w4VMqj76CmErGzD-IOFqKl7-qxqentj7QIbd7MbnntEaFEMWpE0vXmO4vMyGazttk\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tht133/rescued_donkey_guards_33600_solar_panels_and_50/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A rescued donkey is guarding 33,600 solar panels and 50 sheep at Volkswagen factory.",
+    "themes": [
+      "ecological-restoration",
+      "sustainable-energy",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "This post enables a bridge between social entrepreneurship and sustainable energy, highlighting the importance of having multiple revenue streams for wildlife conservation and eco-friendly business models.",
+    "relevance_score": 0.65,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "sowing-seeds-of-sustainability"
+}
