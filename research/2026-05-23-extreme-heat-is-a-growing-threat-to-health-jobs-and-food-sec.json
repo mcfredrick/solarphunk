@@ -1,0 +1,28 @@
+{
+  "id": "2026-05-23-extreme-heat-is-a-growing-threat-to-health-jobs-and-food-sec",
+  "fetched_at": "2026-05-23T08:47:24.427770Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-05-19/extreme-heat-is-a-growing-threat-to-health-jobs-and-food-security-in-southern-africa-study-looks-for-practical-solutions/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Extreme heat is a growing threat to health, jobs and food security in southern Africa \u2013 study looks for practical solutions",
+    "published": "2026-05-19T08:00:19",
+    "excerpt": "Extreme heat is already a defining climate and health threat in southern Africa, yet public debate still treats it as ordinary bad weather. A new study shows that, as climate change drives more extreme events, governments and institutions can adopt practical steps to make communities more climate\u2011resilient."
+  },
+  "llm_processed": {
+    "summary": "This article looks at the impact of extreme heat on health, jobs, and food security in southern Africa, and explores practical solutions.",
+    "themes": [
+      "climate",
+      "regenerative economies",
+      "justice in climate action",
+      "vulnerability and resilience",
+      "water commons"
+    ],
+    "lateral_potential": "This topic often leads to discussions on Decentralized Systems, Adaptive Planning and Circular Economy for Resilience.",
+    "relevance_score": 0.8,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "beyond-heat-and-hunger"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "2026-05-23-crazy-town-episode-125-the-lighter-side-of-dark-ages-with-ch",
+  "fetched_at": "2026-05-23T08:47:24.426982Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-05-20/crazy-town-episode-125-lighter-side-of-dark-ages/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Crazy Town: Episode 125. The Lighter Side of Dark Ages with Chris Smaje",
+    "published": "2026-05-20T08:00:00",
+    "excerpt": "Chris Smaje visits Crazy Town for some farmer-to-farmer straight talk. We cover Viking raids to agrarian populism, from societal collapse to the practicalities of making your way in a failed state. And they can\u2019t get away from the shop talk of gardens, livestock, and home economics."
+  },
+  "llm_processed": {
+    "summary": "This conversation with Chris Smaje explores how communities can move from an unsustainable economy to a more self-sufficient one.",
+    "themes": [
+      "ecological restoration",
+      "community organizing",
+      "alternative economies",
+      "common wealth"
+    ],
+    "lateral_potential": "This topic often sparks discussions on decentralized systems, village-living, and rural economies.",
+    "relevance_score": 0.7,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "beyond-heat-and-hunger"
+}

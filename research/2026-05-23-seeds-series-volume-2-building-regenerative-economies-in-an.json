@@ -1,0 +1,27 @@
+{
+  "id": "2026-05-23-seeds-series-volume-2-building-regenerative-economies-in-an",
+  "fetched_at": "2026-05-23T08:47:24.426676Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-05-20/seeds-series-volume-2-building-regenerative-economies-in-an-age-of-collapse/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Seeds Series Volume 2: Building regenerative economies in an age of collapse",
+    "published": "2026-05-20T08:00:33",
+    "excerpt": "A new volume in the r3.0 \u201cSeeds Series\u201d brings together thinkers, activists and systems scholars exploring how societies might move through ecological and institutional breakdown toward more regenerative, place-based and cooperative forms of life."
+  },
+  "llm_processed": {
+    "summary": "Volume 2 explores the concept of regenerative economics and how it can help us transition to a more sustainable future.",
+    "themes": [
+      "regenerative economics",
+      "community organizing",
+      "alternative economies",
+      "ecological restoration"
+    ],
+    "lateral_potential": "This reading often leads to discussions on post-growth economics and the importance of creative, self-sufficient communities.",
+    "relevance_score": 0.8,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "beyond-heat-and-hunger"
+}

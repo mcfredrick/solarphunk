@@ -1,0 +1,27 @@
+{
+  "id": "2026-05-23-history-suggests-inequality-ends-in-catastrophe-we-need-anot",
+  "fetched_at": "2026-05-23T08:47:24.427146Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-05-19/history-suggests-inequality-ends-in-catastrophe-we-need-another-path/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "History suggests inequality ends in catastrophe. We need another path",
+    "published": "2026-05-19T08:00:37",
+    "excerpt": "History offers a grim account of how structural change occurs. But concealed within that bleakness is a window of possibility that opens just when things fall apart."
+  },
+  "llm_processed": {
+    "summary": "This article argues that rising inequality ends in catastrophe and that we need a different path.",
+    "themes": [
+      "regenerative economics",
+      "degrowth movement",
+      "ecological restoration",
+      "changing the narrative"
+    ],
+    "lateral_potential": "This topic often leads to discussions on experimenting new forms of hierarchy, circular economy, education and perspectival view.",
+    "relevance_score": 0.7,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "beyond-heat-and-hunger"
+}
