@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-24-indigenous-leadership-community-ownership-two-oft-overlooked",
+  "fetched_at": "2026-05-24T08:56:57.887410Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tlsp0x/indigenous_leadership_community_ownership_two/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Indigenous leadership, community ownership: two oft-overlooked pillars of the solarpunk movement?",
+    "published": "2026-05-23T21:26:13",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tlsp0x/indigenous_leadership_community_ownership_two/\"> <img alt=\"Indigenous leadership, community ownership: two oft-overlooked pillars of the solarpunk movement?\" src=\"https://preview.redd.it/hjegmgbwfy2h1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=1e02915e20817501c526be078e5fcb95e7dec7ce\" title=\"Indigenous leadership, community ownership: two oft-overlooked pillars of the solarpunk movement?\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>I've been working with a local homeless shelter for some time now, and we have a partnership with our local tribe who just gave us a grant! One of the top priorities for participants in our program was to be able to grow our own food, so our first grant purchase was raised garden beds for the shelter. I've been impressed by how people have pitched in, gotten it done and are ready to keep working! Unhoused people often have a lot of DIY skill borne of necessity. While many have some difficult behaviors associated with their time unsheltered, having a sense of ownership in their environment and acccess to green growing things helps regulate and support their mental health.</p> <p>This has also been a great experience in building community, both within the shelter and with our local partners. The tribe is inspiring in how it supports its members and encourages sustainable local action. As imperial governments around the world continue to drag their feet on meaningful climate action and green design, indigenous communities can be a great resource for responsive actions and community support. </p> <p>I hope this is okay to post here - I know it doesn't look very utopian. But this was a small victory for us, and it came from the ground up. Let me know what your community is doing!</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/psykulor\"> /u/psykulor </a> <br /> <span><a href=\"https://www.reddit.com/gallery/1tlsp0x\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tlsp0x/indigenous_leadership_community_ownership_two/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "Submissions exploring the oft-overlooked pillars of indigenous leadership and community ownership in the solarpunk movement.",
+    "themes": [
+      "solarpunk-aesthetics-and-culture",
+      "community-organizing-and-mutual-aid",
+      "indigenous-leadership-and-culture"
+    ],
+    "lateral_potential": "Enables a deeper understanding and amplification of marginalized perspectives and community-led initiatives within the solarpunk movement.",
+    "relevance_score": 0.95,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "hope-in-the-time-of-transition"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "2026-05-24-a-street-transformation-warsaw",
+  "fetched_at": "2026-05-24T08:56:57.888245Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tlav0r/a_street_transformation_warsaw/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "A street transformation, Warsaw.",
+    "published": "2026-05-23T08:38:17",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tlav0r/a_street_transformation_warsaw/\"> <img alt=\"A street transformation, Warsaw.\" src=\"https://preview.redd.it/fmuxuwjvau2h1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=2572bfced08ea052c90e76da5beab8a4a4bf92bb\" title=\"A street transformation, Warsaw.\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Source: TomaszGolonko on twitter. The underground tunnel has been repurposed to serve as a water reservoir for trees and plants above.</p> <p>More transformation: <a href=\"https://www.reddit.com/r/solarpunk/s/XkX4yLI3Gp\">https://www.reddit.com/r/solarpunk/s/XkX4yLI3Gp</a> </p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/21Kuranashi\"> /u/21Kuranashi </a> <br /> <span><a href=\"https://i.redd.it/fmuxuwjvau2h1.jpeg\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tlav0r/a_street_transformation_warsaw/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "",
+    "themes": [],
+    "lateral_potential": "",
+    "relevance_score": 0.75,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "hope-in-the-time-of-transition"
+}

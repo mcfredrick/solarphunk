@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-24-today-the-last-fossil-fuel-bus-in-chengdu-was-retired",
+  "fetched_at": "2026-05-24T08:56:57.889017Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tknzt8/today_the_last_fossil_fuel_bus_in_chengdu_was/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Today, the last fossil fuel bus in Chengdu was retired",
+    "published": "2026-05-22T16:26:17",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tknzt8/today_the_last_fossil_fuel_bus_in_chengdu_was/\"> <img alt=\"Today, the last fossil fuel bus in Chengdu was retired\" src=\"https://preview.redd.it/asa1u624tp2h1.jpg?width=140&amp;height=93&amp;auto=webp&amp;s=10e990fa53c93c4443ed1ebdf96dd646fee5b7aa\" title=\"Today, the last fossil fuel bus in Chengdu was retired\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>After bus number P3651 was retired, the city of Chengdu achieved 100% electrification of its public buses.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/No-Echidna7296\"> /u/No-Echidna7296 </a> <br /> <span><a href=\"https://www.reddit.com/gallery/1tknzt8\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tknzt8/today_the_last_fossil_fuel_bus_in_chengdu_was/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "Chengdu officially achieves 100% electrification of public buses, marking a significant milestone in the transition to renewable energy.",
+    "themes": [
+      "regenerative-economics",
+      "ecological-restoration",
+      "transition-towns"
+    ],
+    "lateral_potential": "Demonstrates a critical step in China's accelerated transition towards renewable energy, driving innovation and lowering emissions.",
+    "relevance_score": 0.95,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "hope-in-the-time-of-transition"
+}

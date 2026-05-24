@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-24-demand-utopia-a-solarpunk-podcast",
+  "fetched_at": "2026-05-24T08:56:57.888408Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tlutaf/demand_utopia_a_solarpunk_podcast/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Demand Utopia: A Solarpunk Podcast",
+    "published": "2026-05-23T22:57:20",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tlutaf/demand_utopia_a_solarpunk_podcast/\"> <img alt=\"Demand Utopia: A Solarpunk Podcast\" src=\"https://external-preview.redd.it/zhY8MJ3quhFPCPgduTsZx9oc9_q8kEUgMhgxIwc9uec.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=62b182bc8e8f3a65bbb8615efce311f6b35d6b4c\" title=\"Demand Utopia: A Solarpunk Podcast\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/AcanthisittaBusy457\"> /u/AcanthisittaBusy457 </a> <br /> <span><a href=\"https://podcasts.apple.com/ca/podcast/demand-utopia-a-solarpunk-podcast/id1589869304?l=fr-CA\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tlutaf/demand_utopia_a_solarpunk_podcast/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A podcast focused on exploring and amplifying solarpunk ideas and ideals.",
+    "themes": [
+      "solarpunk-aesthetics-and-culture",
+      "solarpunk-podcast",
+      "community-organizing-and-mutual-aid"
+    ],
+    "lateral_potential": "Provides a platform for solarpunk enthusiasts and leaders to connect and share their work.",
+    "relevance_score": 0.85,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "hope-in-the-time-of-transition"
+}

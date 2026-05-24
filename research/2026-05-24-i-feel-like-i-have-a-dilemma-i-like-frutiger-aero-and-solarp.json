@@ -1,0 +1,26 @@
+{
+  "id": "2026-05-24-i-feel-like-i-have-a-dilemma-i-like-frutiger-aero-and-solarp",
+  "fetched_at": "2026-05-24T08:56:57.888863Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tltk6y/i_feel_like_i_have_a_dilemma_i_like_frutiger_aero/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "I feel like I have a dilemma\u2026 (I like frutiger aero and solarpunk)",
+    "published": "2026-05-23T22:02:26",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I love solarpunk as a movement and an aesthetic so much especially being an anarchist it\u2019s great to have an ecological community based utopia which was always my dream since I was very young. I love its grassroots handmade decorations inspired by Art Nouveau and how it incorporates vernaculars. It\u2019s also very Indigenous focused which I love.</p> <p>However I also love the frutiger aero aesthetic but I have it like a guilty pleasure because it very much so glorifies capitalism and technology (not that I\u2019m full against technology) with a lot of greenwashing. I love the aesthetic so much though and it happens to be a bit nostalgic but my lean for the love of the aesthetic is not from nostalgia.</p> <p>I know you can like two things at the same time but this kind of feels wrong so idk if anyone feels this way too or has any ideas on how to combine the two I\u2019m not sure and feel stupid right now\u2026\ud83d\udc94</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Calm-Investigator547\"> /u/Calm-Investigator547 </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tltk6y/i_feel_like_i_have_a_dilemma_i_like_frutiger_aero/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tltk6y/i_feel_like_i_have_a_dilemma_i_like_frutiger_aero/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "A discussion about the tension between enjoying solarpunk aesthetics and their potential flaws.",
+    "themes": [
+      "solarpunk-aesthetics-and-culture",
+      "frutiger-aero",
+      "capitalism-critique"
+    ],
+    "lateral_potential": "A nuanced exploration of solarpunk's relationship with capitalism and the implications of borrowing from capitalist design.",
+    "relevance_score": 0.65,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "hope-in-the-time-of-transition"
+}
