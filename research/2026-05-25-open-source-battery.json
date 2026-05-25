@@ -1,0 +1,25 @@
+{
+  "id": "2026-05-25-open-source-battery",
+  "fetched_at": "2026-05-25T09:30:18.685133Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tms0rx/open_source_battery/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Open source battery",
+    "published": "2026-05-24T23:41:05",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tms0rx/open_source_battery/\"> <img alt=\"Open source battery\" src=\"https://external-preview.redd.it/6crLfxURHUdk264baxGr8fxWRcVzPeLmYnhlWm0gfJo.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=69a702e2c0fef50098ec741427cb4c1ea0a84081\" title=\"Open source battery\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/ChampionshipSalt696\"> /u/ChampionshipSalt696 </a> <br /> <span><a href=\"https://youtu.be/xhWBX1eLDr8?si=PyBtovTw5JGm1MkI\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tms0rx/open_source_battery/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "An open-source battery project aims to develop a cost-effective and sustainable battery design.",
+    "themes": [
+      "open-science",
+      "decentralized-energy"
+    ],
+    "lateral_potential": "Enables the democratization of battery technology, potentially fostering a shift away from centralized energy systems.",
+    "relevance_score": 0.98,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "decentralizing-urban-futures"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "2026-05-25-district-heating-and-new-tech",
+  "fetched_at": "2026-05-25T09:30:18.684836Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tn2s2u/district_heating_and_new_tech/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "District Heating and new tech",
+    "published": "2026-05-25T08:21:10",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tn2s2u/district_heating_and_new_tech/\"> <img alt=\"District Heating and new tech\" src=\"https://preview.redd.it/mmckx5not83h1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=7c941314a94eb220913113bff5167844adb71ff8\" title=\"District Heating and new tech\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Happy Monday folks</p> <p>This may surprise some of you and for others it will be the most inane and boring thing you have ever heard. That is because is some countries most Heating and cooling is delivered by vast underground networks of pipes carrying hot and cold water into buildings and back out of them. Much of the heat is recirculated, and would otherwise be let off as waste!</p> <p>In most countries however Heating and cooling are carried out on site, in your home or office or what have you. Most of us are used to gas boilers, hot water tanks, heat pumps or of course, the classic, the hearth, the fire. </p> <p>It is my understanding that these pipe networks have saved millions of tons of carbon and billions of euros in oil and gas that hasn't had to be imported over the last 50 years. They also shield their societies from shocks, price or supply shocks, as they let whole communities change fuel source at the flick of a switch.</p> <p>My post is half to prompt discussion on this marvelously simple application of tech I only found out about recently, but to finish with a question - are people aware of any new pushes or applications of new technology to District heating to help it catch on and spread faster out in the wild?</p> <p>I hope you are all having a wonderful day and I hope this sparks some creative ideas for someone out there.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/nonlabrab\"> /u/nonlabrab </a> <br /> <span><a href=\"https://i.redd.it/mmckx5not83h1.jpeg\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tn2s2u/district_heating_and_new_tech/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "District heating involves circulating hot water to buildings and back out, allowing for efficient heat transfer and reducing waste.",
+    "themes": [
+      "appropriate-technology",
+      "regenerative-economics"
+    ],
+    "lateral_potential": "Enables the reduction of energy waste in buildings, highlighting opportunities for efficiency and conservation.",
+    "relevance_score": 0.79,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "decentralizing-urban-futures"
+}

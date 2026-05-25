@@ -1,0 +1,25 @@
+{
+  "id": "2026-05-25-new-solarpunk-hopepunk-climatefiction-novel-a-new-faith",
+  "fetched_at": "2026-05-25T09:30:18.685288Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tms0pn/new_solarpunk_hopepunk_climatefiction_novel_a_new/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "New #solarpunk #hopepunk #climatefiction novel \"A New Faith\"",
+    "published": "2026-05-24T23:41:00",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>In these times of despair, here is a new solarpunk story to mull over - \u201cA New Faith\u201d. </p> <p>Available to read online or download (EPUB and PDF) for free at: <a href=\"https://tinjar.ghost.io/a-new-faith\">https://tinjar.ghost.io/a-new-faith</a></p> <p>Alia, a precocious police detective, is feverishly hunting the killer responsible for the first-ever murder in the city of Sequoia located within the Arctic Circle in Scandinavia. The city was, specifically, created for millions of climate refugees in the aftermath of a catastrophic heat wave. Then the second murder happens. Sara, the killer, is willing to go to any lengths to avoid capture. The only similarity between the two victims threatens the very future of Sequoia. As Alia races against time to save the city, she discovers a deadly secret which turns her life upside down. Will she solve the two murders? Will the city survive? </p> <p><strong>Comparable novels</strong></p> <ul> <li>Octavia Butler\u2019s \u201cParable of the Sower\u201d</li> <li>Neal Stephenson\u2019s \u201cTermination Shock\u201d</li> <li>Kim Stanley Robinson\u2019s \u201cMinistry for the Future\u201d</li> <li>Steven Markley\u2019s \u201cThe Deluge\u201d</li> <li>Jens Liljestrand\u2019s \u201cEven if Everything Ends\u201d</li> <li>Amitav Ghosh\u2019s \u201cGun Island\u201d</li> <li>Emily St. John Mandel\u2019s \u201cStation Eleven\u201d</li> </ul> <p><strong>Motivation</strong></p> <p>A fair bit of global warming is already baked in even if we manage to quickly bring down future GHG emissions. The effects of climate change are being felt in catastrophic ways in many places around the world. How we adapt to those impacts will be a major preoccupation for the rest of our lives and beyond. Adaptation would require efforts to help people survive in their existing homes and/or help people relocate to more habitable environments. In this novel, set in the near future, I explore a world in which a large number of people move away from dangerous places to a safer one. In an era of draconian restrictions on migration, this story attempts to explore several challenging questions - will the climate migrants be allowed to settle down in relatively safer places? How many will be allowed to do so? Who will be allowed? Under what conditions? How will the migrants cope with the massive transition? Will they take the good and bad aspects of their current lives to the new land? Or will they develop new ways of peaceful living? Will the rest of the world allow them to live in peace?</p> <p>#books #book #novel #story #fiction #hopepunk #solarpunk #climatefiction #sciencefiction #speculativefiction #mystery #thriller #detective #women #climate #climatechange #climatecrisis #extinction #survival #adaptation #migration #immigration #indie #indieauthor #scifi #clifi #hope #utopia #protopia #urban</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/TinJar-Solarpunk\"> /u/TinJar-Solarpunk </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tms0pn/new_solarpunk_hopepunk_climatefiction_novel_a_new/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tms0pn/new_solarpunk_hopepunk_climatefiction_novel_a_new/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "The novel 'A New Faith' explores a solarpunk story of climate transformation and community building.",
+    "themes": [
+      "solarpunk-aesthetics",
+      "ecological-restoration"
+    ],
+    "lateral_potential": "Offers a nuanced exploration of community building and ecological restoration, highlighting potential paths for sustainable development.",
+    "relevance_score": 0.89,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "decentralizing-urban-futures"
+}

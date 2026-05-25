@@ -1,0 +1,25 @@
+{
+  "id": "2026-05-25-by-tram-through-the-polish-city-of-wroclaw-dw-documentary",
+  "fetched_at": "2026-05-25T09:30:18.685883Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1tmi7w2/by_tram_through_the_polish_city_of_wroc\u0142aw_dw/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "By tram through the Polish city of Wroc\u0142aw | DW Documentary",
+    "published": "2026-05-24T17:19:04",
+    "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/solarpunk/comments/1tmi7w2/by_tram_through_the_polish_city_of_wroc\u0142aw_dw/\"> <img alt=\"By tram through the Polish city of Wroc\u0142aw | DW Documentary\" src=\"https://external-preview.redd.it/M4iAmq-PgE735QRU7A3a_qUsis9mdPOVX1aM30YMxMA.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;s=78ab75275ee30e6210c2ef97ed06102d83bc4169\" title=\"By tram through the Polish city of Wroc\u0142aw | DW Documentary\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Around 11:00 minute there's a part dedicated to house boats and floating gardens that you might enjoy, but I highly recommend watching it all. It's about infrastructure, architecture, art and partly a slice of life in polish city. Hope you enjoy it as much as I did.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/zubergu\"> /u/zubergu </a> <br /> <span><a href=\"https://youtu.be/RTU0x2rBDNM?si=xdLD4BcId3Do6Le3\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1tmi7w2/by_tram_through_the_polish_city_of_wroc\u0142aw_dw/\">[comments]</a></span> </td></tr></table>"
+  },
+  "llm_processed": {
+    "summary": "A documentary showcases the sustainable infrastructure and innovative architecture of Wroc\u0142aw, Poland.",
+    "themes": [
+      "transit-oriented-development",
+      "sustainable-infrastructure"
+    ],
+    "lateral_potential": "Highlights the potential for urban planning and design to promote sustainability and community development.",
+    "relevance_score": 0.8,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "decentralizing-urban-futures"
+}
