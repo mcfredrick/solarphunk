@@ -1,0 +1,26 @@
+{
+  "id": "2026-06-15-transformation-harit-upvan-upralsi-noida",
+  "fetched_at": "2026-06-15T10:32:30.004844Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1u5vefp/transformation_harit_upvan_upralsi_noida/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Transformation: Harit Upvan Upralsi Noida",
+    "published": "2026-06-14T20:11:59",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>A tremendous transformation shown by @peepalbaba : <a href=\"https://www.instagram.com/p/DZhrW-xjyeI/\">https://www.instagram.com/p/DZhrW-xjyeI/</a></p> <blockquote> <p>Our Harit Upvan Upralsi site has changed tremendously.</p> </blockquote> <p>A lot of the land we work on comes to us in a difficult condition. </p> <p>The soil is degraded, there is very little vegetation and at first glance it can be hard to imagine what the future might look like. </p> <p>But our field teams put in the work every day, planting, protecting saplings and giving the land the attention it needs.</p> <p>The transformation is visible everywhere you look.</p> <h1>Trees have grown beautifully, birds have made this site their home, and the landscape is now full of life.</h1> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/21Kuranashi\"> /u/21Kuranashi </a> <br /> <span><a href=\"https://www.reddit.com/gallery/1u5urf9\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1u5vefp/transformation_harit_upvan_upralsi_noida/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "The article showcases a transformation of a barren piece of land into a thriving ecosystem through field team efforts, highlighting the importance of daily labor in reviving nature.",
+    "themes": [
+      "ecological-restoration",
+      "community-organizing-and-mutual-aid",
+      "appopriate-technology"
+    ],
+    "lateral_potential": "This enables connections between community-led restoration projects, appropriate technology, and participatory approaches to environmental conservation.",
+    "relevance_score": 0.92,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "conservation-meets-gift-economy"
+}

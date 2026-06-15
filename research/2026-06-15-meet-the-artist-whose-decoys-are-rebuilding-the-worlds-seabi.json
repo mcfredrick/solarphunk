@@ -1,0 +1,25 @@
+{
+  "id": "2026-06-15-meet-the-artist-whose-decoys-are-rebuilding-the-worlds-seabi",
+  "fetched_at": "2026-06-15T10:15:33.328228Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-06-10/meet-the-artist-whose-decoys-are-rebuilding-the-worlds-seabird-colonies/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Meet the artist whose decoys are rebuilding the world\u2019s seabird colonies",
+    "published": "2026-06-10T08:00:28",
+    "excerpt": "For more than a decade, Sue \u201cSeabird Sue\u201d Schubel\u2019s lifelike decoys have anchored a global seabird restoration effort built on \u201csocial attraction,\u201d luring colony-nesting birds back to lost or safer habitats, a strategy that has aided about a third of the world\u2019s seabird species, including some of the most endangered."
+  },
+  "llm_processed": {
+    "summary": "Artist Sue Schubel's decoy birds are helping to rebuild the world's seabird colonies, demonstrating the power of social attraction in conservation efforts. This approach recognizes the importance of community-based solutions and collaborative conservation.",
+    "themes": [
+      "ecological-restoration",
+      "community-organizing"
+    ],
+    "lateral_potential": "Using decoy birds as a conservation tool could enable unexpected bridges with community-led conservation projects, as well as research on more effective and inclusive conservation strategies.",
+    "relevance_score": 0.81,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "conservation-meets-gift-economy"
+}

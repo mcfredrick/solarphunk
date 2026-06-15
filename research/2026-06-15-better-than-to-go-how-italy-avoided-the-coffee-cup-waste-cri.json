@@ -1,0 +1,25 @@
+{
+  "id": "2026-06-15-better-than-to-go-how-italy-avoided-the-coffee-cup-waste-cri",
+  "fetched_at": "2026-06-15T10:15:33.328114Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-06-10/better-than-to-go-how-italy-solved-the-coffee-waste-crisis-before-it-even-started/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Better than to-go: How Italy avoided the coffee cup waste crisis before it even started",
+    "published": "2026-06-10T08:00:59",
+    "excerpt": "While coffee chains across North America generate mountains of disposable cups and lids every day, Italy's traditional caf\u00e9 culture offers a different model. By serving coffee in reusable cups and encouraging customers to stay rather than rush away, Italian bars show that convenience and sustainability do not have to be at odds."
+  },
+  "llm_processed": {
+    "summary": "In Italy, the tradition of drinking coffee in cafes, rather than relying on disposable cups, has helped avoid the coffee cup waste crisis. This approach promotes community gathering and social interaction, while minimizing waste and pollution.",
+    "themes": [
+      "community-organizing",
+      "transition-towns"
+    ],
+    "lateral_potential": "Adopting a more communal approach to coffee culture could enable unexpected bridges with local food systems and cooperative economies, as well as initiatives focused on reducing waste and promoting sustainable consumption.",
+    "relevance_score": 0.85,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "conservation-meets-gift-economy"
+}

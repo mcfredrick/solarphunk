@@ -1,0 +1,25 @@
+{
+  "id": "2026-06-15-for-6000-years-humanity-controlled-water-climate-change-is-c",
+  "fetched_at": "2026-06-15T10:15:33.327989Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-06-11/for-6000-years-humanity-controlled-water-climate-change-is-changing-the-equation/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "For 6,000 years humanity controlled water. Climate change is changing the equation",
+    "published": "2026-06-11T08:00:38",
+    "excerpt": "For 6,000 years, human societies have sought to control water through ever-larger infrastructure. As climate change brings more extreme floods, droughts and heatwaves, a growing number of cities are exploring a different path: adapting to water's rhythms rather than trying to dominate them."
+  },
+  "llm_processed": {
+    "summary": "For 6,000 years, humans have controlled water, often at the expense of other species. Climate change is changing this equation, and it's time to redefine our relationship with water, recognizing its vital role in sustaining life and ecosystems.",
+    "themes": [
+      "ecological-restoration",
+      "agroecology"
+    ],
+    "lateral_potential": "Rethinking our relationship with water could enable unexpected bridges with watershed restoration and community-led conservation projects, as well as research on more sustainable water management practices.",
+    "relevance_score": 0.89,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "conservation-meets-gift-economy"
+}

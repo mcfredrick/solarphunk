@@ -1,0 +1,26 @@
+{
+  "id": "2026-06-15-what-does-care-really-mean-in-agroecology",
+  "fetched_at": "2026-06-15T10:15:33.327510Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-06-12/what-does-care-really-mean-in-agroecology/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "What does \u2018care\u2019 really mean in agroecology?",
+    "published": "2026-06-12T08:00:04",
+    "excerpt": "So much talk about the importance of \u2018care\u2019 in agroecology, but what does it mean? Anouk Dijkman\u2019s \u2018Matrix of Care\u2019 offers a clear way to see how domestic, community and more\u2011than\u2011human care practices connect, and why they matter for agroecological change."
+  },
+  "llm_processed": {
+    "summary": "Agroecological systems prioritize care for the land and communities, recognizing the intersection of exploitation and environment. It's essential to explore care beyond its traditional bounds to create a more equitable and sustainable model.",
+    "themes": [
+      "agroecology",
+      "ecological-restoration",
+      "cooperative-platforms"
+    ],
+    "lateral_potential": "Exploring the concept of care in agroecology could enable unexpected bridges with feminist and decolonial movements, as well as community-based projects focused on social and environmental justice.",
+    "relevance_score": 0.84,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "conservation-meets-gift-economy"
+}

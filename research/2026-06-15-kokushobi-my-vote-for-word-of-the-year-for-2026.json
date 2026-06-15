@@ -1,0 +1,25 @@
+{
+  "id": "2026-06-15-kokushobi-my-vote-for-word-of-the-year-for-2026",
+  "fetched_at": "2026-06-15T10:15:33.328444Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-06-09/kokushobi-my-vote-for-word-of-the-year-for-2026/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Kokushobi: My vote for word of the year for 2026",
+    "published": "2026-06-09T08:00:30",
+    "excerpt": "As Japan coins a new term for \u201ccruelly hot days,\u201d its linguistic and institutional adaptation to extreme heat starkly contrasts with growing climate denial among U.S. political elites, revealing an emerging global split between fossil-fuel holdouts and nations pushing for a rapid energy transition."
+  },
+  "llm_processed": {
+    "summary": "The term kokushobi, or 'Cruelly Hot Day,' highlights the need to take action on climate change, particularly in Japan. This recognition can inform efforts to reduce carbon emissions and promote climate resilience.",
+    "themes": [
+      "climate-action",
+      "ecological-restoration"
+    ],
+    "lateral_potential": "Using the term kokushobi could enable unexpected bridges with climate activism, as well as research on more effective climate governance and resilience-building strategies.",
+    "relevance_score": 0.87,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "conservation-meets-gift-economy"
+}

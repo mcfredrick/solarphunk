@@ -1,0 +1,26 @@
+{
+  "id": "2026-06-15-sea-beet-sugar-beet",
+  "fetched_at": "2026-06-15T10:34:56.683947Z",
+  "source": {
+    "feed_url": "https://dark-mountain.net/feed/",
+    "article_url": "https://dark-mountain.net/sea-beet-sugar-beet/",
+    "feed_name": "Dark Mountain Project"
+  },
+  "raw": {
+    "title": "Sea Beet, Sugar Beet",
+    "published": "2025-12-26T11:21:01",
+    "excerpt": "<p>The summer the visitors flock from the cities to the sandy lands: the children run...</p>\n<p>The post <a href=\"https://dark-mountain.net/sea-beet-sugar-beet/\">Sea Beet, Sugar Beet</a> appeared first on <a href=\"https://dark-mountain.net\">Dark Mountain</a>.</p>"
+  },
+  "llm_processed": {
+    "summary": "Learning about the versatile plant sea beet, noting its comparison to sugar beet in terms of both usage and its ability to thrive in different environments.",
+    "themes": [
+      "agroecology",
+      "regenerative-economics",
+      "ecological-restoration"
+    ],
+    "lateral_potential": "This resource enables a connection between lesser known crops and practical post-growth agriculture as a potential bounce point for transition towns.",
+    "relevance_score": 0.65,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "conservation-meets-gift-economy"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2026-06-15-save-them-from-ourselves",
+  "fetched_at": "2026-06-15T10:32:30.004516Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1u5kox5/save_them_from_ourselves/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "Save Them {From Ourselves}",
+    "published": "2026-06-14T13:06:13",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>A harrowing demonstration of the true number of these species that are remaining in the wild.</p> <h1>There is only one root solution to this: We must return the land we took away from them by force.</h1> <p>Now, there are many ways to attain such a future, and Eco-Georgism is one fundamental economic concept that could alleviate much of the urban sprawl that threatens our environment. It promotes denser and more efficient human settlements while allowing vast areas of nature to recover. </p> <blockquote> <p>A Solarian civilization must not seek to dominate nature, but to coexist with it sustainably. That can be achieved through combining architecture with ecology : Arcology. </p> </blockquote> <p>Through rewilding, ecological restoration, wildlife corridors, and sustainable cities &amp; habitats, we can create a world where human civilization no longer comes at the expense of every other species.</p> <p>The blurry images are a warning.</p> <p>If we continue to erase the wild, one day the only clear images left of these creatures will be the ones in our archives.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/21Kuranashi\"> /u/21Kuranashi </a> <br /> <span><a href=\"https://www.reddit.com/gallery/1u5kod6\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1u5kox5/save_them_from_ourselves/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "The article discusses the exponential decline of species in the wild and proposes that returning land taken from nature by force is the root solution. Eco-Georgism is mentioned as an economic concept to alleviate urban sprawl.",
+    "themes": [
+      "regenerative-economics",
+      "ecological-restoration",
+      "transition-towns"
+    ],
+    "lateral_potential": "The article enables bridges between ecological restoration, regenerative economics, and sustainable urban planning.",
+    "relevance_score": 0.81,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "conservation-meets-gift-economy"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2026-06-15-it-is-quite-incredible-that-humanity-can-make-the-world-howe",
+  "fetched_at": "2026-06-15T10:32:30.005126Z",
+  "source": {
+    "feed_url": "https://www.reddit.com/r/solarpunk/.rss",
+    "article_url": "https://www.reddit.com/r/solarpunk/comments/1u5y8vf/it_is_quite_incredible_that_humanity_can_make_the/",
+    "feed_name": "r/solarpunk"
+  },
+  "raw": {
+    "title": "It is quite incredible that humanity can make the world however they want...",
+    "published": "2026-06-14T22:07:05",
+    "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>and we are in the middle of climate change and have an unfair gap between rich and poor instead of a world where the most important topics are living in harmony with the environment and all human lifes to be made equally like living in paradies.</p> <p>And we as a collective can do that! Every one of us, believe in the future you want and it is one step closer to coming true! </p> <p>Don't play THEIR game, because the house always wins. Let's try and make our own rules. Our Solarpunk future!</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/MariaVanillaUwU\"> /u/MariaVanillaUwU </a> <br /> <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1u5y8vf/it_is_quite_incredible_that_humanity_can_make_the/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/solarpunk/comments/1u5y8vf/it_is_quite_incredible_that_humanity_can_make_the/\">[comments]</a></span>"
+  },
+  "llm_processed": {
+    "summary": "The article expresses frustration with the current state of the world and calls for a solar punk future where living in harmony with the environment and equalizing human lives is prioritized.",
+    "themes": [
+      "regenerative-economics",
+      "ecological-restoration",
+      "cooperative-platforms"
+    ],
+    "lateral_potential": "This article enables connections between environmentally conscious economics, ecological restoration, and cooperative platforms.",
+    "relevance_score": 0.67,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "conservation-meets-gift-economy"
+}

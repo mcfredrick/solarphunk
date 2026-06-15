@@ -1,0 +1,25 @@
+{
+  "id": "2026-06-15-relationality-rebuilding-the-connections-that-sustain-life",
+  "fetched_at": "2026-06-15T10:15:33.327838Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-06-11/relationality-rebuilding-the-connections-that-sustain-life/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "Relationality: Rebuilding the connections that sustain life",
+    "published": "2026-06-11T08:00:46",
+    "excerpt": "This chapter of the Seeds Series explores \"relationality\" as a foundation for regenerative cultures, drawing on insights from various interviewees to show how empathy, accountability, place-based belonging, and interdependence can help heal the social and ecological fractures of modern life."
+  },
+  "llm_processed": {
+    "summary": "Relational systems thinking connects Western systems thinking with Indigenous ways of understanding the world, allowing societies to intentionally dismantle collapsing systems and replace them with regenerative ones. This approach prioritizes relationships between humans, nature, and other organisms, fostering a more holistic understanding.",
+    "themes": [
+      "cooperative-platforms",
+      "commons-governance"
+    ],
+    "lateral_potential": "Applying relational systems thinking could enable unexpected bridges with Indigenous and ecofeminist movements, as well as projects focused on restorative justice and decolonization.",
+    "relevance_score": 0.82,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "conservation-meets-gift-economy"
+}

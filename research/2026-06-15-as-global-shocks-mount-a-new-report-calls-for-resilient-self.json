@@ -1,0 +1,25 @@
+{
+  "id": "2026-06-15-as-global-shocks-mount-a-new-report-calls-for-resilient-self",
+  "fetched_at": "2026-06-15T10:15:33.328346Z",
+  "source": {
+    "feed_url": "https://www.resilience.org/feed/",
+    "article_url": "https://www.resilience.org/stories/2026-06-10/as-global-shocks-mount-a-new-report-calls-for-resilient-self-reliant-food-systems/",
+    "feed_name": "Resilience"
+  },
+  "raw": {
+    "title": "As global shocks mount, a new report calls for resilient, self-reliant food systems",
+    "published": "2026-06-10T08:00:12",
+    "excerpt": "Resilient, self-reliant food systems. A new IPES-Food report says they\u2019re key to addressing food price volatility amid rising geopolitical tensions."
+  },
+  "llm_processed": {
+    "summary": "A new report calls for resilient, self-reliant food systems, recognizing the need to reduce dependence on global markets and stabilize food prices in the face of global shocks. This approach prioritizes local food systems and community-led initiatives.",
+    "themes": [
+      "food-sovereignty",
+      "community-organizing"
+    ],
+    "lateral_potential": "Promoting self-reliant food systems could enable unexpected bridges with local food movements, as well as research on more sustainable and equitable food systems.",
+    "relevance_score": 0.83,
+    "model": "openrouter/meta-llama/llama-3.2-3b-instruct:free"
+  },
+  "used_in_dream": "conservation-meets-gift-economy"
+}
